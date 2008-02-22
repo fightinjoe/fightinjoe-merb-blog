@@ -1,0 +1,20 @@
+Setting up DataMapper:
+http://jit.nuance9.com/2007/11/merb-datamapper-getting-rolling.html 
+
+Gem dependencies
+- merb_helper
+- do_postgres
+- merb_has_flash
+
+Setup of postgres on MacOSX
+- http://www.robbyonrails.com/articles/2008/01/22/installing-ruby-on-rails-and-postgresql-on-os-x-third-edition
+
+Update MacPorts
+- http://www.schabell.com/2007/12/macports-update.html
+
+bug in datamapper for sql session store
+- http://merb.lighthouseapp.com/projects/7588/tickets/5-merb_datamapper-sessions-postgres-busted
+
+No magic route paths
+
+Native support for HAML and SASS

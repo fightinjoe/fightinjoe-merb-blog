@@ -1,0 +1,16 @@
+---
+# This is a sample database file for the DataMapper ORM
+:development: &defaults
+  :adapter: postgresql
+  :database: fightinjoe_development
+  :username: postgres
+  :password: postgres
+  :host: localhost
+
+:test:
+  <<: *defaults
+  :database: fightinjoe_test
+
+:production:
+  <<: *defaults
+  :database: fightinjoe_production

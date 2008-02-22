@@ -1,11 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Fresh Merb App</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="/stylesheets/master.css" type="text/css" media="screen" charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Aaron Wheeler : Fightinjoe.com</title>
+    <link href="/stylesheets/rice.css" rel="stylesheet" type="text/css" />
+    <link href="/feed/atom.xml" rel="alternate" type="application/atom+xml" />
   </head>
   <body>
-    <%= catch_content :layout %>
+    <h1><a href="/"> Aaron Wheeler :  </a></h1>
+    <div id="shell">
+      <div id="wrapper">
+        <div id="header"></div>
+        <div id="content">
+          <%= catch_content :layout %>
+        </div>
+        <div id="sidebar">
+          <ul>
+            <li id="photos"><a href="http://flickr.com/photos/fightinjoe">Photos</a></li>
+            <li id="albums"><a href="#" onclick="alert('You can contact me at aa' + 'ron' + '@' + 'fi' + 'ght' + 'injo' + 'e' + '.' + 'com');return false;">Contact</a></li>
+            <li id="previously"><a href="#">Previously</a></li>
+          </ul>
+          <ul id="previous">
+            <li><a href="/2007/10/27/what-did-i-do" title="What did I do?">What did I do?</a></li>
+            <li><a href="/2007/6/27/travel-advisory" title="Travel Advisory">Travel Advisory</a></li>
+            <li><a href="/2007/6/21/marriage-recommendations" title="Marriage recommendations">Marriage recommendations</a></li>
+            <li><a href="/2007/5/27/community-building" title="Community Building">Community Building</a></li>
+            <li><a href="/2007/5/2/bite-your-lip" title="Bite your lip">Bite your lip</a></li>
+            <li><a href="/2007/4/20/close-and-open" title="Close and Open">Close and Open</a></li>
+            <li><a href="/2007/4/17/neo-japanese" title="Neo-Japanese">Neo-Japanese</a></li>
+            <li><a href="/2007/1/10/oral-fixation" title="Oral Fixation">Oral Fixation</a></li>
+            <li><a href="/2006/12/30/migration" title="Migration">Migration</a></li>
+            <li><a href="/2006/10/17/21st_century" title="21st Century">21st Century</a></li>
+          </ul>
+        </div>
+        <div id="footer"></div>
+      </div>
+    </div>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+    <script type="text/javascript">_uacct="UA-257048-1"; urchinTracker();</script>
+    <script type="text/javascript" src="http://cetrk.com/pages/scripts/0004/7761.js"> </script>
   </body>
 </html>

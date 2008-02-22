@@ -1,0 +1,123 @@
+body {
+  font-family: Helvetica, Arial;
+  text-align: center;
+  margin:0;
+  font-size:76%;
+  background: url(/images/riceShadow.jpg) center repeat-y;
+}
+
+h1 {
+  width:800px;
+  margin:0 auto;
+  text-indent:-2000px;
+  overflow:hidden;
+  background: url(/images/header.jpg) no-repeat center 0;
+  height:166px;
+  z-index:2;
+  position:relative;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: monospace;
+  border-bottom: 1px solid Silver;
+  margin: 0;
+}
+
+h2 a { color: Black; text-decoration:none; }
+
+small {
+  color: Silver;
+  font-size:1em;
+  padding:.5em 0 1em 0;
+  display:block;
+}
+
+#shell {
+  margin: 0 auto;
+  text-align:left;
+  width:800px;
+  border: 1px solid White;
+  border-bottom:none;
+  position:relative;
+  top:-1px;
+  background:url(/images/riceBodyTop.jpg) no-repeat;
+}
+
+#wrapper {
+  margin: 0 67px 0 70px;
+  background:white;
+}
+
+#content {
+  font-size: 1em;
+  width: 450px;
+  float:right;
+  padding-right:10px;
+}
+
+#sidebar {
+  width: 190px;
+}
+
+#sidebar a { text-decoration: none; }
+
+#sidebar ul {
+  list-style:none;
+  padding:0;
+  margin:0 0 0 10px;
+}
+
+#sidebar li {
+  text-align:center;
+  padding: .75em 0;
+  clear:left;
+  font-size: 1em
+}
+
+#sidebar li#photo img {
+  width:120px;
+  border: 1px solid #ddd;
+  padding: 3px;
+}
+
+#sidebar li#photos  { background: #CBE379; }
+#sidebar li#albums  { background: #B3D838; }
+#sidebar li#contact { background: #7D9920; }
+#sidebar li#previously { background: Black; }
+
+#sidebar ul#previous li {
+  background: Black;
+  border-top:1px solid Gray;
+}
+
+#sidebar a { color: Black; }
+#sidebar li#previously a { color: White; }
+#sidebar ul#previous a { color: Silver; }
+
+#sidebar span {
+  background: black;
+  color: White;
+  display:block;
+  float: left;
+  margin:-.75em .5em 0 .5em;
+}
+
+#sidebar small {
+  font-size:smaller;
+  margin-bottom:-.5em;
+}
+
+#footer {
+  height: 120px;
+  background: black url(/images/riceBottom.jpg) 0 -25px;
+  margin:0 -1px -1px -2px;
+  clear:both;
+}
+
+pre {
+  background: #ddd;
+  font-size:1.2em;
+  padding: 5px;
+  overflow:auto;
+}
