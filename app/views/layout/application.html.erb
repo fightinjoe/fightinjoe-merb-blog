@@ -3,6 +3,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Aaron Wheeler : Fightinjoe.com</title>
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/chili-1.7.pack.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.easing.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.accordion.js"></script>
     <link href="/stylesheets/rice.css" rel="stylesheet" type="text/css" />
     <link href="/feed/atom.xml" rel="alternate" type="application/atom+xml" />
   </head>
@@ -15,12 +19,17 @@
           <%= catch_content :layout %>
         </div>
         <div id="sidebar">
-          <ul>
-            <li id="photos"><a href="http://flickr.com/photos/fightinjoe">Photos</a></li>
-            <li id="albums"><a href="#" onclick="alert('You can contact me at aa' + 'ron' + '@' + 'fi' + 'ght' + 'injo' + 'e' + '.' + 'com');return false;">Contact</a></li>
-            <li id="previously"><a href="#">Previously</a></li>
-          </ul>
+          <h3 id="photos">Photos</h3>
+          <div>photos</div>
+
+          <h3 id="albums">Contact</h3>
+          <div>albums</div>
+
+          <h3 id="previously">Previously</h3>
           <ul id="previous">
+            <% for blog in Blog.al( :limit => 10 ) %>
+              <li><a href="<%= blog.path %>">content...</a></li>
+            <% end %>
             <li><a href="/2007/10/27/what-did-i-do" title="What did I do?">What did I do?</a></li>
             <li><a href="/2007/6/27/travel-advisory" title="Travel Advisory">Travel Advisory</a></li>
             <li><a href="/2007/6/21/marriage-recommendations" title="Marriage recommendations">Marriage recommendations</a></li>
@@ -38,6 +47,7 @@
     </div>
     <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
     <script type="text/javascript">_uacct="UA-257048-1"; urchinTracker();</script>
-    <script type="text/javascript" src="http://cetrk.com/pages/scripts/0004/7761.js"> </script>
+    <script type="text/javascript" src="http://cetrk.com/pages/scripts/0004/7761.js"></script>
+    <script type="text/javascript">jQuery('#sidebar').accordion({ header: 'h3', autoheight: false });</script>
   </body>
 </html>
