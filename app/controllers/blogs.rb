@@ -5,6 +5,7 @@ class Blogs < Application
   end
 
   def show
+    @blog = Blog.first( :year => params[:year], :month => params[:month], :path_title => [:path_title])
     render
   end
 
