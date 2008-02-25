@@ -18,3 +18,10 @@ bug in datamapper for sql session store
 No magic route paths
 
 Native support for HAML and SASS
+
+Running Merb-Edge
+- http://rorblog.techcfl.com/category/merb/
+- to keep things up to date
+  $ cd merb-core
+  $ git pull
+  $ sudo rake gem install
