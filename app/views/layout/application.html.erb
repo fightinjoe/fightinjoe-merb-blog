@@ -16,7 +16,7 @@
       <div id="wrapper">
         <div id="header"></div>
         <div id="content">
-          <%= catch_content :layout %>
+          <%= catch_content :for_layout %>
         </div>
         <div id="sidebar">
           <h3 id="photos">Photos</h3>
@@ -28,7 +28,7 @@
           <h3 id="previously">Previously</h3>
           <ul id="previous">
             <% for blog in Blog.all( :limit => 10 ) %>
-              <li><a href="<%= blog.path %>" title="<%= blog.title %>"><%= blog.title %></a></li>
+              <li><a href="<%#= blog.path %>" title="<%#= blog.title %>"><%#= blog.title %></a></li>
             <% end %>
           </ul>
         </div>

@@ -25,3 +25,15 @@ Running Merb-Edge
   $ cd merb-core
   $ git pull
   $ sudo rake gem install
+
+# notes
+  - Haml not available by default
+  - init.rb file
+  - layouts have changed - :layout => :for_layout
+
+Template Not Found
+- http://jacobswanner.com/2008/2/14/merb-0-9-haml
+
+undefined method `precompiled_with_ambles' for #<Haml::Engine:0x6b3d0c>
+- upgrade to 1.8.2 from 1.7.1
+

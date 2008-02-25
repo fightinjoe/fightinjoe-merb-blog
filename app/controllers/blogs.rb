@@ -1,29 +1,57 @@
 class Blogs < Application
+  # provides :xml, :yaml, :js
+  
   def index
     @blogs = Blog.all
-    render
+    display @blogs
   end
 
   def show
-    @blog = Blog.first( :year => params[:year], :month => params[:month], :path_title => [:path_title])
-    render
+    @blog = Blog.first(params[:id])
+    raise NotFound unless @blog
+    display @blog
   end
 
   def new
-    @blog, @method = Blog.new, 'post'
+    only_provides :html
+    @blog = Blog.new
     render
   end
 
   def edit
-    @blog, @method = Blog.find( params[:id] ), 'put'
+    only_provides :html
+    @blog = Blog.first(params[:id])
+    raise NotFound unless @blog
     render
   end
 
   def create
-    Blog.create( params[:blog] )
-    redirect blogs_path
+    @blog = Blog.new(params[:blog])
+    if @blog.save
+      redirect url(:blog, @blog)
+    else
+      render :action => :new
+    end
   end
 
   def update
+    @blog = Blog.first(params[:id])
+    raise NotFound unless @blog
+    if @blog.update_attributes(params[:blog])
+      redirect url(:blog, @blog)
+    else
+      raise BadRequest
+    end
   end
+
+  def destroy
+    @blog = Blog.first(params[:id])
+    raise NotFound unless @blog
+    if @blog.destroy!
+      redirect url(:blogs)
+    else
+      raise BadRequest
+    end
+  end
+  
 end

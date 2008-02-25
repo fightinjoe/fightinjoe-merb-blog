@@ -1,4 +1,4 @@
 .DS_Store
 public/javascripts/.DS_Store
-log/*.pid
+log/*
 *.pid

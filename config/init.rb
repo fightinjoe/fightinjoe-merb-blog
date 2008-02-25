@@ -44,4 +44,7 @@ Merb::BootLoader.after_app_loads do
   ### Add dependencies here that must load after the application loads:
 
   # dependency "magic_admin" # this gem uses the app's model classes
+
+  # http://jacobswanner.com/2008/2/14/merb-0-9-haml
+  require "merb-haml"
 end
