@@ -1,0 +1,12 @@
+Mon, 25 Feb 2008 10:04:19 GMT  ~  info  ~  Logfile created
+Mon, 25 Feb 2008 10:04:19 GMT ~  ~ SELECT "id", "title", "path_title", "created_at", "updated_at", "year", "month", "category_id", "user_id" FROM "blogs"
+Mon, 25 Feb 2008 10:07:03 GMT ~  ~ SELECT "id", "title", "path_title", "created_at", "updated_at", "year", "month", "category_id", "user_id" FROM "blogs" WHERE ("month" = 'show') AND ("year" = 'blogs') AND ("path_title" IN ('path_title')) LIMIT 1
+Mon, 25 Feb 2008 10:07:03 GMT ~  ~ Your query failed.
+ERROR:  invalid input syntax for integer: "show"
+QUERY: "SELECT "id", "title", "path_title", "created_at", "updated_at", "year", "month", "category_id", "user_id" FROM "blogs" WHERE ("month" = 'show') AND ("year" = 'blogs') AND ("path_title" IN ('path_title')) LIMIT 1"
+Mon, 25 Feb 2008 10:08:52 GMT ~  ~ SELECT "id", "title", "path_title", "created_at", "updated_at", "year", "month", "category_id", "user_id" FROM "blogs" WHERE ("month" IS NULL) AND ("path_title" IN ('path_title')) AND ("year" IS NULL) LIMIT 1
+Mon, 25 Feb 2008 10:09:14 GMT ~  ~ SELECT "id", "title", "path_title", "created_at", "updated_at", "year", "month", "category_id", "user_id" FROM "blogs" WHERE ("month" IS NULL) AND ("path_title" IN ('path_title')) AND ("year" IS NULL) LIMIT 1
+Mon, 25 Feb 2008 10:11:59 GMT ~  ~ SELECT "id", "title", "path_title", "created_at", "updated_at", "year", "month", "category_id", "user_id" FROM "blogs" WHERE ("month" IS NULL) AND ("path_title" IN ('path_title')) AND ("year" IS NULL) LIMIT 1
+Mon, 25 Feb 2008 10:12:39 GMT ~  ~ SELECT "id", "title", "path_title", "created_at", "updated_at", "year", "month", "category_id", "user_id" FROM "blogs" WHERE ("month" IS NULL) AND ("path_title" IN ('path_title')) AND ("year" IS NULL) LIMIT 1
+Mon, 25 Feb 2008 10:12:40 GMT ~  ~ SELECT "id", "title", "path_title", "created_at", "updated_at", "year", "month", "category_id", "user_id" FROM "blogs" WHERE ("month" IS NULL) AND ("path_title" IN ('path_title')) AND ("year" IS NULL) LIMIT 1
+Mon, 25 Feb 2008 10:12:51 GMT ~  ~ SELECT "id", "title", "path_title", "created_at", "updated_at", "year", "month", "category_id", "user_id" FROM "blogs" WHERE ("month" IS NULL) AND ("path_title" IN ('path_title')) AND ("year" IS NULL) LIMIT 1
