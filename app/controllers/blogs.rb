@@ -1,14 +1,14 @@
 class Blogs < Application
   # provides :xml, :yaml, :js
-  
+
+  before :find_blog, :except => %w(index new create)
+
   def index
     @blogs = Blog.all
     display @blogs
   end
 
   def show
-    @blog = Blog.first(params[:id])
-    raise NotFound unless @blog
     display @blog
   end
 
@@ -53,5 +53,13 @@ class Blogs < Application
       raise BadRequest
     end
   end
-  
+
+  private
+
+    def find_blog
+      id, page_title, month, year = params[:id], params[:path_title], params[:month], params[:year]
+      @blog = id ? Blog.first( id ) : Blog.first( :path_title => page_title, :year => year, :month => month )
+      raise NotFound unless @blog
+    end
+
 end
