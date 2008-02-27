@@ -24,7 +24,9 @@ Merb::Router.prepare do |r|
   # RESTful routes
   # r.resources :posts
 
-  r.resources :blogs
+  r.resources :blogs do |b|
+    b.resources :comments
+  end
 
   r.match('/:year/:month/:path_title').to( :controller => 'blogs', :action => 'show' ).name( :blog )
 
