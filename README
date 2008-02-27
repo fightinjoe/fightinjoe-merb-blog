@@ -37,3 +37,13 @@ Template Not Found
 undefined method `precompiled_with_ambles' for #<Haml::Engine:0x6b3d0c>
 - upgrade to 1.8.2 from 1.7.1
 
+GIT vs SVN
+- http://git.or.cz/course/svn.html
+
+Merbful authentication
+- http://hassox.blogspot.com/2008/01/merbful-authentication-is-born.html
+- patch for 0.9 - http://pastie.textmate.org/private/5slvszmguuqhrphwmzemrg
+- fixes postgres sessions - http://merb.lighthouseapp.com/projects/7588/tickets/5-merb_datamapper-sessions-postgres-busted
+
+Ruby debugging
+- http://blog.kineticweb.com/articles/2007/11/15/kinetics-intro-to-ruby-debugging

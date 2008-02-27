@@ -14,12 +14,6 @@ class Blog < DataMapper::Base
   before_create :set_year
   before_create :set_month
 
-  ##
-  # Creates a path for finding the blog by year, month, and title
-  def path
-    raise [ year, month, path_title ].inspect
-    "/%4d/%2d/%s" % [ year, month, path_title ]
-  end
 
   private
 
