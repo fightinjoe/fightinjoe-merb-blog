@@ -17,7 +17,7 @@ class Blog < DataMapper::Base
 
   private
 
-  def set_path_title() path_title ||= title.downcase.gsub(' ', '_'); end
-  def set_year()       year         = Time.now.year;  end
-  def set_month()      month        = Time.now.month; end
+  def set_path_title() self.path_title ||= self.title.downcase.gsub(' ', '_'); end
+  def set_year()       self.year         = Time.now.year;  end
+  def set_month()      self.month        = Time.now.month; end
 end

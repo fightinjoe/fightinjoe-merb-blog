@@ -47,3 +47,7 @@ Merbful authentication
 
 Ruby debugging
 - http://blog.kineticweb.com/articles/2007/11/15/kinetics-intro-to-ruby-debugging
+
+Testing
+ - automigrate test database
+   http://marcus.ahnve.net/2008/02/16/how-to-automigrate-the-test-database-using-merb-datamapper-and-rspec/

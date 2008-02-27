@@ -1,7 +1,7 @@
 $TESTING=true
 require 'rubygems'
 require 'merb-core'
-
+require 'ruby-debug'
 
 # TODO: Boot Merb, via the Test Rack adapter
 Merb.start :environment => (ENV['MERB_ENV'] || 'test'),
