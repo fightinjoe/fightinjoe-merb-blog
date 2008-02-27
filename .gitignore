@@ -2,3 +2,4 @@
 public/javascripts/.DS_Store
 log/*
 *.pid
+spec/models/log
