@@ -1,6 +1,1 @@
-%form{ :action => "#{ blogs_path }", :method => 'post' }
-  %input{ :name => '_method', :type => 'hidden', :value => "#{ @method }" }
-  %input{ :name => 'blog[title]', :type => 'text', :value => "#{ @blog.title }", :size => 40 }/
-  %textarea{ :name => 'blog[body]', :rows => 10, :cols => 40 }
-  %input{ :type => 'submit', :value => 'Save' }
-  
+= partial( :form, :blog => @blog )

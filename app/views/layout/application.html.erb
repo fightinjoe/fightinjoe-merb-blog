@@ -28,7 +28,7 @@
           <h3 id="previously">Previously</h3>
           <ul id="previous">
             <% for blog in Blog.all( :limit => 10 ) %>
-              <li><a href="<%#= blog.path %>" title="<%#= blog.title %>"><%#= blog.title %></a></li>
+              <li><a href="<%= blog_path( blog ) %>" title="<%= blog.title %>"><%= blog.title %></a></li>
             <% end %>
           </ul>
         </div>

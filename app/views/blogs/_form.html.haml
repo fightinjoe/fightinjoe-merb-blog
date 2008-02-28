@@ -1,0 +1,18 @@
+:ruby
+  # Partial for displaying a form for creating or editing a blog
+  # Parameters:
+  #  blog - blog object to edit or optionally create
+
+- action = blog.new_record? ? url(:blogs) : url(:blog, blog)
+- form_for( :blog, :action => action ) do
+  - unless blog.new_record?
+    %input{ :name => '_method', :type => 'hidden', :value => "put" }
+
+  %dl
+    %dt= label_for( :title )
+    %dd= text_control( :title )
+    %dt= label_for( :body )
+    %dd= text_area_control( :body )
+    %dd
+      %input{ :type => 'button', :value => 'Cancel', :onclick => "document.location = '#{ url(:blog, blog) }';"}
+    %dd= submit_button( 'Save blog' )
