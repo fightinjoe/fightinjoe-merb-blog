@@ -25,7 +25,6 @@ class Blog < DataMapper::Base
   # Before saving, check to make sure that the category_id is set to an integer.
   # If not, create a new category with the title of teh category_id.
   def normalize_category_id
-    debugger
     return if self.category_id.nil?
     if self.category_id.to_i == 0
       category = Category.find_or_create( :title => self.category_id )
