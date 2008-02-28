@@ -1,4 +1,4 @@
 %ul
   - for blog in @blogs
     %li
-      %a{ :href => "#{ url(:blog, :year => blog.year, :month => blog.month, :path_title => blog.path_title) }" }= blog.title
+      %a{ :href => "#{ url(:blog_by_date, blog) }" }= blog.title
