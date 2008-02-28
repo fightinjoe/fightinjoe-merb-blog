@@ -10,9 +10,14 @@
 
   %dl
     %dt= label_for( :title )
-    %dd= text_control( :title )
+    %dd= text_control( :title, :size => 50 )
+
+    %dt= label_for( :category_id, 'Category' )
+    - collection = Category.all.unshift( Category.new ).push( Category.new( :id => 0, :title => '-- Add a new Category --' ) )
+    - onclick  = "if(this.value == '0'){var title=prompt('What is the name of your new category?');"
+    - onclick += "o=this.options[this.selectedIndex];o.value=title;o.innerHTML=title;}"
+    %dd= select_control( :category_id, :collection => collection, :onclick => onclick, :text_method => 'title', :value_method => 'id', :selected => blog.category_id )
+
     %dt= label_for( :body )
-    %dd= text_area_control( :body )
-    %dd
-      %input{ :type => 'button', :value => 'Cancel', :onclick => "document.location = '#{ url(:blog, blog) }';"}
+    %dd~ text_area_control( :body, :cols => 50, :rows => 20 )
     %dd= submit_button( 'Save blog' )

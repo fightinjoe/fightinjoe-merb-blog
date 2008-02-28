@@ -29,8 +29,6 @@ module Merb
         attrs[:id] = control_id( attribute )
         label( content, '', attrs )
       end
-
-      
     end
   end
 end

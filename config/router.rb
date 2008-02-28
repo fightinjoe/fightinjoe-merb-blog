@@ -28,7 +28,7 @@ Merb::Router.prepare do |r|
     b.resources :comments
   end
 
-  r.match('/:year/:month/:path_title').to( :controller => 'blogs', :action => 'show' ).name( :blog )
+  r.match('/:year/:month/:path_title').to( :controller => 'blogs', :action => 'show' ).name( :blog_by_date )
 
   # This is the default route for /:controller/:action/:id
   # This is fine for most cases.  If you're heavily using resource-based
