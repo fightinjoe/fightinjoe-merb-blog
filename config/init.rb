@@ -39,6 +39,7 @@ use_test :rspec
 # dependency "RedCloth", "> 3.0"
 # OR
 # dependencies "RedCloth" => "> 3.0", "ruby-aes-cext" => "= 1.0"
+dependencies "merb_helpers", "merb-haml"
 
 Merb::BootLoader.after_app_loads do
   ### Add dependencies here that must load after the application loads:
@@ -46,5 +47,5 @@ Merb::BootLoader.after_app_loads do
   # dependency "magic_admin" # this gem uses the app's model classes
 
   # http://jacobswanner.com/2008/2/14/merb-0-9-haml
-  require "merb-haml"
+  # require "merb-haml"
 end

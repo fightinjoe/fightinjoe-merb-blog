@@ -1,0 +1,7 @@
+%hr
+%div
+  - form_for( :comment, :action => url(:comment, @comment) ) do
+    %dl
+    = text_control :author_name, :label => 'Name'
+    = text_area_control :body, :label => 'Comment'
+    = submit_button( 'Save comment' )

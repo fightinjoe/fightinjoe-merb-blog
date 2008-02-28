@@ -51,3 +51,9 @@ Ruby debugging
 Testing
  - automigrate test database
    http://marcus.ahnve.net/2008/02/16/how-to-automigrate-the-test-database-using-merb-datamapper-and-rspec/
+
+Routing
+ - http://toolmantim.com/article/2008/1/22/merb_routing_in_0_5
+
+Partials
+ - http://jit.nuance9.com/2008/02/merb-faqs-environment-variables.html

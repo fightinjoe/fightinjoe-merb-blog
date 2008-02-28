@@ -9,6 +9,7 @@ class Blog < DataMapper::Base
 
   belongs_to :user
   belongs_to :category
+  has_many   :comments
 
   before_create :set_path_title
   before_create :set_year

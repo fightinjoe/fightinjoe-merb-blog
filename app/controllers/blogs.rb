@@ -9,6 +9,7 @@ class Blogs < Application
   end
 
   def show
+    @comment = @blog.comments.build({})
     display @blog
   end
 

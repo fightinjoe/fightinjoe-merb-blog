@@ -26,9 +26,10 @@ class Comments < Application
   end
 
   def create
+    params[:comment][:blog_id] = params[:blog_id]
     @comment = Comment.new(params[:comment])
     if @comment.save
-      redirect url(:comment, @comment)
+      redirect blog_path( @comment.reload.blog )
     else
       render :action => :new
     end

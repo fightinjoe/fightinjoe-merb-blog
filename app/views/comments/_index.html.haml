@@ -1,0 +1,11 @@
+:ruby
+  # Partial for displaying a list of comments
+  # Locals:
+  #   comments - Array of comments to be displayed
+
+%ul
+  - for comment in comments
+    - next if comment.new_record?
+    %li
+      %strong= comment.author_name
+      = comment.body
