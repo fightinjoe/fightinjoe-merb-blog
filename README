@@ -57,3 +57,6 @@ Routing
 
 Partials
  - http://jit.nuance9.com/2008/02/merb-faqs-environment-variables.html
+
+Scaling
+ - http://www.last100meters.com/2008/2/18/skinny-requst-fat-backend-scaling-rails-let-mongrels-breath
