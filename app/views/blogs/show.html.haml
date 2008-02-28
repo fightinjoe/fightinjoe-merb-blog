@@ -2,6 +2,7 @@
 %small= @blog.created_at
 = @blog.body
 
+= link( 'New',  url(:new_blog) )
 = link( 'Edit', url(:edit_blog, @blog) )
 
 = partial( 'comments/index', :comments => @blog.comments )

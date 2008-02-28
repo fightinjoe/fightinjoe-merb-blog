@@ -1,7 +1,7 @@
 class Blogs < Application
   # provides :xml, :yaml, :js
 
-  before :find_blog, :except => %w(index create)
+  before :find_blog, :except => %w(index new create)
 
   def index
     @blogs = Blog.all
@@ -15,6 +15,7 @@ class Blogs < Application
 
   def new
     only_provides :html
+    @blog = Blog.new
     render
   end
 
