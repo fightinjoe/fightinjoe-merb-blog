@@ -2,6 +2,7 @@ class Blog < DataMapper::Base
   property :title,      :string
   property :path_title, :string
   property :body,       :text
+  property :body_html,  :text,    :lazy => false, :writer => :private
   property :created_at, :datetime
   property :updated_at, :datetime
   property :year,       :integer
@@ -11,10 +12,16 @@ class Blog < DataMapper::Base
   belongs_to :category
   has_many   :comments
 
+#  validates_presence_of :title
+
   before_create :set_path_title
   before_create :set_year
   before_create :set_month
   before_save :normalize_category_id
+
+  # The before_save filter doesn't seem to work for both create and update
+  before_create :cache_body_html
+  before_update :cache_body_html
 
   private
 
@@ -30,5 +37,10 @@ class Blog < DataMapper::Base
       category = Category.find_or_create( :title => self.category_id )
       self.category_id = category.id
     end
+  end
+
+  def cache_body_html
+    return if self.body.nil?
+    self.body_html = RedCloth.new( self.body ).to_html
   end
 end

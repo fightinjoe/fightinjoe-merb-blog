@@ -26,4 +26,16 @@ describe Blog do
     Category.first.title.should match /#{title}/
   end
 
+  it "should cache the body as HTML" do             # cache_body_html
+    body = 'this is *strong*'
+    want  = '<p>this is <strong>strong</strong></p>'
+    blog  = Blog.create( :body => body, :title => 'Blog title', :category_id => 'cat' )
+    blog.reload.body_html.should match /#{ want }/
+
+    body = 'changed'
+    want = '<p>changed</p>'
+    blog.body = body
+    blog.save
+    blog.reload.body_html.should match /#{ want }/
+  end
 end

@@ -1,6 +1,6 @@
 %h2= @blog.title
 %small= @blog.created_at
-= @blog.body
+= @blog.body_html
 
 = link( 'New',  url(:new_blog) )
 = link( 'Edit', url(:edit_blog, @blog) )

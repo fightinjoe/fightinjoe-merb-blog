@@ -60,7 +60,7 @@ class Blogs < Application
     def find_blog
       id, page_title, month, year = params[:id], params[:path_title], params[:month], params[:year]
       @blog = id ? Blog.first( id ) : Blog.first( :path_title => page_title, :year => year, :month => month )
-      raise NotFound unless @blog
+      #raise NotFound unless @blog
     end
 
 end
