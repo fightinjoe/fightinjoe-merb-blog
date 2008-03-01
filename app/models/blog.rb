@@ -7,6 +7,8 @@ class Blog < DataMapper::Base
   property :updated_at, :datetime
   property :year,       :integer
   property :month,      :integer
+  property :comments_expire_at, :datetime
+  property :permalink,  :text
 
   belongs_to :user
   belongs_to :category
