@@ -40,9 +40,18 @@ use_test :rspec
 # OR
 # dependencies "RedCloth" => "> 3.0", "ruby-aes-cext" => "= 1.0"
 dependencies "merb_helpers", "merb_helpers_ext"
-dependency "merb-haml"
+dependencies "merb-haml", "merb-mailer"
 dependency "RedCloth"
 dependency "datamapper_reflection"
+
+Merb::Mailer.config = {
+  :host   => 'smtp.yourserver.com',
+  :port   => '25',
+  :user   => 'user',
+  :pass   => 'pass',
+  :auth   => :plain,                 # :plain, :login, :cram_md5, the default is no auth
+  :domain => "localhost.localdomain" # the HELO domain provided by the client to the server
+}
 
 Merb::BootLoader.after_app_loads do
   ### Add dependencies here that must load after the application loads:

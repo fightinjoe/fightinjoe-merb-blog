@@ -29,7 +29,11 @@ class Comments < Application
     params[:comment][:blog_id] = params[:blog_id]
     @comment = Comment.new(params[:comment])
     if @comment.save
-      redirect blog_path( @comment.reload.blog )
+      if @comment.blog_id.nil?
+        send_contact_email
+      else
+        redirect blog_path( @comment.reload.blog )
+      end
     else
       render :action => :new
     end
@@ -54,5 +58,20 @@ class Comments < Application
       raise BadRequest
     end
   end
-  
+
+  private
+
+    def send_contact_email
+      send_mail(
+        CommentMailer,
+        :notify,
+        {
+          :from    => "%s <%s>" % [ @comment.author_name, @comment.author_email ],
+          :to      => "aaron@fightinjoe.com",
+          :subject => 'Contact via FightinJoe.com from %s' % @comment.author_name
+        },
+        { :comment => @comment }
+      )
+    end
+
 end
