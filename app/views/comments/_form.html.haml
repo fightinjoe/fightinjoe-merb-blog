@@ -1,6 +1,6 @@
 %hr
 %div
-  - form_for( :comment, :action => url(:comment, @comment) ) do
+  - form_for( :comment, :action => url(:blog_comments, @comment) ) do
     %dl
     = text_control :author_name, :label => 'Name'
     = text_area_control :body, :label => 'Comment'
