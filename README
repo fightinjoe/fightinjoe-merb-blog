@@ -15,8 +15,6 @@ Update MacPorts
 bug in datamapper for sql session store
 - http://merb.lighthouseapp.com/projects/7588/tickets/5-merb_datamapper-sessions-postgres-busted
 
-No magic route paths
-
 Native support for HAML and SASS
 
 Running Merb-Edge
@@ -54,6 +52,7 @@ Testing
 
 Routing
  - http://toolmantim.com/article/2008/1/22/merb_routing_in_0_5
+ - Merb::Router.named_routes.keys
 
 Partials
  - http://jit.nuance9.com/2008/02/merb-faqs-environment-variables.html
