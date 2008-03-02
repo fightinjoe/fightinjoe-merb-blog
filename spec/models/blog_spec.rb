@@ -36,3 +36,17 @@ describe Blog, 'Callback methods' do
     blog.reload.body_html.should match /#{ want }/
   end
 end
+
+describe Blog, 'Instance methods' do
+  before(:each) do
+    @today     = Blog.new( :title => 'today',     :comments_expire_at => Time.now )
+    @tomorrow  = Blog.new( :title => 'tomorrow',  :comments_expire_at => Time.now + (24*60*60) )
+    @yesterday = Blog.new( :title => 'yesterday', :comments_expire_at => Time.now - (24*60*60) )
+  end
+
+  it 'should know when comments close' do           # comments_closed?
+    @yesterday.comments_closed?.should == true
+    @today.comments_closed?.should     == true
+    @tomorrow.comments_closed?.should  == false
+  end
+end

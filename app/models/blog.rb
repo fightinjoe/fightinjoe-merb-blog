@@ -23,8 +23,19 @@ class Blog < DataMapper::Base
   before_create :set_month
   before_save   :normalize_category_id
 
-  # The before_save filter doesn't seem to work for both create and update
-  before_save :cache_body_html
+  # The before_save filter doesn't seem to work for update
+  before_create :cache_body_html
+  before_update :cache_body_html
+
+  # Returns a boolean indicating whether or not comments can be added to the blog
+  def comments_closed?
+    return false if self.comments_expire_at.nil?
+    exp = self.comments_expire_at
+    start_of_the_day = Time.local( exp.year, exp.month, exp.day )
+    Time.now >= exp
+  end
+
+  private
 
     def set_path_title() self.path_title ||= self.title.downcase.gsub(' ', '_'); end
     def set_year()       self.year         = Time.now.year;  end
@@ -46,6 +57,7 @@ class Blog < DataMapper::Base
     end
 
     def parse_date( date_params )
+      return date_params unless date_params.is_a?( Hash )
       d = date_params
       Date.parse('%4d.%2d.%2d' % [d['year'],d['month'],d['day']])
     end
