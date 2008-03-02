@@ -79,7 +79,7 @@ module DataMapper
         out = case method
         when nil, Proc then method # do nothing
         when Symbol                # lookup the function and wrap in an anonymous function that takes the value as a parameter
-          lambda { |value| puts [method,value].inspect; send( method, value ) }
+          lambda { |value| send( method, value ) }
         else raise ArgumentError.new("#{method.inspect} is not an anonymous function or a symbol pointing to an instance method")
         end
         out
