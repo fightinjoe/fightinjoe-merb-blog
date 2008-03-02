@@ -36,30 +36,33 @@
 #
 #
 module DataMapper
-  class Property
-    self.const_get('PROPERTY_OPTIONS') << :reflect
-
-    def create_setter!
-      if lazy?
-        klass.class_eval <<-EOS
-        #{writer_visibility.to_s}
-        def #{name}=(value)
-          class << self;
-            attr_accessor #{name.inspect}
+#  class Property # change for 3.0 support
+  module Persistence
+    module ClassMethods
+      self.const_get('PROPERTY_OPTIONS') << :reflect
+      
+      def create_setter!
+        if lazy?
+          klass.class_eval <<-EOS
+          #{writer_visibility.to_s}
+          def #{name}=(value)
+            class << self;
+              attr_accessor #{name.inspect}
+            end
+            @#{name} = reflect_or_return(#{name.inspect},value)
           end
-          @#{name} = reflect_or_return(#{name.inspect},value)
+          EOS
+        else
+          klass.class_eval <<-EOS
+          #{writer_visibility.to_s}
+          def #{name}=(value)
+            #{instance_variable_name} = reflect_or_return(#{name.inspect},value)
+          end
+          EOS
         end
-        EOS
-      else
-        klass.class_eval <<-EOS
-        #{writer_visibility.to_s}
-        def #{name}=(value)
-          #{instance_variable_name} = reflect_or_return(#{name.inspect},value)
-        end
-        EOS
+      rescue SyntaxError
+        raise SyntaxError.new(column)
       end
-    rescue SyntaxError
-      raise SyntaxError.new(column)
     end
   end
 

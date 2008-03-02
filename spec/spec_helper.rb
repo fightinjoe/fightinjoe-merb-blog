@@ -15,8 +15,11 @@ Spec::Runner.configure do |config|
 #  config.mock_with :mocha
 end
 
-DataMapper::Base.auto_migrate!
+# changed from DataMapper::Base.auto_migrate!
+[Blog, Comment, Category].each { |dm| dm.auto_migrate! }
 
+# ==== Example
+#   lambda { User.count }.should be_different_by(1) { User.create }
 module Spec
   module Matchers
     # http://www.last100meters.com/2007/12/11/a-handy-assert_difference-for-rspec
