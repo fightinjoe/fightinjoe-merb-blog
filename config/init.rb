@@ -42,6 +42,7 @@ use_test :rspec
 dependencies "merb_helpers", "merb_helpers_ext"
 dependency "merb-haml"
 dependency "RedCloth"
+dependency "datamapper_reflection"
 
 Merb::BootLoader.after_app_loads do
   ### Add dependencies here that must load after the application loads:

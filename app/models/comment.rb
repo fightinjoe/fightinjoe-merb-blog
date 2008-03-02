@@ -1,4 +1,6 @@
 class Comment < DataMapper::Base
+  include DataMapper::Reflection
+
   property :body, :text
   property :created_at, :datetime
   property :author_name, :text

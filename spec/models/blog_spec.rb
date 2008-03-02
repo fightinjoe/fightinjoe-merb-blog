@@ -1,9 +1,6 @@
 require File.join( File.dirname(__FILE__), "..", "spec_helper" )
 
-describe Blog do
-
-  # Class method
-
+describe Blog, 'Callback methods' do
   it "should set the path title when saved" do      # set_path
     title = 'This is my TITLE'
     want  = /this_is_my_title/
