@@ -1,11 +1,11 @@
 class Blogs < Application
   # provides :xml, :yaml, :js
 
-  before :find_blog, :except => %w(index new create)
+  before :find_blog, :only => %w(show edit destroy) #%w(index new create)
 
   def index
     @blogs = Blog.all
-    display @blogs
+    render
   end
 
   def show
@@ -21,8 +21,6 @@ class Blogs < Application
 
   def edit
     only_provides :html
-    @blog = Blog.first(params[:id])
-    raise NotFound unless @blog
     render
   end
 
@@ -60,7 +58,7 @@ class Blogs < Application
     def find_blog
       id, page_title, month, year = params[:id], params[:path_title], params[:month], params[:year]
       @blog = id ? Blog.first( id ) : Blog.first( :path_title => page_title, :year => year, :month => month )
-      #raise NotFound unless @blog
+      raise NotFound unless @blog
     end
 
 end

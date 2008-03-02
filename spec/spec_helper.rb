@@ -12,6 +12,7 @@ Merb.start :environment => (ENV['MERB_ENV'] || 'test'),
 Spec::Runner.configure do |config|
   config.include(Merb::Test::Helpers)
   config.include(Merb::Test::RequestHelper)
+#  config.mock_with :mocha
 end
 
 DataMapper::Base.auto_migrate!
