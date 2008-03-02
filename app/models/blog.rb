@@ -30,9 +30,7 @@ class Blog < DataMapper::Base
   # Returns a boolean indicating whether or not comments can be added to the blog
   def comments_closed?
     return false if self.comments_expire_at.nil?
-    exp = self.comments_expire_at
-    start_of_the_day = Time.local( exp.year, exp.month, exp.day )
-    Time.now >= exp
+    Date.today >= self.comments_expire_at.to_date
   end
 
   private

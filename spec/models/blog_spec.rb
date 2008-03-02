@@ -39,9 +39,9 @@ end
 
 describe Blog, 'Instance methods' do
   before(:each) do
-    @today     = Blog.new( :title => 'today',     :comments_expire_at => Time.now )
-    @tomorrow  = Blog.new( :title => 'tomorrow',  :comments_expire_at => Time.now + (24*60*60) )
-    @yesterday = Blog.new( :title => 'yesterday', :comments_expire_at => Time.now - (24*60*60) )
+    @today     = Blog.new( :title => 'today',     :comments_expire_at => mock('datetime', :to_date => Date.today ) )
+    @tomorrow  = Blog.new( :title => 'tomorrow',  :comments_expire_at => mock('datetime', :to_date => Date.today + 1) )
+    @yesterday = Blog.new( :title => 'yesterday', :comments_expire_at => mock('datetime', :to_date => Date.today - 1) )
   end
 
   it 'should know when comments close' do           # comments_closed?
