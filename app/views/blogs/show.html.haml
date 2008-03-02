@@ -5,5 +5,4 @@
 = link( 'New',  url(:new_blog) )
 = link( 'Edit', url(:edit_blog, @blog) )
 
-= partial( 'comments/index', :comments => @blog.comments )
-= partial( 'comments/form' )
+= partial( 'comments/index', :blog => @blog )

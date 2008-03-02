@@ -1,3 +1,7 @@
+:ruby
+  # Partial for displaying an inline form for creating a comment
+  # === Parameters
+  # blog<Blog>:: The Blog instance to attach the comment to
 %hr
 %div
   - form_for( :comment, :action => url(:blog_comments, @comment) ) do

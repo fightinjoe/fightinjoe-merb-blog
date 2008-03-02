@@ -1,11 +1,16 @@
 :ruby
   # Partial for displaying a list of comments
-  # Locals:
-  #   comments - Array of comments to be displayed
+  # ==== Parameters
+  # blog<Blog>:: the blog to which the comments are attached
 
 %ul
-  - for comment in comments
+  - for comment in blog.comments.all
     - next if comment.new_record?
     %li
       %strong= comment.author_name
       = comment.body
+
+- if blog.comments_expired?
+  %p Comments are closed
+- else
+  = partial( 'comments/form', :blog => blog )
