@@ -1,4 +1,8 @@
+require 'datamapper_reflection'
+
 class Blog < DataMapper::Base
+  include DataMapper::Reflection
+
   property :title,      :string
   property :path_title, :string
   property :body,       :text
@@ -7,8 +11,8 @@ class Blog < DataMapper::Base
   property :updated_at, :datetime
   property :year,       :integer
   property :month,      :integer
-  property :comments_expire_at, :datetime
   property :permalink,  :text
+  property :comments_expire_at, :datetime, :reflect => :parse_date
 
   belongs_to :user
   belongs_to :category
@@ -35,7 +39,7 @@ class Blog < DataMapper::Base
   # If not, create a new category with the title of teh category_id.
   def normalize_category_id
     return if self.category_id.nil?
-    if self.category_id.to_i == 0
+    if self.category_id.to_i == -1
       category = Category.find_or_create( :title => self.category_id )
       self.category_id = category.id
     end
@@ -44,5 +48,10 @@ class Blog < DataMapper::Base
   def cache_body_html
     return if self.body.nil?
     self.body_html = RedCloth.new( self.body ).to_html
+  end
+
+  def parse_date( date_params )
+    d = date_params
+    Date.parse('%4d.%2d.%2d' % [d['year'],d['month'],d['day']])
   end
 end
