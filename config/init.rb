@@ -42,7 +42,7 @@ use_test :rspec
 dependencies "merb_helpers", "merb_helpers_ext"
 dependencies "merb-haml", "merb-mailer"
 dependency "RedCloth"
-dependency "datamapper_reflection"
+# dependency "datamapper_reflection"
 
 Merb::Mailer.config = {
   :host   => 'smtp.yourserver.com',

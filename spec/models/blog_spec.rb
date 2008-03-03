@@ -20,13 +20,13 @@ describe Blog, 'Callback methods' do
     lambda { Category.count }.should be_different_by(1) {
       blog = Blog.create( :title => 'Blog Title', :category_id => title )
     }
-    Category.first.title.should match /#{title}/
+    Category.first( :order => 'id DESC').title.should match /#{title}/
   end
 
   it "should cache the body as HTML" do             # cache_body_html
     body = 'this is *strong*'
     want  = '<p>this is <strong>strong</strong></p>'
-    blog  = Blog.create( :body => body, :title => 'Blog title', :category_id => 'cat' )
+    blog  = Blog.create( :body => body, :title => 'Blog title' )
     blog.reload.body_html.should match /#{ want }/
 
     body = 'changed'
@@ -48,5 +48,16 @@ describe Blog, 'Instance methods' do
     @yesterday.comments_closed?.should == true
     @today.comments_closed?.should     == true
     @tomorrow.comments_closed?.should  == false
+  end
+end
+
+describe Blog, 'Properties' do
+  before(:each) do
+  end
+
+  it 'should parse dates propertly' do
+    date = Date.today
+    blog = Blog.new( :title => 'title', :comments_expire_at => { 'year' => date.year, 'month' => date.month, 'day' => date.day } )
+    blog.comments_expire_at.should == date
   end
 end

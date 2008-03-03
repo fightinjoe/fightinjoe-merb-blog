@@ -1,5 +1,5 @@
 class Blog < DataMapper::Base
-  include DataMapper::Reflection
+#  include DataMapper::Reflection
 
   property :title,      :string
   property :path_title, :string
@@ -10,7 +10,7 @@ class Blog < DataMapper::Base
   property :year,       :integer
   property :month,      :integer
   property :permalink,  :text
-  property :comments_expire_at, :datetime, :reflect => :parse_date
+  property :comments_expire_at, :datetime #, :reflect => :parse_date
 
   belongs_to :user
   belongs_to :category
@@ -33,6 +33,10 @@ class Blog < DataMapper::Base
     Date.today >= self.comments_expire_at.to_date
   end
 
+  def comments_expire_at=( date )
+    @comments_expire_at = parse_date( date )
+  end
+
   private
 
     def set_path_title() self.path_title ||= self.title.downcase.gsub(' ', '_'); end
@@ -42,8 +46,8 @@ class Blog < DataMapper::Base
     # Before saving, check to make sure that the category_id is set to an integer.
     # If not, create a new category with the title of teh category_id.
     def normalize_category_id
-      return true if self.category_id.nil?
-      if self.category_id.to_i == 0 && self.category_id != '0'
+      return true if [nil,0].include?(self.category_id)
+      if self.category_id.to_s =~ /\w/
         category = Category.find_or_create( :title => self.category_id )
         self.category_id = category.id
       end

@@ -1,5 +1,5 @@
 class Comment < DataMapper::Base
-  include DataMapper::Reflection
+#  include DataMapper::Reflection
 
   property :body,           :text
   property :created_at,     :datetime

@@ -1,5 +1,5 @@
 class Category < DataMapper::Base
-  include DataMapper::Reflection
+#  include DataMapper::Reflection
 
   property :title, :string
 
