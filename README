@@ -68,6 +68,27 @@ Rspec on Rails on Crack
 
 mail in merb
  - http://yehudakatz.com/2007/09/03/merbs-mailer-is-awesome-if-i-do-say-so-myself/
+ - testing: http://rubyforge.org/pipermail/merb-devel/2008-January/000464.html
 
 Merb links
  - http://www.merbcast.com/tutorials.html
+
+
+----
+
+Complete
+
+Add categories
+add sidebar categories
+Add RedCloth
+add caching of html content
+Add comment expiration
+Add Flickr
+To Do
+
+Add authentication
+Add Contact option
+Add static option for blogs
+Caching
+captcha
+comment RSS feed
