@@ -37,6 +37,7 @@ class Blogs < Application
     @blog = Blog.first(params[:id])
     raise NotFound unless @blog
     if @blog.update_attributes(params[:blog])
+      flash[:notice] = 'Success!'
       redirect url(:blog, @blog)
     else
       raise BadRequest

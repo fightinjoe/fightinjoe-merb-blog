@@ -40,7 +40,7 @@ use_test :rspec
 # OR
 # dependencies "RedCloth" => "> 3.0", "ruby-aes-cext" => "= 1.0"
 dependencies "merb_helpers", "merb_helpers_ext"
-dependencies "merb-haml", "merb-mailer"
+dependencies "merb-haml", "merb-mailer", "merb_has_flash"
 dependency "RedCloth"
 # dependency "datamapper_reflection"
 
