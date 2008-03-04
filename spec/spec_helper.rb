@@ -5,7 +5,7 @@ require 'ruby-debug'
 
 # TODO: Boot Merb, via the Test Rack adapter
 Merb.start :environment => (ENV['MERB_ENV'] || 'test'),
-           :adapter     => 'runner',
+#           :adapter     => 'runner',
            :merb_root  => File.join(File.dirname(__FILE__), ".." )
 
 class Merb::Mailer
@@ -13,8 +13,9 @@ class Merb::Mailer
 end
 
 Spec::Runner.configure do |config|
-  config.include(Merb::Test::Helpers)
-  config.include(Merb::Test::RequestHelper)
+  config.include(Merb::Test::ViewHelper)
+  config.include(Merb::Test::RouteHelper)
+  config.include(Merb::Test::ControllerHelper)
 #  config.mock_with :mocha
 end
 

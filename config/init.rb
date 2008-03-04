@@ -7,6 +7,11 @@ $LOAD_PATH.unshift(Merb.root / "lib")
 
 
 Merb::Config.use do |c|
+  
+  ### Sets up a custom session id key, if you want to piggyback sessions of other applications
+  ### with the cookie session store. If not specified, defaults to '_session_id'.
+  # c[:session_id_key] = '_session_id'
+  
   c[:session_secret_key]  = '0089065a640a7408b2b9a75f360a58adce409a10'
   c[:session_store] = 'cookie'
 end  
@@ -27,6 +32,12 @@ use_orm :datamapper
 
 ### This defines which test framework the generators will use
 ### rspec is turned on by default
+###
+### Note that you need to install the merb_rspec if you want to ue
+### rspec and merb_test_unit if you want to use test_unit. 
+### merb_rspec is installed by default if you did gem install
+### merb.
+###
 # use_test :test_unit
 use_test :rspec
 
@@ -40,24 +51,21 @@ use_test :rspec
 # OR
 # dependencies "RedCloth" => "> 3.0", "ruby-aes-cext" => "= 1.0"
 dependencies "merb_helpers", "merb_helpers_ext"
+# http://jacobswanner.com/2008/2/14/merb-0-9-haml
 dependencies "merb-haml", "merb-mailer", "merb_has_flash"
 dependency "RedCloth"
 # dependency "datamapper_reflection"
-
-Merb::Mailer.config = {
-  :host   => 'smtp.yourserver.com',
-  :port   => '25',
-  :user   => 'user',
-  :pass   => 'pass',
-  :auth   => :plain,                 # :plain, :login, :cram_md5, the default is no auth
-  :domain => "localhost.localdomain" # the HELO domain provided by the client to the server
-}
 
 Merb::BootLoader.after_app_loads do
   ### Add dependencies here that must load after the application loads:
 
   # dependency "magic_admin" # this gem uses the app's model classes
-
-  # http://jacobswanner.com/2008/2/14/merb-0-9-haml
-  # require "merb-haml"
+  Merb::Mailer.config = {
+    :host   => 'smtp.yourserver.com',
+    :port   => '25',
+    :user   => 'user',
+    :pass   => 'pass',
+    :auth   => :plain,                 # :plain, :login, :cram_md5, the default is no auth
+    :domain => "localhost.localdomain" # the HELO domain provided by the client to the server
+  }
 end
