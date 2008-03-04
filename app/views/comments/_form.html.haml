@@ -5,7 +5,7 @@
   #              and if left off will send an email.
 %hr
 %div
-  - action = defined?(blog) ? url(:blog_comments, @comment) : url(:comments)
+  - action = @comment.blog_id ? url(:blog_comments, @comment) : url(:comments)
   - form_for( :comment, :action => action ) do
     %dl
     = text_control :author_name, :label => 'Name'
