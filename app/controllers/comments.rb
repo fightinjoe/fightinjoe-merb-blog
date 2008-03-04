@@ -1,9 +1,10 @@
 class Comments < Application
   # provides :xml, :yaml, :js
-  
+
   def index
-    @comments = Comment.all
-    display @comments
+    provides :rss, :html
+    @comments = Comment.all( :order => 'created_at DESC', :limit => 30 )
+    render
   end
 
   def show
@@ -33,7 +34,7 @@ class Comments < Application
       if @comment.blog_id.nil?
         send_contact_email
       else
-        redirect(blog_path( @comment.reload.blog ))
+        redirect( url(:blog, @comment.blog_id) )
       end
     else
       render :action => :new

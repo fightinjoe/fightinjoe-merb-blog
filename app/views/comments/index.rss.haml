@@ -1,0 +1,20 @@
+!!! XML
+%rss{ :version => '2.0', :'xmlns:opensearch' => "http://a9.com/-/spec/opensearch/1.1/", :'xmlns:atom' => "http://www.w3.org/2005/Atom" }
+  %channel
+    %title= "Fightinjoe: Comments"
+    %link= "http://www.fightinjoe.com/comments.rss"
+    %language en-us
+    %description Most recent comments for blogs at Fightinjoe.com
+    %lastBuildDate= Time.now
+  
+    - for comment in @comments
+      %item
+        %title= 'Comment by %s' % comment.author_name
+        %link http://www.google.com
+
+        %description
+          - sig = '<hr/>' + [comment.author_name_and_email, comment.author_website].join(', ')
+          = CGI.escapeHTML(comment.body + sig )
+
+        %author= CGI.escapeHTML( comment.author_name_and_email )
+        %pubDate= comment.created_at

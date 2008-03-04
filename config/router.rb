@@ -22,13 +22,16 @@
 Merb.logger.info("Compiling routes...")
 Merb::Router.prepare do |r|
   # RESTful routes
-  # r.resources :posts
-
   r.resources :blogs do |b|
     b.resources :comments
   end
 
+  r.resources :comments
+
+  # NAMED routes
   r.match('/:year/:month/:path_title').to( :controller => 'blogs', :action => 'show' ).name( :blog_by_date )
+
+  r.match('/contact').to( :controller => 'comments', :action => 'new' ).name( :contact )
 
   # This is the default route for /:controller/:action/:id
   # This is fine for most cases.  If you're heavily using resource-based

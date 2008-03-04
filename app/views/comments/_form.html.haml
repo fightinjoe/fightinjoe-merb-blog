@@ -1,10 +1,12 @@
 :ruby
   # Partial for displaying an inline form for creating a comment
   # === Parameters
-  # blog<Blog>:: The Blog instance to attach the comment to
+  # blog<Blog>:: The Blog instance to attach the comment to.  This is optional,
+  #              and if left off will send an email.
 %hr
 %div
-  - form_for( :comment, :action => url(:blog_comments, @comment) ) do
+  - action = defined?(blog) ? url(:blog_comments, @comment) : url(:comments)
+  - form_for( :comment, :action => action ) do
     %dl
     = text_control :author_name, :label => 'Name'
     = text_area_control :body, :label => 'Comment'

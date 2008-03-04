@@ -5,7 +5,6 @@ Gem.path.unshift(Merb.root / "gems")
 # Make the app's "lib" directory a place where ruby files get "require"d from
 $LOAD_PATH.unshift(Merb.root / "lib")
 
-
 Merb::Config.use do |c|
   
   ### Sets up a custom session id key, if you want to piggyback sessions of other applications
@@ -50,16 +49,20 @@ use_test :rspec
 # dependency "RedCloth", "> 3.0"
 # OR
 # dependencies "RedCloth" => "> 3.0", "ruby-aes-cext" => "= 1.0"
+
 dependencies "merb_helpers", "merb_helpers_ext"
 # http://jacobswanner.com/2008/2/14/merb-0-9-haml
-dependencies "merb-haml", "merb-mailer", "merb_has_flash"
+require 'merb-mailer'
+dependencies "merb-haml", "merb_has_flash"
 dependency "RedCloth"
 # dependency "datamapper_reflection"
+
 
 Merb::BootLoader.after_app_loads do
   ### Add dependencies here that must load after the application loads:
 
   # dependency "magic_admin" # this gem uses the app's model classes
+
   Merb::Mailer.config = {
     :host   => 'smtp.yourserver.com',
     :port   => '25',
@@ -68,4 +71,6 @@ Merb::BootLoader.after_app_loads do
     :auth   => :plain,                 # :plain, :login, :cram_md5, the default is no auth
     :domain => "localhost.localdomain" # the HELO domain provided by the client to the server
   }
+
+  Merb.add_mime_type(:rss, nil, ['text/xml'])
 end

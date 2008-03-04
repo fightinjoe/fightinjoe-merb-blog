@@ -20,7 +20,8 @@ Spec::Runner.configure do |config|
 end
 
 # changed from DataMapper::Base.auto_migrate!
-[Blog, Comment, Category].each { |dm| dm.auto_migrate! }
+#[Blog, Comment, Category].each { |dm| dm.auto_migrate! }
+DataMapper::Base.auto_migrate!
 
 # http://www.last100meters.com/2007/12/11/a-handy-assert_difference-for-rspec
 # ==== Example

@@ -72,7 +72,24 @@ mail in merb
 
 Merb links
  - http://www.merbcast.com/tutorials.html
+ - http://www.rubyinside.com/merb-tutorials-and-resources-716.html
 
+Converting SVN repo to GIT:
+ - http://tsunanet.blogspot.com/2007/07/learning-git-svn-in-5min.html
+ git svn dcommit
+
+Git-Stash
+ - http://kurt.karmalab.org/articles/2008/02/18/the-power-of-git-git-stash
+ - http://www.kernel.org/pub/software/scm/git/docs/git-stash.html
+
+Git-Rebase
+ - http://jbowes.dangerouslyinc.com/2007/01/26/git-rebase-keeping-your-branches-current/
+
+Git TM Bundle
+ - http://gitorious.org/projects/git-tmbundle
+
+Respond_to vs provides
+ - http://hassox.blogspot.com/2007/10/goodbye-respondto-hello-provides.html
 
 ----
 
