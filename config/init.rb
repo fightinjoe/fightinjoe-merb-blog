@@ -53,7 +53,7 @@ use_test :rspec
 dependencies "merb_helpers", "merb_helpers_ext"
 # http://jacobswanner.com/2008/2/14/merb-0-9-haml
 require 'merb-mailer'
-dependencies "merb-haml", "merb_has_flash"
+dependency "merb-haml" #, "merb_has_flash"
 dependency "RedCloth"
 # dependency "datamapper_reflection"
 
