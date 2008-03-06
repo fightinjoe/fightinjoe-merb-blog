@@ -60,6 +60,15 @@ small {
   width: 190px;
 }
 
+#sidebar h3, #sidebar div {
+  margin: 0 0 0 10px;
+}
+
+#sidebar h3 {
+  text-align: center;
+  padding: .5em 0;
+}
+
 #sidebar a { text-decoration: none; }
 
 #sidebar ul {
@@ -75,25 +84,31 @@ small {
   font-size: 1em
 }
 
-#sidebar li#photo img {
+#sidebar #photo img {
   width:120px;
   border: 1px solid #ddd;
   padding: 3px;
 }
 
-#sidebar li#photos  { background: #CBE379; }
-#sidebar li#albums  { background: #B3D838; }
-#sidebar li#contact { background: #7D9920; }
-#sidebar li#previously { background: Black; }
-
-#sidebar ul#previous li {
-  background: Black;
-  border-top:1px solid Gray;
-}
+#sidebar #photos  { background: #CBE379; }
+#sidebar #albums  { background: #B3D838; }
+#sidebar #contact { background: #7D9920; }
+#sidebar #previously { background: #7D9920; }
 
 #sidebar a { color: Black; }
 #sidebar li#previously a { color: White; }
-#sidebar ul#previous a { color: Silver; }
+
+#sidebar #previous {
+  background: black;
+  color: White;
+}
+
+#sidebar #previous a { color: Silver; }
+
+#sidebar #previous strong {
+  display: block;
+  border-bottom: 2px solid #222;
+}
 
 #sidebar span {
   background: black;
