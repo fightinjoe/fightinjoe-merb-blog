@@ -14,7 +14,8 @@ class Comments < Application
   end
 
   def new
-    only_provides :html
+    provides :js, :html
+    @blog = Blog.get( params[:blog_id] )
     @comment = Comment.new
     render
   end
@@ -34,7 +35,7 @@ class Comments < Application
       if @comment.blog_id.nil?
         send_contact_email
       else
-        redirect( url(:blog, @comment.blog_id) )
+        redirect( url(:blog_by_date, @comment.reload.blog) )
       end
     else
       render :action => :new

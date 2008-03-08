@@ -29,6 +29,32 @@ module Merb
         attrs[:id] = control_id( attribute )
         label( content, '', attrs )
       end
+
+      def options_for_selectt(collection, attrs = {})
+        prompt     = attrs.delete(:prompt)
+        blank      = attrs.delete(:include_blank)
+        selected   = attrs.delete(:selected)
+        ret = String.new
+        ret << tag('option', prompt, :value => '') if prompt
+        ret << tag("option", '', :value => '') if blank
+        unless collection.blank?
+          if collection.is_a?(Hash)
+            collection.each do |label,group|
+              ret << open_tag("optgroup", :label => label.to_s.gsub(/\b[a-z]/) {|x| x.upcase}) + 
+                options_for_select(group, :selected => selected) + "</optgroup>"
+            end
+          else
+            collection.each do |value,text|
+              text ||= value
+              options = selected.to_a.include?(value) ? {:selected => 'selected'} : {}
+              ret << tag( 'option', text, {:value => value}.merge(options) )
+            end
+          end
+        end
+
+        return ret
+      end
+
     end
   end
 end

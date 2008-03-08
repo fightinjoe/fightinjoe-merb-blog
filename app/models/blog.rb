@@ -27,6 +27,10 @@ class Blog < DataMapper::Base
   before_create :cache_body_html
   before_update :cache_body_html
 
+  class << self
+    def last() first( :order => 'created_at DESC' ); end
+  end
+
   # Returns a boolean indicating whether or not comments can be added to the blog
   def comments_closed?
     return false if self.comments_expire_at.nil?

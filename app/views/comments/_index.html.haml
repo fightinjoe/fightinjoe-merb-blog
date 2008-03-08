@@ -13,4 +13,7 @@
 - if blog.comments_closed?
   %p Comments are closed
 - else
-  = partial( 'comments/form', :blog => blog )
+  #comment_form
+    - url     = url(:new_blog_comment, :blog_id => 1, :format => :js)
+    - onclick = "$('#comment_form').load('#{ url }'); return false;"
+    %a{ :href => '#', :onclick => onclick } Add a comment

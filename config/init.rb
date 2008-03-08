@@ -56,7 +56,7 @@ require 'merb-mailer'
 dependency "merb-haml" #, "merb_has_flash"
 dependency "RedCloth"
 # dependency "datamapper_reflection"
-
+require 'object_ext'
 
 Merb::BootLoader.after_app_loads do
   ### Add dependencies here that must load after the application loads:
@@ -74,6 +74,7 @@ Merb::BootLoader.after_app_loads do
 
   Merb.add_mime_type(:rss, nil, ['text/xml'])
 end
+
 begin 
   require File.join(File.dirname(__FILE__), '..', 'lib', 'authenticated_system/authenticated_dependencies') 
 rescue LoadError

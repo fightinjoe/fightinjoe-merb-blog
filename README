@@ -109,3 +109,10 @@ Add static option for blogs
 Caching
 captcha
 comment RSS feed
+
+
+dkubb: Blinchik: I saw that earlier you were looking for merb_dm that worked with edge DM.  here it is: http://github.com/heimidal/merb-plugins/
+[6:00pm] Blinchik: dkubb: thanks!
+[6:01pm] mattup joined the chat room.
+[6:01pm] mattup was granted voice by ChanServ.
+[6:02pm] dkubb: Blinchik: I know Heimidal forked merb_dm into this repo and started working on something compat with edge DM.  if you have any problems I would recommend asking for help i #datamapper.  Heimidal has been pretty responsive with any questions/suggestions I've had so far

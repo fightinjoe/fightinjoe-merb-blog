@@ -9,8 +9,8 @@ class Blogs < Application
     render
   end
 
-  def show
-    @comment = @blog.comments.build({})
+  def show 
+    @comment = Comment.new( :blog_id => @blog.id )
     display @blog
   end
 
@@ -39,7 +39,7 @@ class Blogs < Application
     raise NotFound unless @blog
     if @blog.update_attributes(params[:blog])
       # flash[:notice] = 'Success!'
-      redirect url(:blog, @blog)
+      redirect url(:blog_by_date, @blog)
     else
       raise BadRequest
     end
@@ -59,7 +59,11 @@ class Blogs < Application
 
     def find_blog
       id, page_title, month, year = params[:id], params[:path_title], params[:month], params[:year]
-      @blog = id ? Blog.first( id ) : Blog.first( :path_title => page_title, :year => year, :month => month )
+      if id == 'latest'
+        @blog = Blog.last
+      else
+        @blog = id ? Blog.first( id ) : Blog.get( :path_title => page_title, :year => year, :month => month )
+      end
       raise NotFound unless @blog
     end
 
