@@ -1,7 +1,8 @@
 class Blogs < Application
   # provides :xml, :yaml, :js
 
-  before :find_blog, :only => %w(show edit destroy) #%w(index new create)
+  before :find_blog,      :only    => %w(show edit destroy)
+  before :login_required, :exclude => %w(index show)
 
   def index
     @blogs = Blog.all

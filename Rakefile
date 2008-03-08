@@ -73,4 +73,19 @@ namespace :dm do
       Merb::BootLoader::LoadClasses.reload( file )
     end
   end
+
+  namespace :db do
+    desc "Migrate a single table(s) - pass in TABLE=Model1,Model2 to migrate Model1 and Model2"
+    task :migrate => :merb_start do
+      for model in ENV['TABLE'].split(',')
+        begin
+          eval(model).auto_migrate!
+          puts "Succesfully migrated model #{model}."
+        rescue
+          puts "!!! Unable to resolve model name #{model} - did you spell your model name correctly?"
+          puts "Auto-migration of #{model} failed."
+        end
+      end
+    end
+  end
 end

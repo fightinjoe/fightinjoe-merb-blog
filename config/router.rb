@@ -42,3 +42,5 @@ Merb::Router.prepare do |r|
   # Change this for your home page to be available at /
   # r.match('/').to(:controller => 'blogs', :action =>'index')
 end
+
+AuthenticatedSystem.add_routes rescue nil

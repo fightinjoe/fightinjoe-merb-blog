@@ -74,3 +74,7 @@ Merb::BootLoader.after_app_loads do
 
   Merb.add_mime_type(:rss, nil, ['text/xml'])
 end
+begin 
+  require File.join(File.dirname(__FILE__), '..', 'lib', 'authenticated_system/authenticated_dependencies') 
+rescue LoadError
+end
