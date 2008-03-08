@@ -23,7 +23,8 @@
             #pic
             %h3#photos
               %a{ :href => 'http://www.flickr.com/photos/fightinjoe' } Photos
-            %h3#albums Contact
+            %h3#albums
+              %a{ :href => '/contact' } Contact
             %h3#previously Previously
             %ul#previous
               %li
@@ -32,7 +33,7 @@
                   %ul
                     - for blog in Blog.all( :limit => 10, :category_id => category.id )
                       %li
-                        %a{:href => "<%= url(:blog_by_date, blog) %>"}= blog.title
+                        %a{:href => "#{ url(:blog_by_date, blog) }"}= blog.title
 
         #footer
 

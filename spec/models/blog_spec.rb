@@ -20,7 +20,9 @@ describe Blog, 'Callback methods' do
     lambda { Category.count }.should be_different_by(1) {
       blog = Blog.create( :title => 'Blog Title', :category_id => title )
     }
-    Category.first( :order => 'id DESC').title.should match /#{title}/
+    category = Category.first( :order => 'id DESC')
+    category.title.should match /#{title}/
+    blog.reload.category.should == category
   end
 
   it "should cache the body as HTML" do             # cache_body_html

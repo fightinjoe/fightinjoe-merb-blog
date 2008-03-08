@@ -2,6 +2,7 @@ $TESTING=true
 require 'rubygems'
 require 'merb-core'
 require 'ruby-debug'
+require 'spec'
 
 Merb.start :environment => (ENV['MERB_ENV'] || 'test'),
            :merb_root  => File.join(File.dirname(__FILE__), ".." )
@@ -18,10 +19,10 @@ Spec::Runner.configure do |config|
 end
 
 # Hack to make DataMapper create the database properly
-reload_path, pattern = Merb.load_paths[:model]
-Dir[ reload_path / pattern ].each do |file|
-  Merb::BootLoader::LoadClasses.reload( file )
-end
+# reload_path, pattern = Merb.load_paths[:model]
+# Dir[ reload_path / pattern ].each do |file|
+#   Merb::BootLoader::LoadClasses.reload( file )
+# end
 
 DataMapper::Persistence.auto_migrate!
 

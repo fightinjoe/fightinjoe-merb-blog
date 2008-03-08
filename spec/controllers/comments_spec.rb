@@ -9,7 +9,6 @@ describe Comments, "index action" do
   end
 
   it "should render the comments as RSS" do
-    debugger
     @controller = dispatch_to( Comments, 'index', :format => 'rss' )
   end
 

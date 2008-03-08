@@ -47,7 +47,7 @@ class Blog < DataMapper::Base
     # If not, create a new category with the title of teh category_id.
     def normalize_category_id
       return true if [nil,0].include?(self.category_id)
-      if self.category_id.to_s =~ /\w/
+      if self.category_id.to_s =~ /[a-zA-Z]/
         category = Category.find_or_create( :title => self.category_id )
         self.category_id = category.id
       end
