@@ -3,11 +3,16 @@
   # === Parameters
   # blog<Blog>:: The Blog instance to attach the comment to.  This is optional,
   #              and if left off will send an email.
-%hr
-%div
-  - action = @comment.blog_id ? url(:blog_comments, @comment) : url(:comments)
-  - form_for( :comment, :action => action ) do
-    %dl
-    = text_control :author_name, :label => 'Name'
-    = text_area_control :body, :label => 'Comment'
-    = submit_button( 'Save comment' )
+
+- action = @comment.blog_id ? url(:blog_comments, @comment) : url(:comments)
+- form_for( :comment, :action => action ) do
+  %dl
+    %dt= label_for( :author_name, 'Name' )
+    %dd= text_control( :author_name )
+
+    %dt= label_for( :author_email, 'Email' )
+    %dd= text_control( :author_email )
+
+    %dt= label_for( :body )
+    %dd= text_area_control( :body )
+    %dd= submit_button( 'Send' )
