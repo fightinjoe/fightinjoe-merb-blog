@@ -1,4 +1,5 @@
-require File.join(File.dirname(__FILE__), "..", 'spec_helper.rb')
+require File.join(File.dirname(__FILE__),  "..", 'spec_helper.rb')
+include UserSpecHelper
 
 describe Blogs, "index action" do
   before(:each) do
@@ -23,7 +24,6 @@ end
 describe Blogs, "show action" do
   before(:each) do
     @blog = mock("blog", :id => 1)
-    Comment.should_receive(:build).and_return( Comment.new( :blog_id => @blog ) )
     @blog.stub!(:comments).and_return( Comment )
     Blog.should_receive(:first).with('1').and_return( @blog )
 
@@ -43,12 +43,15 @@ end
 describe Blogs, "edit action" do
   before(:each) do
     @blog = mock("blog", :id => 1)
-#    Comment.should_receive(:build).and_return( Comment.new( :blog_id => @blog ) )
-#    @blog.stub!(:comments).and_return( Comment )
     Blog.should_receive(:first).with('1').and_return( @blog )
 
-    #Blogs.any_instance.expects(:render)
-    @controller = dispatch_to( Blogs, 'edit', :id => 1 ) { |controller| controller.stub!(:render) }
+    [User, Blog].collect(&:delete_all)
+    @quentin = User.create(valid_user_hash.with(:login => "quentin", :password => "test", :password_confirmation => "test"))
+
+    @controller = get('/blogs/1/edit') { |request|
+      request.stub!(:current_user).and_return(@quentin)
+      request.stub!(:render)
+    }
   end
 
   it "should get successfully" do
@@ -62,11 +65,15 @@ end
 
 describe Blogs, "update action" do
   before(:each) do
+    [User, Blog].collect(&:delete_all)
+    @quentin = User.create(valid_user_hash.with(:login => "quentin", :password => "test", :password_confirmation => "test"))
     @title = 'title'
     @blog  = Blog.create( :title => 'blog' )
 
-    #Blogs.any_instance.expects(:render)
-    @controller = dispatch_to( Blogs, 'update', :id => @blog.id, :blog => {:title => @title} ) { |controller| controller.stub!(:render) }
+    @controller = put("/blogs/#{ @blog.id }", :blog => {:title => @title}) { |request|
+      request.stub!(:current_user).and_return(@quentin)
+      request.stub!(:render)
+    }
   end
 
   it "should redirect" do
@@ -80,11 +87,13 @@ end
 
 describe Blogs, "new action" do
   before(:each) do
-#    @blog = mock("blog", :id => 1)
-#    Blog.should_receive(:first).with('1').and_return( @blog )
+    [User, Blog].collect(&:delete_all)
+    @quentin = User.create(valid_user_hash.with(:login => "quentin", :password => "test", :password_confirmation => "test"))
 
-    #Blogs.any_instance.expects(:render)
-    @controller = dispatch_to( Blogs, 'new' ) { |controller| controller.stub!(:render) }
+    @controller = get('/blogs/new') { |request|
+      request.stub!(:current_user).and_return(@quentin)
+      request.stub!(:render)
+    }
   end
 
   it "should get successfully" do
@@ -99,7 +108,13 @@ end
 describe Blogs, "create action" do
   before(:each) do
     @title      = 'title'
-    @controller = dispatch_to( Blogs, 'create', :blog => { :title => 'title' } ) { |controller| controller.stub!(:render) }
+    [User, Blog].collect(&:delete_all)
+    @quentin = User.create(valid_user_hash.with(:login => "quentin", :password => "test", :password_confirmation => "test"))
+
+    @controller = post('/blogs', :blog => { :title => 'title' }) { |request|
+      request.stub!(:current_user).and_return(@quentin)
+      request.stub!(:render)
+    }
   end
 
   it "should redirect" do
@@ -110,12 +125,13 @@ describe Blogs, "create action" do
     Blog.first( :order => 'id DESC' ).title.should == @title
   end
 
-  it "should pass" do
-    lambda { Blog.count }.should be_different_by(1) {
-      @controller = dispatch_to( Blogs, 'create', :blog => {
+  it "should create a new blog" do
+    Blog.delete_all
+    lambda do
+      @controller = post( '/blogs', :blog => {
         "body"=>"h2. Complete\r\n\r\n* Add categories\r\n** add sidebar categories\r\n* Add RedCloth\r\n* add caching of html content\r\n* Add comment expiration\r\n* Add Flickr\r\n\r\nh2. To Do\r\n\r\n* Add authentication\r\n* Add Contact option\r\n* Add static option for blogs\r\n* Caching\r\n* captcha\r\n* comment RSS feed",
         "title"=>"To-do list", "category_id"=>"1", "comments_expire_at"=>{"month"=>1, "day"=>1, "year"=>2008}
-      })
-    }
+      }) { |request| request.stub!(:current_user).and_return(@quentin) }
+    end.should change(Blog, :count).by(1)
   end
 end

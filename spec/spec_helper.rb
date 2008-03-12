@@ -3,6 +3,8 @@ require 'rubygems'
 require 'merb-core'
 require 'ruby-debug'
 require 'spec'
+require File.join( File.dirname(__FILE__), "authenticated_system_spec_helper")
+require File.join( File.dirname(__FILE__), "user_spec_helper")
 
 Merb.start :environment => (ENV['MERB_ENV'] || 'test'),
            :merb_root  => File.join(File.dirname(__FILE__), ".." )
