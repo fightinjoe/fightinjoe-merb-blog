@@ -1,0 +1,29 @@
+deploy
+ - change DNS
+ - Add proxy for Flickr rss feed
+ - deploy with Vlad
+
+Sidebar
+ - better styling
+ - add date
+ - add toggle indicator
+
+Testing
+ - view tests
+ - get rcov working
+
+Blogs
+ - add published
+ - add versioning
+ - add synopsis
+ - add browsing by category
+
+Design
+ - widen design
+
+About
+ - about page, about me, about site, about tools
+
+Gems
+ - find out how to freeze
+ - port will_paginate

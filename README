@@ -92,6 +92,13 @@ Git TM Bundle
 Respond_to vs provides
  - http://hassox.blogspot.com/2007/10/goodbye-respondto-hello-provides.html
 
+Vlad deployment
+ - Vlad merb config: http://topfunky.net/svn/shovel/merb/vlad_config.rb
+ - Vlad and git: http://scie.nti.st/2007/9/25/vlad-the-deployer-and-git
+ - Merb and Capistrano
+   - http://www.benr75.com/articles/2007/12/24/taking_merb_to_production_nginx_evented_mongrel_capistrano
+   - http://railstips.org/2008/2/15/merb-and-capistrano
+
 ----
 
 Complete

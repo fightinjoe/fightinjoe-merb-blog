@@ -10,6 +10,9 @@ require 'fileutils'
 require 'merb-core'
 require 'rubigen'
 
+require 'vlad'
+Vlad.load
+
 $RAKE_ENV = true
 
 init_file = File.join(File.dirname(__FILE__) / "config" / "init")
