@@ -17,7 +17,7 @@ class Comment < DataMapper::Base
 
   private
     def validate_open_comments
-      return true if blog.blank?
+      return true if self.blog.blank?
       if self.blog.comments_closed?
         self.errors.add( :blog_id, 'Comments are closed for this blog' )
         return false

@@ -1,6 +1,10 @@
 require File.join( File.dirname(__FILE__), "..", "spec_helper" )
 
 describe Blog, 'Callback methods' do
+  before(:each) do
+    [Blog, Category].collect(&:delete_all)
+  end
+
   it "should set the path title when saved" do      # set_path
     title = 'This is my TITLE'
     want  = /this_is_my_title/
@@ -18,11 +22,11 @@ describe Blog, 'Callback methods' do
   it "should find or create a category" do          # normalize_category_id
     title = 'Category title'
     lambda { Category.count }.should be_different_by(1) {
-      blog = Blog.create( :title => 'Blog Title', :category_id => title )
+      @blog = Blog.create( :title => 'Blog Title', :category_id => title )
     }
     category = Category.first( :order => 'id DESC')
     category.title.should match /#{title}/
-    blog.reload.category.should == category
+    @blog.reload.category.should == category
   end
 
   it "should cache the body as HTML" do             # cache_body_html
