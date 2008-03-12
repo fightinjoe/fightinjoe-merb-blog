@@ -5,7 +5,7 @@ class Blogs < Application
   before :login_required, :exclude => %w(index show)
 
   def index
-    @blogs = Blog.all
+    @blogs = Blog.all( :order => 'created_at DESC')
     render
   end
 
@@ -62,7 +62,7 @@ class Blogs < Application
       if id == 'latest'
         @blog = Blog.last
       else
-        @blog = id ? Blog.first( id ) : Blog.get( :path_title => page_title, :year => year, :month => month )
+        @blog = id ? Blog.first( id ) : Blog.first( :path_title => page_title, :year => year, :month => month )
       end
       raise NotFound unless @blog
     end

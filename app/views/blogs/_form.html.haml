@@ -13,8 +13,8 @@
     %dd= text_control( :title, :size => 50 )
 
     %dt= label_for( :category_id, 'Category' )
-    - collection = Category.all.unshift( Category.new ).push( Category.new( :id => -1, :title => '-- Add a new Category --' ) )
-    - onclick  = "if(this.value == '0'){var title=prompt('What is the name of your new category?');"
+    - collection = Category.all.unshift( Category.new ).push( Category.new( :title => '-- Add a new Category --' ) )
+    - onclick  = "if(this.value == ''){var title=prompt('What is the name of your new category?');"
     - onclick += "o=this.options[this.selectedIndex];o.value=title;o.innerHTML=title;}"
     %dd= select_control( :category_id, :collection => collection, :onclick => onclick, :text_method => 'title', :value_method => 'id', :selected => blog.category_id )
 

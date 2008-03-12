@@ -6,6 +6,13 @@ body {
   background: url(/images/riceShadow.jpg) center repeat-y;
 }
 
+a {
+  color: #385409;
+  text-decoration: none;
+}
+
+a:hover { text-decoration:underline; }
+
 h1 {
   width:800px;
   margin:0 auto;
@@ -31,6 +38,26 @@ small {
   font-size:1em;
   padding:.5em 0 1em 0;
   display:block;
+}
+
+.right { float:right; }
+
+ul.unlist {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ul.horizontal li {
+  float:left;
+  padding: 0 .5em;
+}
+
+dl.compact dt {
+  float:left;
+  width: 75px;
+  clear:left;
+  line-height: 2em;
 }
 
 #shell {

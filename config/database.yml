@@ -2,7 +2,7 @@
 # This is a sample database file for the DataMapper ORM
 :development: &defaults
   :adapter: postgresql
-  :database: fightinjoe_development
+  :database: joe_dev
   :username: postgres
   :password: postgres
   :host: localhost

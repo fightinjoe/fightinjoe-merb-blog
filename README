@@ -77,6 +77,7 @@ Merb links
 Converting SVN repo to GIT:
  - http://tsunanet.blogspot.com/2007/07/learning-git-svn-in-5min.html
  git svn dcommit
+ - http://andy.delcambre.com/2008/3/4/git-svn-workflow
 
 Git-Stash
  - http://kurt.karmalab.org/articles/2008/02/18/the-power-of-git-git-stash

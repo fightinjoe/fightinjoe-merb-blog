@@ -64,15 +64,15 @@ end
 
 # Hack to make the rake tasks for datamapper work
 namespace :dm do
-  task :merb_start do
-    Merb.start :adapter => 'runner',
-               :environment => ENV['MERB_ENV'] || 'development'
-
-    reload_path, pattern = Merb.load_paths[:model]
-    Dir[ reload_path / pattern ].each do |file|
-      Merb::BootLoader::LoadClasses.reload( file )
-    end
-  end
+  #task :merb_start do
+  #  Merb.start :adapter => 'runner',
+  #             :environment => ENV['MERB_ENV'] || 'development'
+  #
+  #  reload_path, pattern = Merb.load_paths[:model]
+  #  Dir[ reload_path / pattern ].each do |file|
+  #    Merb::BootLoader::LoadClasses.reload( file )
+  #  end
+  #end
 
   namespace :db do
     desc "Migrate a single table(s) - pass in TABLE=Model1,Model2 to migrate Model1 and Model2"

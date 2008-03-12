@@ -6,7 +6,7 @@
 
 - action = @comment.blog_id ? url(:blog_comments, @comment) : url(:comments)
 - form_for( :comment, :action => action ) do
-  %dl
+  %dl{ :class => "#{ 'compact' if @comment.blog_id }"}
     %dt= label_for( :author_name, 'Name' )
     %dd= text_control( :author_name )
 

@@ -3,3 +3,4 @@
   - for blog in @blogs
     %li
       %a{ :href => "#{ url(:blog_by_date, blog) }" }= blog.title
+      %a{ :href => "#{ url(:blog, blog) }" }= "(#{blog.id})"

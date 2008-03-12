@@ -27,7 +27,8 @@ module AuthenticatedSystem
     
     # A method to assist with specs
     def clear_database_table
-      User.auto_migrate!
+      #User.auto_migrate!
+      User.delete_all
     end
   end
   

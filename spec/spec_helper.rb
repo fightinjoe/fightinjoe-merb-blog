@@ -18,13 +18,7 @@ Spec::Runner.configure do |config|
 #  config.mock_with :mocha
 end
 
-# Hack to make DataMapper create the database properly
-# reload_path, pattern = Merb.load_paths[:model]
-# Dir[ reload_path / pattern ].each do |file|
-#   Merb::BootLoader::LoadClasses.reload( file )
-# end
-
-DataMapper::Persistence.auto_migrate!
+# DataMapper::Persistence.auto_migrate!
 
 # http://www.last100meters.com/2007/12/11/a-handy-assert_difference-for-rspec
 # ==== Example

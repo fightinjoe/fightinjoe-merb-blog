@@ -14,7 +14,7 @@
 
         %description
           - sig = '<hr/>' + [comment.author_name_and_email, comment.author_website].join(', ')
-          = CGI.escapeHTML(comment.body + sig )
+          = CGI.escapeHTML(comment.body.to_s + sig )
 
         %author= CGI.escapeHTML( comment.author_name_and_email )
         %pubDate= comment.created_at

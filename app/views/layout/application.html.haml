@@ -31,9 +31,12 @@
                 - for category in Category.all
                   %strong= category.title
                   %ul
-                    - for blog in Blog.all( :limit => 10, :category_id => category.id )
+                    - for blog in Blog.all( :limit => 10, :category_id => category.id, :order => 'created_at DESC' )
                       %li
                         %a{:href => "#{ url(:blog_by_date, blog) }"}= blog.title
+                    - if Blog.count > 10
+                      %li
+                        %a{:href => "#{ url(:blogs) }"} Read more...
 
         #footer
 

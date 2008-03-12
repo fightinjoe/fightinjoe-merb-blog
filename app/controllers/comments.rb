@@ -15,8 +15,8 @@ class Comments < Application
 
   def new
     provides :js, :html
-    @blog = Blog.get( params[:blog_id] )
-    @comment = Comment.new
+    @blog = params[:blog_id] ? Blog.get( params[:blog_id] ) : nil
+    @comment = Comment.new( :blog_id => params[:blog_id] )
     render
   end
 
