@@ -5,7 +5,8 @@ class Blogs < Application
   before :login_required, :exclude => %w(index show)
 
   def index
-    @blogs = Blog.all( :order => 'created_at DESC')
+    opts = { :order => 'created_at DESC' }
+    @blogs = logged_in? ? Blog.all( opts ) : Blog.published
     render
   end
 

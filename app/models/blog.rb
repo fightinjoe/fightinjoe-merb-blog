@@ -1,15 +1,16 @@
 class Blog < DataMapper::Base
 #  include DataMapper::Reflection
 
-  property :title,      :string
-  property :path_title, :string
-  property :body,       :text
-  property :body_html,  :text,    :lazy => false, :writer => :private
-  property :created_at, :datetime
-  property :updated_at, :datetime
-  property :year,       :integer
-  property :month,      :integer
-  property :permalink,  :text
+  property :title,        :string
+  property :path_title,   :string
+  property :body,         :text
+  property :body_html,    :text,    :lazy => false, :writer => :private
+  property :created_at,   :datetime
+  property :updated_at,   :datetime
+  property :published_at, :datetime
+  property :year,         :integer
+  property :month,        :integer
+  property :permalink,    :text
   property :comments_expire_at, :datetime #, :reflect => :parse_date
 
   belongs_to :user
@@ -28,7 +29,15 @@ class Blog < DataMapper::Base
   before_update :cache_body_html
 
   class << self
-    def last() first( :order => 'created_at DESC' ); end
+    def last() first( options ); end
+
+    # Find all published blogs
+    def published
+      all( options.merge( :conditions => ['blogs.published_at IS NOT NULL'] ) )
+    end
+
+    private
+      def options() { :order => 'created_at DESC' }; end
   end
 
   # Returns a boolean indicating whether or not comments can be added to the blog
@@ -39,6 +48,16 @@ class Blog < DataMapper::Base
 
   def comments_expire_at=( date )
     @comments_expire_at = parse_date( date )
+  end
+
+  alias published published_at
+
+  def published=( value )
+    if [0,'0',false,''].include?(value)
+      self.published_at &&= nil
+    else
+      self.published_at ||= Time.now
+    end
   end
 
   private

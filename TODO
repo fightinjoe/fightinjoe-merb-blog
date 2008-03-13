@@ -1,8 +1,3 @@
-deploy
- - change DNS
- - Add proxy for Flickr rss feed
- - deploy with Vlad
-
 Sidebar
  - better styling
  - add date
@@ -27,3 +22,13 @@ About
 Gems
  - find out how to freeze
  - port will_paginate
+
+Flickr
+ - get JS slideshow working
+
+=== DONE ===
+
+deploy
+ - change DNS
+ - Add proxy for Flickr rss feed
+ - deploy with Vlad

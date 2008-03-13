@@ -19,6 +19,13 @@
     %dd= select_control( :category_id, :collection => collection, :onclick => onclick, :text_method => 'title', :value_method => 'id', :selected => blog.category_id )
 
     %dt
+      %label{ :for => 'blog_publish' } Published?
+    %dd
+      = checkbox_control( :published, :value => 1 )
+      - if @blog.published
+        = "Published at #{ @blog.published }"
+
+    %dt
       %label{ :for => 'blog_comments_expire_at' } Comment expiration
     %dd
       %select{ :name => 'blog[comments_expire_at][year]' }

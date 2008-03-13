@@ -55,6 +55,11 @@ describe Blog, 'Instance methods' do
     @today.comments_closed?.should     == true
     @tomorrow.comments_closed?.should  == false
   end
+
+  it 'should set the published at date' do
+    @today.publish = true
+    @today.published_at.should_not == nil
+  end
 end
 
 describe Blog, 'Properties' do
