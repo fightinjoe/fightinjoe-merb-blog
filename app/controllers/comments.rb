@@ -34,6 +34,7 @@ class Comments < Application
     if @comment.save
       if @comment.blog_id.nil?
         send_contact_email
+        redirect( '/' )
       else
         redirect( url(:blog_by_date, @comment.reload.blog) )
       end

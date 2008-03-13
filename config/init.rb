@@ -54,7 +54,7 @@ dependencies "merb_helpers", "merb_helpers_ext"
 # http://jacobswanner.com/2008/2/14/merb-0-9-haml
 require 'merb-mailer'
 dependency "merb-haml" #, "merb_has_flash"
-dependency "RedCloth"
+dependency "redcloth"
 # dependency "datamapper_reflection"
 require 'object_ext'
 
@@ -63,14 +63,8 @@ Merb::BootLoader.after_app_loads do
 
   # dependency "magic_admin" # this gem uses the app's model classes
 
-  Merb::Mailer.config = {
-    :host   => 'smtp.yourserver.com',
-    :port   => '25',
-    :user   => 'user',
-    :pass   => 'pass',
-    :auth   => :plain,                 # :plain, :login, :cram_md5, the default is no auth
-    :domain => "localhost.localdomain" # the HELO domain provided by the client to the server
-  }
+  Merb::Mailer.config = {:sendmail_path => '/usr/sbin/sendmail'}
+  Merb::Mailer.delivery_method = :sendmail
 
   Merb.add_mime_type(:rss, nil, ['text/xml'])
 end
