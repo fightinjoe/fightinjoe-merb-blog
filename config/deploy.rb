@@ -1,7 +1,8 @@
 set :application, "fightinjoe"
-set :domain,      "fightinjoe.mixedape.com"
+set :domain,      "mixedape.com"
 set :deploy_to,   "/var/www/apps/#{application}"
-set :repository,  "dev1.myhost.com:/var/git/repo.git"
+# set :scm,         'git'
+set :repository,  'git@github.com:fightinjoe/fightinjoe-merb-blog.git' #"dev1.myhost.com:/var/git/repo.git"
 set :revision,    "master"
 
 # http://topfunky.net/svn/shovel/merb/vlad_config.rb
@@ -14,6 +15,24 @@ set :merb_env,    "production"
 set :config_files, ['database.yml', 'merb.yml']
 
 task :deploy => ["merb:deploy:update", "merb:deploy:copy_config_files", "merb:deploy:restart_app"]
+
+namespace :vlad do
+  desc 'Restart the app server'
+  remote_task :start_app, :role => :app do
+    run "cd #{current_path};./script/stop_merb"
+    run "cd #{current_path}; merb -e production -c 1"
+    #run "/etc/init.d/merb restart"
+  end
+
+  desc 'Stop the app server'
+  remote_task :stop_app, :role => :app do
+    run "cd #{current_path};./script/stop_merb"
+  end
+
+  remote_task :update, :role => :app do
+    run "ln -f -s #{ deploy_to }/shared/database.yml #{ deploy_to }/current/config/database.yml"
+  end
+end
 
 namespace :merb do
 
