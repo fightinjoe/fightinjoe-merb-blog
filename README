@@ -99,6 +99,15 @@ Vlad deployment
    - http://www.benr75.com/articles/2007/12/24/taking_merb_to_production_nginx_evented_mongrel_capistrano
    - http://railstips.org/2008/2/15/merb-and-capistrano
 
+Rake
+ - Overwriting: http://blog.jayfields.com/2008/02/rake-task-overwriting.html
+ - How does it work: http://www.railsenvy.com/2007/6/11/ruby-on-rails-rake-tutorial#how_does_rake_work
+ - Tutorial: http://docs.rubyrake.org/tutorial/index.html
+ - API: http://rake.rubyforge.org/
+
+Postgres
+ - backup and restore: http://www.postgresql.org/docs/8.1/static/backup.html
+
 ----
 
 Complete
