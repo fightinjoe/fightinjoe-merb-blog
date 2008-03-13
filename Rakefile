@@ -11,7 +11,7 @@ require 'merb-core'
 require 'rubigen'
 
 require 'vlad'
-Vlad.load
+Vlad.load( :app => nil, :scm => 'git' )
 
 $RAKE_ENV = true
 
