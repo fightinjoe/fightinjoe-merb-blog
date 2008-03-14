@@ -57,6 +57,7 @@ dependency "merb-haml" #, "merb_has_flash"
 dependency "redcloth"
 # dependency "datamapper_reflection"
 require 'object_ext'
+require 'merb_router_behavior_ext'
 
 Merb::BootLoader.after_app_loads do
   ### Add dependencies here that must load after the application loads:
