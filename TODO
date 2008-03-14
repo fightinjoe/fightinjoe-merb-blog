@@ -1,7 +1,8 @@
-Sidebar
- - better styling
- - add date
- - add toggle indicator
+Comments
+ - style
+
+Categories
+ - show by categories
 
 Testing
  - view tests
@@ -14,6 +15,7 @@ Blogs
 
 Design
  - widen design
+ - fix Safari bugs
 
 About
  - about page, about me, about site, about tools
@@ -34,3 +36,8 @@ deploy
 
 Blogs
  - add published
+
+Sidebar
+ - better styling
+ - add date
+ - add toggle indicator

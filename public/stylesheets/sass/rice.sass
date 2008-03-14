@@ -96,7 +96,6 @@ body
           :font-size 1em
           :margin-bottom .25em
           :padding .4em 0 .15em 0
-          :overflow auto
           .selected
             :color White
           a
@@ -106,6 +105,8 @@ body
           ul
             :background Black
             li
+              :clear left
+              :min-height 30px
               &:hover
                 :background = !green6
                 .date
@@ -138,14 +139,14 @@ body
         :margin-bottom -.5em
       .date
         :width 30px
-        :height 26px
+        :height 30px
         :float left
         :text-align center
         :margin -.25em 10px 0 5px
-        :padding-top 4px
         :background #222
         :color Gray
         .month, .day
+          :line-height 15px
           :display block
           :float none
           :margin 0
