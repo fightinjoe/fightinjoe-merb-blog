@@ -2,7 +2,7 @@ require File.join(File.dirname(__FILE__), '..', '..', "lib", "authenticated_syst
 class Users < Application
   provides :xml
   
-  skip_before :login_required
+  before :login_required
   
   def new
     only_provides :html

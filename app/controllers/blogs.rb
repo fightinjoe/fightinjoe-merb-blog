@@ -1,4 +1,5 @@
 class Blogs < Application
+  include Merb::CommentsHelper
   # provides :xml, :yaml, :js
 
   before :find_blog,      :only    => %w(show edit destroy)

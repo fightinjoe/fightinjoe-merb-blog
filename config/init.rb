@@ -67,6 +67,7 @@ Merb::BootLoader.after_app_loads do
   Merb::Mailer.delivery_method = :sendmail
 
   Merb.add_mime_type(:rss, nil, ['text/xml'])
+
 end
 
 begin 

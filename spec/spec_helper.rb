@@ -20,7 +20,13 @@ Spec::Runner.configure do |config|
 #  config.mock_with :mocha
 end
 
-# DataMapper::Persistence.auto_migrate!
+def blog_options( options = {} )
+  { :title => 'title' }
+end
+
+def comment_options( options = {} )
+  { :body => 'body', :author_name => 'name' }.merge( options )
+end
 
 # http://www.last100meters.com/2007/12/11/a-handy-assert_difference-for-rspec
 # ==== Example

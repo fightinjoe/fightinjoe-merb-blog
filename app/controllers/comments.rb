@@ -1,8 +1,10 @@
 class Comments < Application
   # provides :xml, :yaml, :js
+  before :login_required, :exclude => %w(index new create)
 
   def index
     provides :rss, :html
+    redirect('/') and return unless logged_in?
     @comments = Comment.all( :order => 'created_at DESC', :limit => 30 )
     render
   end
@@ -55,9 +57,10 @@ class Comments < Application
 
   def destroy
     @comment = Comment.first(params[:id])
+    @blog = @comment.blog
     raise NotFound unless @comment
     if @comment.destroy!
-      redirect url(:comments)
+      @blog ? redirect( url(:blog, @blog) ) : redirect( url(:comments) )
     else
       raise BadRequest
     end

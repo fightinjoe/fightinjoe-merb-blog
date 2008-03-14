@@ -1,11 +1,6 @@
 %h2= @blog.title
 %small= @blog.created_at.strftime( '%c')
-- if logged_in?
-  %ul.unlist.horizontal.right
-    %li= link( 'New',  url(:new_blog) )
-    %li= link( 'Edit', url(:edit_blog, @blog) )
-    %li= link( 'Logout', url(:logout) )
-
+= blog_actions( @blog ) if logged_in?
 / %h3= # flash[:notice]
 = @blog.body_html
 

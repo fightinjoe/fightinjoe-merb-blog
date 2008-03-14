@@ -3,17 +3,26 @@
   # ==== Parameters
   # blog<Blog>:: the blog to which the comments are attached
 
-%ul
-  - for comment in blog.comments
-    - next if comment.new_record?
-    %li
-      %strong= comment.author_name
-      = comment.body
+#comments
+  %h2{ :style => 'font-size:1.5em;' } Comments
 
-- if blog.comments_closed?
-  %p Comments are closed
-- else
-  #comment_form
-    - url     = url(:new_blog_comment, :blog_id => 1, :format => :js)
-    - onclick = "$('#comment_form').load('#{ url }'); return false;"
-    %a{ :href => '#', :onclick => onclick } Add a comment
+  %ul.unlist
+    - for comment in blog.comments
+      - next if comment.new_record?
+      %li.dot
+        .date
+          %span.month= comment.created_at.strftime('%b')
+          %span.day=   comment.created_at.strftime('%d')
+        .comment
+          %strong= link_to_author( comment )
+          = comment.body
+          = comment_actions( comment ) if logged_in?
+        .clear
+
+  - if blog.comments_closed?
+    %p Comments are closed
+  - else
+    #comment_form
+      - url     = url(:new_blog_comment, :blog_id => 1, :format => :js)
+      - onclick = "$('#comment_form').load('#{ url }'); return false;"
+      %a{ :href => '#', :onclick => onclick } Add a comment
