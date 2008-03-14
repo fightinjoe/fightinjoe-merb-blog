@@ -11,6 +11,9 @@ class Comment < DataMapper::Base
 
   before_save :validate_open_comments
 
+  validates_presence_of :author_name
+  validates_presence_of :body
+
   def author_name_and_email
     '%s <%s>' % [ self.author_name, self.author_email ]
   end
