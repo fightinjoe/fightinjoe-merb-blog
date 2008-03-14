@@ -38,6 +38,7 @@ class Comments < Application
         send_contact_email
         redirect( '/' )
       else
+        flash[:notice] = 'Thanks for sharing!  Your comment will appear below.'
         redirect( url(:blog_by_date, @comment.reload.blog) )
       end
     else
