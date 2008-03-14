@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: MerbHasFlash::ControllerExtension::InstanceMethods#sweep_flash
+is_singleton: false
+name: sweep_flash
+params: ()
+visibility: protected
