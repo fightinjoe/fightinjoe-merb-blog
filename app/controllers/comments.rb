@@ -39,7 +39,7 @@ class Comments < Application
         redirect( url(:blog_by_date, @comment.reload.blog) )
       end
     else
-      render :action => :new
+      render :new
     end
   end
 

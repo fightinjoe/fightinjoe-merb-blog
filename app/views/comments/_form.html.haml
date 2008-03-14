@@ -4,18 +4,21 @@
   # blog<Blog>:: The Blog instance to attach the comment to.  This is optional,
   #              and if left off will send an email.
 
+- error_li = lambda { |err| "<li>#{ err.last.join('<br />') }</li>" }
+= error_messages_for( @comment, error_li, 'errors' ) { |es| "<strong>#{es.size} problem(s) prevented your comment from saving:</strong>" }
+
 - action = @comment.blog_id ? url(:blog_comments, @comment) : url(:comments)
 - form_for( :comment, :action => action ) do
   %dl{ :class => "#{ 'compact' if @comment.blog_id }"}
-    %dt= label_for( :author_name, 'Name' )
-    %dd= text_control( :author_name )
+    %dt= label_for( :author_name, 'Name*' )
+    %dd= text_control( :author_name, :size => 30, :class => 'larger' )
 
     %dt= label_for( :author_email, 'Email' )
-    %dd= text_control( :author_email )
+    %dd= text_control( :author_email, :size => 30, :class => 'larger' )
 
     %dt= label_for( :author_website, 'Website' )
-    %dd= text_control( :author_website )
+    %dd= text_control( :author_website, :size => 30, :class => 'larger' )
 
-    %dt= label_for( :body, 'Comment' )
-    %dd= text_area_control( :body )
+    %dt= label_for( :body, 'Comment*' )
+    %dd= text_area_control( :body, :class => 'larger', :cols => 37, :rows => 5 )
     %dd= submit_button( 'Send' )
