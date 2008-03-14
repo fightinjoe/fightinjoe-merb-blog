@@ -8,7 +8,6 @@ Testing
  - get rcov working
 
 Blogs
- - add published
  - add versioning
  - add synopsis
  - add browsing by category
@@ -32,3 +31,6 @@ deploy
  - change DNS
  - Add proxy for Flickr rss feed
  - deploy with Vlad
+
+Blogs
+ - add published

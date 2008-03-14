@@ -1,0 +1,157 @@
+@import common
+
+!green0 = #F3F9E0
+!green1 = #CBE379
+!green2 = #B3D838
+!green3 = #7D9920
+!green4 = #5A6E17
+!green5 = #3C490F
+!green6 = #222909
+
+body
+  :font-family Helvetica, Arial
+  :text-align center
+  :margin 0
+  :font-size 76%
+  :background url(/images/riceShadow.jpg) center repeat-y
+  a
+    :color #385409
+    :text-decoration none
+    &:hover
+      :text-decoration underline
+  h2
+    :font-size 32px
+    :font-family monospace
+    :border-bottom 1px solid Silver
+    :margin 0
+    a
+      :color Black
+      :text-decoration none
+  small
+    :color Silver
+    :font-size 1em
+    :padding .5em 0 1em 0
+    :display block
+  pre
+    :background #ddd
+    :font-size 1.2em
+    :padding 5px
+    :overflow auto
+
+#title
+  :width 800px
+  :margin 0 auto
+  :text-indent -2000px
+  :overflow hidden
+  :background url(/images/header.jpg) no-repeat center 0
+  :height 166px
+  :z-index 2
+  :position relative
+
+
+#shell
+  :margin 0 auto
+  :text-align left
+  :width 800px
+  :border 1px solid White
+  :border-bottom none
+  :position relative
+  :top -1px
+  :background url(/images/riceBodyTop.jpg) no-repeat
+
+#wrapper
+  :margin 0 67px 0 70px
+  :background white
+  #header
+
+  #content
+    :font-size 1em
+    :width 450px
+    :float right
+    :padding-right 10px
+    p
+      :font-size 1.2em
+      :line-height 1.4em
+
+  #sidebar
+    :width 190px
+    .wrapper
+      :margin-left 15px
+      h3, div, ul
+        :margin 0
+      h3
+        :text-align center
+        :padding .5em 0
+        :text-align center
+      a
+        :text-decoration none
+        :color Black
+      ul
+        :background = !green5
+        :color Black
+        :list-style none
+        :padding 0
+        li
+          :clear left
+          :font-size 1em
+          :margin-bottom .25em
+          :padding .4em 0 .15em 0
+          :overflow auto
+          .selected
+            :color White
+          a
+            :color Silver
+            &:hover
+              :text-decoration underline
+          ul
+            :background Black
+            li
+              &:hover
+                :background = !green6
+                .date
+                  :background = !green5
+                  :color = !green1
+                a
+                  :color White
+          strong
+            :font-size 1.2em
+            :display block
+            :border-bottom 2px solid Black
+            :padding .5em 0
+            :text-align center
+      #pic
+        img
+          :width 80%
+          :padding 3px
+          :border 1px solid Silver
+          :border-left 1px solid #ddd
+          :border-top 1px solid #ddd
+          :margin-bottom 1em
+      #photos
+        :background-color = !green1
+      #contact
+        :background-color = !green2
+      #previous
+        :background-color = !green3
+      small
+        :font-size smaller
+        :margin-bottom -.5em
+      .date
+        :width 30px
+        :height 26px
+        :float left
+        :text-align center
+        :margin -.25em 10px 0 5px
+        :padding-top 4px
+        :background #222
+        :color Gray
+        .month, .day
+          :display block
+          :float none
+          :margin 0
+  
+  #footer
+    :height 120px
+    :background black url(/images/riceBottom.jpg) 0 -25px
+    :margin 0 -1px -1px -2px
+    :clear both

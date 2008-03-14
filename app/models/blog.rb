@@ -29,15 +29,15 @@ class Blog < DataMapper::Base
   before_update :cache_body_html
 
   class << self
-    def last() first( options ); end
+    def last() first( default_options ); end
 
     # Find all published blogs
-    def published
-      all( options.merge( :conditions => ['blogs.published_at IS NOT NULL'] ) )
+    def published( options = {} )
+      all( default_options.merge( :conditions => ['blogs.published_at IS NOT NULL'] ).merge( options ) )
     end
 
     private
-      def options() { :order => 'created_at DESC' }; end
+      def default_options() { :order => 'published_at DESC' }; end
   end
 
   # Returns a boolean indicating whether or not comments can be added to the blog

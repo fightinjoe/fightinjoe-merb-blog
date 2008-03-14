@@ -1,5 +1,6 @@
 .DS_Store
 public/javascripts/.DS_Store
+public/stylesheets/*.css
 log/*
 *.pid
 spec/models/log
