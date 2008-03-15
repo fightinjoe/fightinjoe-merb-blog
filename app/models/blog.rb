@@ -36,6 +36,22 @@ class Blog < DataMapper::Base
       all( default_options.merge( :conditions => ['blogs.published_at IS NOT NULL'] ).merge( options ) )
     end
 
+    def per_page() 10; end
+
+    # Returns a paginator object for paginating blogs.
+    #
+    # ==== Parameters
+    # user<User>:: the logged in user; will show only published blogs if not a User
+    #
+    # ==== Example
+    #  @page = Blog.paginate_for( current_user ).page( params[:page] )
+    def paginate_for( user )
+      count   = user.is_a?( User ) ? Blog.count : Blog.count( 'published_at IS NOT NULL' )
+      Paginator.new( count, per_page ) do |offset, per_page|
+        all( default_options.merge( :limit => per_page, :offset => offset ) )
+      end
+    end
+
     private
       def default_options() { :order => 'published_at DESC' }; end
   end
@@ -58,6 +74,12 @@ class Blog < DataMapper::Base
     else
       self.published_at ||= Time.now
     end
+  end
+
+  def preview( words = 35, paragraphs = 2 )
+    words = body_without_markup.split(/ +/)[0...words].join(' ')
+    paras = words.split(/[\n\r]+/)
+    '<p>%s...</p>' % paras[0...paragraphs].join('</p><p>')
   end
 
   private
@@ -85,5 +107,9 @@ class Blog < DataMapper::Base
       return date_params unless date_params.is_a?( Hash )
       d = date_params
       Date.parse('%4d.%2d.%2d' % [d['year'],d['month'],d['day']])
+    end
+
+    def body_without_markup
+      body_html.to_s.gsub(%r{<[^>]*>},'')
     end
 end

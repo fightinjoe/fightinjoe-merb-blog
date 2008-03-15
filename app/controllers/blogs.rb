@@ -7,7 +7,7 @@ class Blogs < Application
 
   def index
     opts = { :order => 'created_at DESC' }
-    @blogs = logged_in? ? Blog.all( opts ) : Blog.published
+    @blogs = Blog.paginate_for( current_user ).page( params[:page] )
     render
   end
 

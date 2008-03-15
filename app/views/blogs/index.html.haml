@@ -1,7 +1,20 @@
-%h3= logged_in? ? 'Logged in' : 'Not logged in'
-
-%ul
+%ul.unlist#blogs
   - for blog in @blogs
-    %li
-      %a{ :href => "#{ url(:blog_by_date, blog) }" }= blog.title
-      %a{ :href => "#{ url(:blog, blog) }" }= "(#{blog.id})"
+    - css_class = blog.published_at ? 'published' : 'unpublished'
+    %li.preview.dot{ :class => "#{ css_class }" }
+
+      - date = blog.published_at || blog.created_at
+      .date
+        %span.month= date.strftime('%b')
+        %span.day=   date.strftime('%d')
+      .blog
+        %h3
+          %a{ :href => "#{ url(:blog_by_date, blog) }" }= blog.title
+        = blog.preview
+        %a{ :href => "#{ url(:blog, blog) }" }= "(#{blog.id})"
+
+- if @blogs.prev
+  %a{ :href => "#{ url(:blogs, :page => @blogs.prev.number) }" } Previous
+
+- if @blogs.next
+  %a{ :href => "#{ url(:blogs, :page => @blogs.next.number) }" } Next

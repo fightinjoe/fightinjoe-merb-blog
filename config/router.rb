@@ -38,7 +38,7 @@ Merb::Router.prepare do |r|
   # routes, you may want to comment/remove this line to prevent
   # clients from calling your create or destroy actions with a GET
   r.default_routes
-  
+
   # Change this for your home page to be available at /
   r.match('/').to(:controller => 'blogs', :action =>'show', :id => 'latest' )
 end

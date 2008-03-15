@@ -27,6 +27,10 @@ end
 
 describe Comments, "create action" do
   before(:each) do
+    @blog       = Blog.create( blog_options )
+    @controller = post("/blogs/#{ @blog.id }/comments/new", :comment => comment_options ) { |req|
+      req.stub!(:render)
+    }
   end
 
   it "should send an email when there is no blog id" do
@@ -36,6 +40,10 @@ describe Comments, "create action" do
         @controller.status.should == 302
       }
     }
+  end
+
+  it "should set the flash" do
+    @controller.flash.empty?.should == false
   end
 end
 
@@ -73,5 +81,13 @@ describe Comments, "delete action" do
       @controller.status.should == 302
       @controller.should redirect_to url(:blog, @blog)
     }
+  end
+
+  it "should set the flash" do
+    @controller = delete( @path ) { |request|
+      request.stub!(:current_user).and_return(@quentin)
+      request.stub!(:render)
+    }
+    @controller.flash.empty?.should == false
   end
 end

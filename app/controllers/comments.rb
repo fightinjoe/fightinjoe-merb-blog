@@ -61,6 +61,7 @@ class Comments < Application
     @blog = @comment.blog
     raise NotFound unless @comment
     if @comment.destroy!
+      flash[:notice] = 'Your comment has been successfully deleted'
       @blog ? redirect( url(:blog, @blog) ) : redirect( url(:comments) )
     else
       raise BadRequest
