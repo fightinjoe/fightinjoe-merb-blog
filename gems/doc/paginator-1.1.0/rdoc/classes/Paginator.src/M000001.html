@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>new (Paginator)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/paginator.rb, line 24</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">count</span>, <span class="ruby-identifier">per_page</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">select</span>)
+    <span class="ruby-ivar">@count</span>, <span class="ruby-ivar">@per_page</span> = <span class="ruby-identifier">count</span>, <span class="ruby-identifier">per_page</span>
+    <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">select</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">MissingSelectError</span>, <span class="ruby-value str">&quot;Must provide block to select data for each page&quot;</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-ivar">@select</span> = <span class="ruby-identifier">select</span>
+  <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

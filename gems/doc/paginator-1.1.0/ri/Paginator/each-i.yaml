@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: page(number)
+comment: 
+full_name: Paginator#each
+is_singleton: false
+name: each
+params: () {|page(number)| ...}
+visibility: public

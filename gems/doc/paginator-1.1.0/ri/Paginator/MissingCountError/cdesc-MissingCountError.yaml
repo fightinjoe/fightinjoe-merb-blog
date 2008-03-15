@@ -1,0 +1,15 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: Paginator::MissingCountError
+includes: []
+
+instance_methods: []
+
+name: MissingCountError
+superclass: ArgumentError

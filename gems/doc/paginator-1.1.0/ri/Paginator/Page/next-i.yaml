@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get next page (if possible)
+full_name: Paginator::Page#next
+is_singleton: false
+name: next
+params: ()
+visibility: public

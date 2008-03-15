@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: README.txt</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>README.txt</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>README.txt
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Sat Mar 15 09:40:25 +0900 2008</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+paginator
+</p>
+<pre>
+    by Bruce Williams
+    http://codefluency.com
+</pre>
+<h2>DESCRIPTION:</h2>
+<p>
+<a href="../classes/Paginator.html">Paginator</a> is a simple pagination
+class that provides a generic interface suitable for use in any Ruby
+program.
+</p>
+<h2>FEATURES/PROBLEMS:</h2>
+<p>
+<a href="../classes/Paginator.html">Paginator</a> doesn&#8216;t make any
+assumptions as to how data is retrieved; you just have to provide it with
+the total number of objects and a way to pull a specific set of objects
+based on the offset and number of objects per page.
+</p>
+<h2>SYNOPSIS:</h2>
+<p>
+In both of these examples I&#8216;m using a PER_PAGE constant (the number
+of items per page), but it&#8216;s merely for labeling purposes.
+</p>
+<p>
+You could, of course, just pass in the number of items per page directly to
+the initializer without assigning it somewhere beforehand.
+</p>
+<h3>In a Rails Application</h3>
+<pre>
+  def index
+    @pager = ::Paginator.new(Foo.count, PER_PAGE) do |offset, per_page|
+      Foo.find(:all, :limit =&gt; per_page, :offset =&gt; offset)
+    end
+    @page = @pager.page(params[:page])
+    # respond_to here if you want it
+  end
+
+  # In your view
+  &lt;% @page.each do |foo| %&gt;
+    &lt;%# Show something for each item %&gt;
+  &lt;% end %&gt;
+  &lt;%= @page.number %&gt;
+  &lt;%= link_to(&quot;Prev&quot;, foos_url(:page =&gt; @page.prev.number)) if @page.prev? %&gt;
+  &lt;%= link_to(&quot;Next&quot;, foos_url(:page =&gt; @page.next.number)) if @page.next? %&gt;
+</pre>
+<h3>Anything else</h3>
+<pre>
+  bunch_o_data = (1..60).to_a
+  pager = Paginator.new(bunch_o_data.size, PER_PAGE) do |offset, per_page|
+    bunch_o_data[offset,per_page]
+  end
+  pager.each do |page|
+    puts &quot;Page ##{page.number}&quot;
+    page.each do |item|
+      puts item
+    end
+  end
+</pre>
+<h2>REQUIREMENTS:</h2>
+<p>
+None.
+</p>
+<h2>INSTALL:</h2>
+<p>
+No special instructions.
+</p>
+<h2>LICENSE:</h2>
+<p>
+(The MIT License)
+</p>
+<p>
+Copyright (c) 2006-2007 Bruce Williams (<a
+href="http://codefluency.com">codefluency.com</a>)
+</p>
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+&#8216;Software&#8217;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+</p>
+<p>
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+</p>
+<p>
+THE SOFTWARE IS PROVIDED &#8216;AS IS&#8217;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+</p>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

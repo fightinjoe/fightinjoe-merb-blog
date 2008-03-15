@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Total number of pages
+full_name: Paginator#number_of_pages
+is_singleton: false
+name: number_of_pages
+params: ()
+visibility: public
