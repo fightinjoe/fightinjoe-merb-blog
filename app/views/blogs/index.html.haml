@@ -1,3 +1,5 @@
+%h2= '%s Blogs' % ( @category.try(:title) || 'All' )
+
 %ul.unlist#blogs
   - for blog in @blogs
     - css_class = blog.published_at ? 'published' : 'unpublished'
@@ -14,7 +16,9 @@
         %a{ :href => "#{ url(:blog, blog) }" }= "(#{blog.id})"
 
 - if @blogs.prev
-  %a{ :href => "#{ url(:blogs, :page => @blogs.prev.number) }" } Previous
+  - opts = { :page => @blogs.prev.number }
+  %a{ :href => "#{ @category ? url(:category, opts.merge( :category_title => @category.title )): url(:blogs, opts) }" } Previous
 
 - if @blogs.next
-  %a{ :href => "#{ url(:blogs, :page => @blogs.next.number) }" } Next
+  - opts = { :page => @blogs.next.number }
+  %a{ :href => "#{ @category ? url(:category, opts.merge( :category_title => @category.title )): url(:blogs, opts) }" } Next

@@ -37,7 +37,7 @@
                         %a{:href => "#{ url(:blog_by_date, blog) }"}= blog.title
                     - if Blog.count > 10
                       %li.center
-                        %a{:href => "#{ url(:blogs) }"} Read more...
+                        %a{:href => "#{ url(:category, :category_title => category.title) }"} Read more...
 
         #footer
 

@@ -6,8 +6,13 @@ class Blogs < Application
   before :login_required, :exclude => %w(index show)
 
   def index
-    opts = { :order => 'created_at DESC' }
-    @blogs = Blog.paginate_for( current_user ).page( params[:page] )
+    title    = params[:category_title]
+    @category = title && Category.first( :title => title )
+
+    raise NotFound if title && @category.nil?
+
+    options = @category ? { :category_id => @category.id } : {}
+    @blogs  = Blog.paginate_for( current_user, options ).page( params[:page] )
     render
   end
 

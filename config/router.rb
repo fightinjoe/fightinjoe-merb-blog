@@ -33,6 +33,8 @@ Merb::Router.prepare do |r|
 
   r.match('/contact').to( :controller => 'comments', :action => 'new' ).name( :contact )
 
+  r.match('/:category_title').to( :controller => 'blogs', :action => 'index' ).name( :category )
+
   # This is the default route for /:controller/:action/:id
   # This is fine for most cases.  If you're heavily using resource-based
   # routes, you may want to comment/remove this line to prevent

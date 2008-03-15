@@ -45,15 +45,21 @@ class Blog < DataMapper::Base
     #
     # ==== Example
     #  @page = Blog.paginate_for( current_user ).page( params[:page] )
-    def paginate_for( user )
-      count   = user.is_a?( User ) ? Blog.count : Blog.count( 'published_at IS NOT NULL' )
+    def paginate_for( user, options = {} )
+      count = count_for( user, options[:category_id] )
       Paginator.new( count, per_page ) do |offset, per_page|
-        all( default_options.merge( :limit => per_page, :offset => offset ) )
+        all( default_options.merge(options).merge( :limit => per_page, :offset => offset ) )
       end
     end
 
     private
       def default_options() { :order => 'published_at DESC' }; end
+
+      def count_for( user, category_id = nil )
+        sql = category_id ? "category_id = #{ category_id }" : nil
+        user.is_a?( User ) ?
+          Blog.count( sql ) : Blog.count( [sql, "published_at IS NOT NULL"].compact.join(' AND ') )
+      end
   end
 
   # Returns a boolean indicating whether or not comments can be added to the blog
