@@ -1,18 +1,13 @@
 set :application, "fightinjoe"
 set :domain,      "mixedape.com"
 set :deploy_to,   "/var/www/apps/#{application}"
-# set :scm,         'git'
-set :repository,  'git@github.com:fightinjoe/fightinjoe-merb-blog.git' #"dev1.myhost.com:/var/git/repo.git"
+set :repository,  'git@github.com:fightinjoe/fightinjoe-merb-blog.git'
 set :revision,    "master"
-
-# http://topfunky.net/svn/shovel/merb/vlad_config.rb
-# set :deploy_to,   "/var/www/apps/#{application}"
-# set :repository,  "http://svn.my_domain.com/#{application}"
 
 set :merb_env,    "production"
 # TODO Create the production versions of these files in the
 #      shared/config directory on the server.
-set :config_files, ['database.yml', 'merb.yml']
+set :config_files, ['database.yml']
 
 task :deploy => ["merb:deploy:update", "merb:deploy:copy_config_files", "merb:deploy:restart_app"]
 

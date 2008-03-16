@@ -4,17 +4,19 @@ Testing
 
 Blogs
  - add versioning
- - add rss
 
 Design
  - widen design
- - fix Safari bugs
 
 About
  - about page, about me, about site, about tools
 
 Flickr
  - get JS slideshow working
+
+Exceptions
+ - better exception pages
+ - exception logging
 
 === DONE ===
 
@@ -27,6 +29,7 @@ Blogs
  - add published
  - add synopsis
  - add browsing by category
+ - add rss
 
 Sidebar
  - better styling
@@ -41,3 +44,6 @@ Categories
 
 Gems
  - find out how to freeze
+
+Design
+ - fix Safari bugs
