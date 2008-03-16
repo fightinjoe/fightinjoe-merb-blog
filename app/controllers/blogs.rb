@@ -6,13 +6,20 @@ class Blogs < Application
   before :login_required, :exclude => %w(index show)
 
   def index
-    title    = params[:category_title]
-    @category = title && Category.first( :title => title )
+    provides :html, :rss
 
-    raise NotFound if title && @category.nil?
+    if params[:format] == 'rss'
+      @blogs = Blog.all( :conditions => ['published_at IS NOT NULL'], :order => 'published_at DESC', :limit => 10 )
+    else
+      title     = params[:category_title]
+      @category = title && Category.first( :title => title )
 
-    options = @category ? { :category_id => @category.id } : {}
-    @blogs  = Blog.paginate_for( current_user, options ).page( params[:page] )
+      raise NotFound if title && @category.nil?
+
+      options = @category ? { :category_id => @category.id } : {}
+      @blogs  = Blog.paginate_for( current_user, options ).page( params[:page] )
+    end
+
     render
   end
 

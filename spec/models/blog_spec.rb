@@ -57,7 +57,7 @@ describe Blog, 'Instance methods' do
   end
 
   it 'should set the published at date' do
-    @today.publish = true
+    @today.published = true
     @today.published_at.should_not == nil
   end
 end

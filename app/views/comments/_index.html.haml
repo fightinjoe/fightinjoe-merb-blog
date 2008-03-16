@@ -23,6 +23,6 @@
     %p Comments are closed
   - else
     #comment_form
-      - url     = url(:new_blog_comment, :blog_id => 1, :format => :js)
+      - url     = url(:new_blog_comment, :blog_id => blog.id, :format => :js)
       - onclick = "$('#comment_form').load('#{ url }'); return false;"
       %a{ :href => '#', :onclick => onclick } Add a comment

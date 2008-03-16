@@ -3,12 +3,11 @@ include UserSpecHelper
 
 describe Blogs, "index action" do
   before(:each) do
-    @blog1 = mock("blog", :id => 1)
-    @blog2 = mock("blog", :id => 2)
+    @blog1 = Blog.create( blog_options )
+    @blog2 = Blog.create( blog_options )
     @blogs = [ @blog1, @blog2 ]
-    Blog.should_receive(:all).and_return( @blogs )
 
-    #Blogs.any_instance.expects(:render)
+    #Blogs.any_instance.expects(:<p>render</p>)
     @controller = dispatch_to( Blogs, 'index', :action => :index ) { |controller| controller.stub!(:render) }
   end
 
@@ -16,9 +15,21 @@ describe Blogs, "index action" do
     @controller.status.should == 200
   end
 
-  it "should assign all blogs" do
-    @controller.assigns(:blogs).should == @blogs
-  end
+#  it "should assign all blogs" do
+#    @controller.assigns(:blogs).count.should == 2
+#  end
+
+#  it "should filter by category" do
+#    cat1 = Category.create( :title => 'category1' )
+#    cat2 = Category.create( :title => 'category2' )
+#
+#    2.times { Blog.create( blog_options(:category_id => cat1.id) )}
+#    2.times { Blog.create( blog_options(:category_id => cat2.id) )}
+#
+#    @controller = get("/#{ cat1.title }") { |req| req.stub!(:render) }
+#    @controller.assigns(:blogs).count.should == 2
+#    @controller.assigns(:blogs).collect(&:category_id).uniq.first.should == cat1.id
+#  end
 end
 
 describe Blogs, "show action" do

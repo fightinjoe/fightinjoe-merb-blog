@@ -108,6 +108,9 @@ Rake
 Postgres
  - backup and restore: http://www.postgresql.org/docs/8.1/static/backup.html
 
+Pagination
+ - http://codefluency.com/articles/2006/10/24/paginator-released/
+
 ----
 
 Complete

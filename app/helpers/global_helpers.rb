@@ -9,7 +9,7 @@ module Merb
         #{ flash[:error] || flash[:notice] }
       </div>
       EOS
-      out << "<script type='text/javascript'>setTimeout( function(){ $('#flash').fadeOut(2*1000) }, 5*1000 );</script>" if flash[:notice]
+      out << "<script type='text/javascript'>setTimeout( function(){ $('#flash').fadeOut(2*1000); }, 5*1000 );</script>" if flash[:notice]
       out
     end
 

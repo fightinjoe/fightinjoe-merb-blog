@@ -1,14 +1,9 @@
-Categories
- - show by categories
-
 Testing
  - view tests
  - get rcov working
 
 Blogs
  - add versioning
- - add synopsis
- - add browsing by category
  - add rss
 
 Design
@@ -17,10 +12,6 @@ Design
 
 About
  - about page, about me, about site, about tools
-
-Gems
- - find out how to freeze
- - port will_paginate
 
 Flickr
  - get JS slideshow working
@@ -34,6 +25,8 @@ deploy
 
 Blogs
  - add published
+ - add synopsis
+ - add browsing by category
 
 Sidebar
  - better styling
@@ -42,3 +35,9 @@ Sidebar
 
 Comments
  - style
+
+Categories
+ - show by categories
+
+Gems
+ - find out how to freeze
