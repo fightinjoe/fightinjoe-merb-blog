@@ -30,9 +30,11 @@
               %a{ :href => '/blogs' } Previously
             #accordion
               - for category in Category.all
+                - blogs = Blog.published( :limit => 10, :category_id => category.id )
+                - next if blogs.empty?
                 %h3= category.title
                 %ul.unlist
-                  - for blog in Blog.published( :limit => 10, :category_id => category.id )
+                  - for blog in blogs
                     %li
                       = print_date( blog.published_at )
                       %a{:href => "#{ url(:blog_by_date, blog) }"}= blog.title
