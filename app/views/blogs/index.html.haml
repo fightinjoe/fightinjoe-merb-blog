@@ -5,10 +5,7 @@
     - css_class = blog.published_at ? 'published' : 'unpublished'
     %li.preview.dot{ :class => "#{ css_class }" }
 
-      - date = blog.published_at || blog.created_at
-      .date
-        %span.month= date.strftime('%b')
-        %span.day=   date.strftime('%d')
+      = print_date( blog.published_at || blog.created_at )
       .blog
         %h3
           %a{ :href => "#{ url(:blog_by_date, blog) }" }= blog.title

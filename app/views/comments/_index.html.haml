@@ -10,9 +10,7 @@
     - for comment in blog.comments
       - next if comment.new_record?
       %li.dot
-        .date
-          %span.month= comment.created_at.strftime('%b')
-          %span.day=   comment.created_at.strftime('%d')
+        = print_date( comment.created_at )
         .comment
           %strong= link_to_author( comment )
           = comment.body

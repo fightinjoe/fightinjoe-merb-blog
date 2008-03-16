@@ -1,5 +1,5 @@
 %h2= @blog.title
-%small= @blog.created_at.strftime( '%c')
+%small= @blog.published_at.strftime( '%A, %d %B %Y')
 
 = print_flash
 

@@ -3,11 +3,11 @@
   %head
     %meta{ :'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8" }/
     %title Aaron Wheeler : Fightinjoe.com
-    %script{ :type => "text/javascript", :src => "/javascripts/jquery.js" }
+    %script{ :type => "text/javascript", :src => "/javascripts/jquery-1.2.3.min.js" }
     %script{ :type => "text/javascript", :src => "/javascripts/chili-1.7.pack.js" }
-    %script{ :type => "text/javascript", :src => "/javascripts/jquery.easing.js" }
     %script{ :type => "text/javascript", :src => "/javascripts/jquery.accordion.js" }
     %script{ :type => "text/javascript", :src => "/javascripts/application.js" }
+    %script{ :type => "text/javascript", :src => "/javascripts/jquery.dimensions.js" }
     %link{ :href => "/stylesheets/rice.css", :rel => "stylesheet", :type => "text/css" }/
     %link{ :href => "/feed/atom.xml", :rel => "alternate", :type => "application/atom+xml" }/
     %link{ :rel => "alternate", :type => "application/rss+xml", :title => "RSS", :href => "http://fightinjoe.com/blogs.rss" }/
@@ -26,19 +26,23 @@
               %a{ :href => 'http://www.flickr.com/photos/fightinjoe' } Photos
             %h3#contact
               %a{ :href => '/contact' } Contact
-            %h3#previous Previously
-            %ul
-              %li
-                - for category in Category.all
-                  %strong= category.title
-                  %ul
-                    - for blog in Blog.published( :limit => 10, :category_id => category.id )
-                      %li
-                        = blog.published_at.strftime('<div class="date"><span class="month">%b</span><span class="day">%d</span></div>')
-                        %a{:href => "#{ url(:blog_by_date, blog) }"}= blog.title
-                    - if Blog.count > 10
-                      %li.center
-                        %a{:href => "#{ url(:category, :category_title => category.title) }"} Read more...
+            %h3#previous
+              %a{ :href => '/blogs' } Previously
+            #accordion
+              - for category in Category.all
+                %h3= category.title
+                %ul.unlist
+                  - for blog in Blog.published( :limit => 10, :category_id => category.id )
+                    %li
+                      = print_date( blog.published_at )
+                      %a{:href => "#{ url(:blog_by_date, blog) }"}= blog.title
+                  - if Blog.count > 10
+                    - # Hack to make sure that the last element isn't gobbled by the next headline.  Seems
+                    - # to be a problem with the dimensions library
+                    - style = request.env['HTTP_USER_AGENT'] =~ /Safari/ ? { :style => 'height:50px' } : {}
+                    %li.center{ style }
+                      %a{:href => "#{ url(:category, :category_title => category.title) }"} Read more...
+                      %a{:href => "#{ url(:category, :category_title => category.title) }", :style => 'display:none;'} Read more...
 
         #footer
 
@@ -47,5 +51,5 @@
     - if Merb.env == 'production'
       %script{ :type => 'text/javascript', :src => 'http://static.getclicky.com/27444.js' }
     %script{ :type => "text/javascript" }
-      jQuery('#sidebar ul li').accordion({ header: 'strong', autoheight: false });
+      jQuery('#accordion').accordion({ header: 'h3' });
       load_flickr_photo();

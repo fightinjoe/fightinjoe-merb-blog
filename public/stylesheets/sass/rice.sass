@@ -89,34 +89,36 @@ body
       a
         :text-decoration none
         :color Black
-      ul
+      #accordion
         :background = !green5
         :color Black
         :list-style none
         :padding 0
-        li
-          :clear left
-          :font-size 1em
-          :margin-bottom .25em
-          :padding .4em 0 .15em 0
-          .selected
+        h3
+          :cursor pointer
+          :border-bottom 1px solid Black
+          :border-color = !green6
+          &.selected
             :color White
-          a
-            :color Silver
+        ul
+          :background Black
+          li
+            :font-size 1em
+            :margin-bottom .25em
+            :padding .4em 0 .15em 0
+            :clear left
+            :min-height 30px
             &:hover
-              :text-decoration underline
-          ul
-            :background Black
-            li
-              :clear left
-              :min-height 30px
+              :background = !green6
+              .date
+                :background = !green5
+                :color = !green1
+              a
+                :color White
+            a
+              :color Silver
               &:hover
-                :background = !green6
-                .date
-                  :background = !green5
-                  :color = !green1
-                a
-                  :color White
+                :text-decoration underline
           strong
             :font-size 1.2em
             :display block

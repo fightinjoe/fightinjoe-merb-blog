@@ -13,5 +13,9 @@ module Merb
       out
     end
 
+    def print_date( date )
+      date.strftime('<div class="date"><span class="month">%b</span><span class="day">%d</span></div>')
+    end
+
   end
 end    
