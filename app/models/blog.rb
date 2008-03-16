@@ -56,7 +56,7 @@ class Blog < DataMapper::Base
       def default_options() { :order => 'published_at DESC' }; end
 
       def count_for( user, category_id = nil )
-        sql = category_id ? "category_id = #{ category_id }" : nil
+        sql = category_id ? "category_id = #{ category_id }" : true
         user.is_a?( User ) ?
           Blog.count( sql ) : Blog.count( [sql, "published_at IS NOT NULL"].compact.join(' AND ') )
       end
