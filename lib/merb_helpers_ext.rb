@@ -13,6 +13,12 @@ module Merb
         tag( 'a', content, attrs )
       end
 
+      def remote_link( content, url, attrs = {} )
+        attrs[:href]    = '#'
+        attrs[:onclick] = 'javascript:%s;return false;' % url
+        tag( 'a', content, attrs )
+      end
+
     end
 
     module Form

@@ -1,9 +1,6 @@
 require 'digest/sha1'
-begin
-  require File.join(File.dirname(__FILE__), '..', '..', "lib", "authenticated_system", "authenticated_dependencies")
-rescue 
-  nil
-end
+require File.join(File.dirname(__FILE__), '..', '..', "lib", "authenticated_system", "authenticated_dependencies") rescue nil
+
 class User < DataMapper::Base
   include AuthenticatedSystem::Model
   

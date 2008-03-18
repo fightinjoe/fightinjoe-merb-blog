@@ -10,14 +10,13 @@ class Exceptions < Application
     render :format => :html
   end
 
-#  def internal_server_error
-#    debugger
-#    #MySpecialMailer.deliver(
-#    #  "team@cowboys.com", 
-#    #  "Exception occured at #{Time.now}", 
-#    #  params[:exception])
-#    #render :inline => 'Something is wrong, but the team are on it!'
-#    render
-#  end
+  # handle 500 errors
+  def internal_server_error
+    LoggedException.create_from_controller( self )
+
+    # Required for rendering the exception message - replace for production
+    @exception = params[:exception]
+    render :format => :html, :layout => :nil
+  end
 
 end

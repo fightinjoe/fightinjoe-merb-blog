@@ -29,7 +29,9 @@ Merb::Router.prepare do |r|
   r.resources :comments
 
   # NAMED routes
-  r.match('/:year/:month/:path_title').to( :controller => 'blogs', :action => 'show' ).name( :blog_by_date )
+  r.match(%r{/(\d+)/(\d+)/([a-zA-Z\-])}).to(
+    :controller => 'blogs', :action => 'show', :year => "[1]", :month => "[2]", :path_title => "[3]"
+  ).name( :blog_by_date )
 
   r.match('/contact').to( :controller => 'comments', :action => 'new' ).name( :contact )
 
