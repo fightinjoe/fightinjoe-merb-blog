@@ -29,7 +29,7 @@ class Blog < DataMapper::Base
   before_update :cache_body_html
 
   class << self
-    def last() first( default_options ); end
+    def last() first( default_options.merge( :conditions => ['published_at IS NOT NULL'] ) ); end
 
     # Find all published blogs
     def published( options = {} )
@@ -90,7 +90,10 @@ class Blog < DataMapper::Base
 
   private
 
-    def set_path_title() self.path_title ||= self.title.downcase.gsub(' ', '_'); end
+    def set_path_title
+      self.path_title ||= self.title.downcase.gsub(' ', '-').gsub(/[.:]/,'')
+    end
+
     def set_year()       self.year         = Time.now.year;  end
     def set_month()      self.month        = Time.now.month; end
 
