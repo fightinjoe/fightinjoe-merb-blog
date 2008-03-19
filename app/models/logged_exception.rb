@@ -1,4 +1,7 @@
+require 'datamapper_ext'
 class LoggedException < DataMapper::Base
+  include DataMapperExt
+
   property :exception_class, :string
   property :controller_name, :string
   property :action_name,     :string
@@ -7,23 +10,21 @@ class LoggedException < DataMapper::Base
   property :cookies,         :text
   property :session,         :text
   property :params,          :text
-  property :environment,     :string
-  property :request,         :text
+  property :environment,     :text
+  property :url,             :text
   property :created_at,      :datetime
+
+  yaml_attribute :cookies, :backtrace, :params, :session, :environment, :request
 
   ### Class Methods ###
 
   def self.create_from_controller( controller )
     e_params, request = controller.params, controller.request
-
     params = {}
-    params[:controller], params[:action] = e_params[:original_params][:controller], e_params[:original_params][:action]
-    for key in [:cookies, :sessions, :params]
-      params[key] = params[ "original_#{ key }" ]
-    end
+    params[:controller_name], params[:action_name] = e_params[:original_params][:controller], e_params[:original_params][:action]
+    params[:params]    = e_params[ "original_params" ]
+    params[:session]   = controller.session.data
     params[:exception] = e_params[:exception]
-    params[:request]   = request
-
     self.create( params )
   end
 
@@ -36,7 +37,7 @@ class LoggedException < DataMapper::Base
     find_by_sql(sql).collect{ |c,a| "#{c.to_s.camel_case}/#{a}"}
   end
 
-  # Pagination
+  # Pagination support
 
   def self.per_page() 20; end
 
@@ -48,45 +49,20 @@ class LoggedException < DataMapper::Base
 
   ### Instance Methods ###
 
-  def cookies
-    @cookie_cache ||= @cookies && YAML.load( @cookies )
-  end
-
-  def cookies=( hash )
-    @cookie_cache = hash
-    @cookies = hash.to_yaml
-  end
-
   def exception=( e )
-    exception_class = e.class.name
-    message         = e.message
-    backtrace       = e.backtrace.to_yaml
-  end
-
-  def params
-    @params_cache ||= @params && YAML.load( @params )
-  end
-
-  def params=( hash )
-    @params_cache = hash
-    @params = hash.to_yaml
-  end
-
-  def session
-    @session_cache ||= @session && YAML.load( @session )
-  end
-
-  def session=( hash )
-    @session_cache = hash
-    @session = hash.to_yaml
+    self.exception_class = e.name
+    self.message         = e.message
+    self.backtrace       = e.backtrace
   end
 
   def request=( req )
-    env = req.env
+    self.environment = req.env.merge( 'process' => $$ )
+    self.url         = "#{req.protocol}#{req.env["HTTP_HOST"]}#{req.uri}"
     #environment = env << "* Process: #{$$}" << "* Server : #{self.class.host_name}") * "\n")
   end
 
   def controller_action
     '%s/%s' % [ controller_name.to_s.camel_case, action_name ]
   end
+
 end

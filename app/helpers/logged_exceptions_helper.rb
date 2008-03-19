@@ -19,5 +19,15 @@ module Merb
       @cycle = @cycle ? @cycle+1 : 0
       opts[ @cycle % opts.size ]
     end
+
+    def print_hash( hash )
+      return hash unless hash.is_a?( Hash )
+      max = hash.keys.max { |a,b| a.to_s.length <=> b.to_s.length }
+      out = hash.keys.collect(&:to_s).sort.inject [] do |out, key|
+        out << '* ' + ("%*s: %s" % [max.to_s.length, key, hash[key].to_s.strip])
+      end
+
+      "<pre>\n#{ out * "\n" }</pre>"
+    end
   end
 end

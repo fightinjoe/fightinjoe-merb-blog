@@ -17,5 +17,9 @@ module Merb
       date.strftime('<div class="date"><span class="month">%b</span><span class="day">%d</span></div>')
     end
 
+    def blog_by_date_url( blog )
+      url(:controller => '')
+    end
+
   end
 end    

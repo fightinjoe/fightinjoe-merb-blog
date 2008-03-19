@@ -7,7 +7,6 @@ class Blogs < Application
 
   def index
     provides :html, :rss
-    raise 'foo'
     if params[:format] == 'rss'
       @blogs = Blog.all( :conditions => ['published_at IS NOT NULL'], :order => 'published_at DESC', :limit => 10 )
     else

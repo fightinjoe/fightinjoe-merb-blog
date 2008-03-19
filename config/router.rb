@@ -28,11 +28,11 @@ Merb::Router.prepare do |r|
 
   r.resources :comments
 
-  # NAMED routes
   r.match(%r{/(\d+)/(\d+)/([a-zA-Z\-])}).to(
     :controller => 'blogs', :action => 'show', :year => "[1]", :month => "[2]", :path_title => "[3]"
-  ).name( :blog_by_date )
+  )
 
+  # NAMED routes
   r.match('/contact').to( :controller => 'comments', :action => 'new' ).name( :contact )
 
   r.match('/:category_title').to( :controller => 'blogs', :action => 'index' ).name( :category )
@@ -42,6 +42,10 @@ Merb::Router.prepare do |r|
   # routes, you may want to comment/remove this line to prevent
   # clients from calling your create or destroy actions with a GET
   r.default_routes
+
+  # Used for path generation
+  r.match('/:year/:month/:path_title').to( :controller => 'blogs', :action => 'show' ).name( :blog_by_date )
+  
 
   # Change this for your home page to be available at /
   r.match('/').to(:controller => 'blogs', :action =>'show', :id => 'latest' )
