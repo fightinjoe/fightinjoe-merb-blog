@@ -1,8 +1,16 @@
 <div id="exceptions">
   <div class="pages">
+    <%=
+      url = url(:action => 'destroy_all')
+      remote_link( 'Delete Visible', "$.get('#{url}', {ids:ExceptionLogger.deleteAll()}, null, 'script')" )
+    %>
     <%# remote_link( 'Delete Visible', :url => { :action => 'destroy_all' }, :with => "ExceptionLogger.deleteAll()" ) %>
     <% if @exceptions.number_of_pages > 1 %>
-    :: Pages: <strong><%# pagination_remote_links @exceptions, :params => { :action => :index } %></strong>
+    :: Pages:
+    <strong>
+      
+      <%# pagination_remote_links @exceptions, :params => { :action => :index } %>
+    </strong>
     <% end %>
   </div>
 

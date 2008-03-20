@@ -21,14 +21,18 @@
 <h3>Filters</h3>
 
 <ul id="all_exceptions" class="filters">
-  <li><%# link_to 'Latest Exceptions', :action => 'index', :id => nil %></li>
+  <li>
+    <%= link( 'Latest Exceptions', url(:controller => 'logged_exceptions', :action => 'index', :id => nil)) %>
+  </li>
 </ul>
 
 <h4>Exception</h4>
 
 <ul id="exception_names" class="filters">
 <% @exception_names.each do |name| -%>
-  <li><%= name %><%# link_to_function name, "ExceptionLogger.setFilter('exception_names','#{escape_javascript name}')" %></li>
+  <li>
+    <a href="javascript:ExceptionLogger.setFilter('exception_names','<%= name %>')"><%= name %></a>
+  </li>
 <% end -%>
 </ul>
 
@@ -36,7 +40,9 @@
 
 <ul id="controller_actions" class="filters">
 <% @controller_actions.each do |action| -%>
-  <li><%= action %><%# link_to_function action, "ExceptionLogger.setFilter('controller_actions','#{escape_javascript action}')" %></li>
+  <li>
+    <a href="javascript:ExceptionLogger.setFilter('controller_actions','<%= action %>')"><%= action %></a>
+  </li>
 <% end -%>
 </ul>
 
@@ -61,7 +67,6 @@
       <%# hidden_field_tag :controller_actions_filter %>
       <%# hidden_field_tag :page, params[:page] %>
     </div>
-  </form>
 </div>
 
 <% partial( :feed ) %>

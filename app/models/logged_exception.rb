@@ -34,7 +34,7 @@ class LoggedException < DataMapper::Base
 
   def self.find_exception_controllers_and_actions
     sql = 'SELECT DISTINCT controller_name, action_name FROM logged_exceptions;'
-    find_by_sql(sql).collect{ |c,a| "#{c.to_s.camel_case}/#{a}"}
+    find_by_sql(sql).collect{ |c| "#{c.controller_name}/#{c.action_name}"}
   end
 
   # Pagination support

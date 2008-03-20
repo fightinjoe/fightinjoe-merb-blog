@@ -51,7 +51,11 @@ class LoggedExceptions < Application
   end
 
   def destroy_all
-    LoggedException.delete_all ['id in (?)', params[:ids]] unless params[:ids].blank?
+    provides :js
+    unless params[:ids].blank?
+      ids = params[:ids].split(',').collect(&:to_i)
+      LoggedException.all( :conditions => ['id in ?', ids] ).each { |l| l.destroy! }
+    end
     query
   end
 

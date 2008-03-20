@@ -21,7 +21,8 @@ ExceptionLogger = {
   },
   
   deleteAll: function() {
-    return Form.serialize('query-form') + '&' + $$('tr.exception').collect(function(tr) { return tr.getAttribute('id').gsub(/^\w+-/, ''); }).toQueryString('ids');
+    return $.makeArray($('tr.exception').map(function(){return this.getAttribute('id').replace(/^\w+-/, '');})).join(",")
+//    return Form.serialize('query-form') + '&' + $$('tr.exception').collect(function(tr) { return tr.getAttribute('id').gsub(/^\w+-/, ''); }).toQueryString('ids');
   }
 }
 
