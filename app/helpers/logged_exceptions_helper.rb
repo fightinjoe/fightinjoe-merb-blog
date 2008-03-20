@@ -29,5 +29,13 @@ module Merb
 
       "<pre>\n#{ out * "\n" }</pre>"
     end
+
+    def print_page_links( paginated_object )
+      links = []
+      paginated_object.number_of_pages.times do |i|
+        links << link( i+1, url(:action => 'index', :page => i+1) )
+      end
+      links * ' '
+    end
   end
 end

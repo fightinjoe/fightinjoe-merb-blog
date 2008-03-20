@@ -47,7 +47,9 @@ class LoggedExceptions < Application
   end
 
   def destroy
-    LoggedException.destroy( params[:id] )
+    provides :js
+    LoggedException.get( params[:id] ).destroy!
+    render :layout => false
   end
 
   def destroy_all
