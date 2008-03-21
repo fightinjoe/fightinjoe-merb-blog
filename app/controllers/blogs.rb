@@ -53,7 +53,8 @@ class Blogs < Application
     @blog = Blog.first(params[:id])
     raise NotFound unless @blog
     if @blog.update_attributes(params[:blog])
-      # flash[:notice] = 'Success!'
+      # flash[:notice] = 'Success!  Your blog has been updated.'
+      sweep_cache
       redirect url(:blog_by_date, @blog)
     else
       raise BadRequest
@@ -80,6 +81,11 @@ class Blogs < Application
         @blog = id ? Blog.first( id ) : Blog.first( :path_title => page_title, :year => year, :month => month )
       end
       raise NotFound unless @blog
+    end
+
+    def sweep_cache
+      expire_page( :key => '/index' )
+      expire_page( :key => url(:blog_by_date, @blog) )
     end
 
 end
