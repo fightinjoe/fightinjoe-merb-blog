@@ -6,19 +6,14 @@ require 'spec'
 require File.join( File.dirname(__FILE__), "authenticated_system_spec_helper")
 require File.join( File.dirname(__FILE__), "user_spec_helper")
 
-Merb.start :environment => (ENV['MERB_ENV'] || 'test'),
-           :merb_root  => File.join(File.dirname(__FILE__), ".." )
+Merb.start_environment(:testing => true, :adapter => 'runner', :environment => ENV['MERB_ENV'] || 'test')
 
-class Merb::Mailer
-  self.delivery_method = :test_send
-end
-
-Spec::Runner.configure do |config|
-  config.include(Merb::Test::ViewHelper)
-  config.include(Merb::Test::RouteHelper)
-  config.include(Merb::Test::ControllerHelper)
-#  config.mock_with :mocha
-end
+# Spec::Runner.configure do |config|
+#   config.include(Merb::Test::ViewHelper)
+#   config.include(Merb::Test::RouteHelper)
+#   config.include(Merb::Test::ControllerHelper)
+# #  config.mock_with :mocha
+# end
 
 def blog_options( options = {} )
   { :title => 'title' }
