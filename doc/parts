@@ -1,0 +1,12 @@
+merb-gen part_controller sidebar
+
+exists  app
+exists  app/helpers
+exists  app/parts
+exists  app/parts/views
+create  app/parts/views/sidebar_part
+create  app/helpers/sidebar_part_helper.rb
+create  app/parts/sidebar_part.rb
+create  app/parts/views/sidebar_part/index.html.erb
+
+dependencies "merb-parts"
