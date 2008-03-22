@@ -53,7 +53,7 @@ use_test :rspec
 dependencies "merb_helpers", "merb_helpers_ext"
 # http://jacobswanner.com/2008/2/14/merb-0-9-haml
 require 'merb-mailer'
-dependencies "merb-haml", "merb-cache"
+dependencies "merb-haml", "merb-cache", "merb-parts"
 dependencies "RedCloth"
 
 # Frozen Gem dependencies
@@ -73,7 +73,7 @@ Merb::BootLoader.after_app_loads do
   Merb.add_mime_type(:rss, nil, ['text/xml'])
 
   Merb::Plugins.config[:merb_cache] = {
-    #:disable => "development", # disable merb-cache in development
+    :disable => "development", # disable merb-cache in development
     :store => "file",
     :cache_directory => Merb.root_path("tmp/cache"),
     :cache_html_directory => Merb.dir_for(:public) / "cache",

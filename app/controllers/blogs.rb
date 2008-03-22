@@ -26,7 +26,7 @@ class Blogs < Application
 
   def show 
     @comment = Comment.new( :blog_id => @blog.id )
-    display @blog
+    render
   end
 
   def new
