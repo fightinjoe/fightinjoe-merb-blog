@@ -14,10 +14,6 @@ About
 Flickr
  - get JS slideshow working
 
-Exceptions
- - better exception pages
- - exception logging
-
 === DONE ===
 
 deploy
@@ -47,3 +43,7 @@ Gems
 
 Design
  - fix Safari bugs
+
+Exceptions
+ - exception logging
+ - better exception pages

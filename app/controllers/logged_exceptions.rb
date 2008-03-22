@@ -1,6 +1,8 @@
 require File.join(File.dirname(__FILE__), '..', '..', "lib", "authenticated_system", "authenticated_dependencies")
 
 class LoggedExceptions < Application
+  before :login_required
+
   def index
     @exception_names    = LoggedException.find_exception_class_names
     @controller_actions = LoggedException.find_exception_controllers_and_actions
