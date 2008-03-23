@@ -5,6 +5,6 @@
 
 = blog_actions( @blog ) if logged_in?
 
-= @blog.body_html
+~ @blog.body_html
 
 = partial( 'comments/index', :blog => @blog )

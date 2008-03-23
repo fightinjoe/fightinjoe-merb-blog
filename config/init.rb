@@ -54,7 +54,7 @@ dependencies "merb_helpers", "merb_helpers_ext"
 # http://jacobswanner.com/2008/2/14/merb-0-9-haml
 require 'merb-mailer'
 dependencies "merb-haml", "merb-cache", "merb-parts", "merb-builder"
-dependencies "RedCloth"
+# dependencies "RedCloth"
 
 # Frozen Gem dependencies
 dependencies "merb_has_flash", 'paginator'
