@@ -26,6 +26,10 @@ Merb::Router.prepare do |r|
     b.resources :comments
   end
 
+  r.namespace :admin do |admin|
+    admin.resources :blogs
+  end
+
   r.resources :comments
 
   r.match(%r{/(\d+)/(\d+)/([a-zA-Z\-]+)}).to(

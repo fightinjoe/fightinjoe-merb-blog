@@ -10,7 +10,6 @@
         %h3
           %a{ :href => "#{ url(:blog_by_date, blog) }" }= blog.title
         = blog.preview
-        %a{ :href => "#{ url(:blog, blog) }" }= "(#{blog.id})"
 
 - if @blogs.prev
   - opts = { :page => @blogs.prev.number }

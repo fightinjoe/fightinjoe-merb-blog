@@ -21,5 +21,9 @@ module Merb
       url(:controller => '')
     end
 
+    def pluralize( count, word )
+      '%d %s' % [count, count == 1 ? word : word.pluralize]
+    end
+
   end
 end    

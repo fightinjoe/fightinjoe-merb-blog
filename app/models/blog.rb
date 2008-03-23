@@ -43,24 +43,42 @@ class Blog < DataMapper::Base
     # Returns a paginator object for paginating blogs.
     #
     # ==== Parameters
-    # user<User>:: the logged in user; will show only published blogs if not a User
+    # options<Hash>:: options used to qualify the pagination and blog selection
+    #
+    # ==== Options
+    # :all => if it evaluates to TRUE, then both published and unpublished blogs
+    #         will be paginated.  The default is for only published blogs to display
+    # :per_page => Override the default setting for the number of blogs per page
+    # _anything_else_ => will be fed as a parameter to Blog#all
     #
     # ==== Example
     #  @page = Blog.paginate_for( current_user ).page( params[:page] )
-    def paginate_for( user, options = {} )
-      count = count_for( user, options[:category_id] )
+    def paginate( options = {} )
+      pp  = options.delete(:per_page) || per_page
+      all = options.delete(:all)
+
+      options.delete(:category_id) if options[:category_id].nil?
+
+      count = count_for( all, options[:category_id] )
+
       Paginator.new( count, per_page ) do |offset, per_page|
-        all( default_options.merge(options).merge( :limit => per_page, :offset => offset ) )
+        all( default_options.merge(options).merge( :limit => pp, :offset => offset ) )
       end
     end
 
     private
       def default_options() { :order => 'published_at DESC' }; end
 
-      def count_for( user, category_id = nil )
-        sql = category_id ? "category_id = #{ category_id }" : true
-        user.is_a?( User ) ?
-          Blog.count( sql ) : Blog.count( [sql, "published_at IS NOT NULL"].compact.join(' AND ') )
+      def count_for( all, category_id = nil )
+        conditions = category_id ? ['category_id = ?'] : [true]
+        parameters = category_id ? [ category_id ]     : []
+
+        unless all
+          conditions << 'published_at IS NOT NULL'
+        end
+
+        conditions = [ conditions.join(' AND '), *parameters ].compact
+        Blog.count( :conditions => conditions )
       end
   end
 
@@ -84,10 +102,18 @@ class Blog < DataMapper::Base
     end
   end
 
+  def published?
+    !published_at.nil?
+  end
+
   def preview( words = 35, paragraphs = 2 )
     words = body_without_markup.split(/ +/)[0...words].join(' ')
     paras = words.split(/[\n\r]+/)
     '<p>%s...</p>' % paras[0...paragraphs].join('</p><p>')
+  end
+
+  def count_comments
+    Comment.count( :conditions => ['comments.blog_id = ?', self.id] )
   end
 
   private

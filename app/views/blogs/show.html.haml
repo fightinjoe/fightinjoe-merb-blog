@@ -1,10 +1,6 @@
 %h2= @blog.title
 %small= @blog.published_at.strftime( '%A, %d %B %Y') if @blog.published_at
 
-= print_flash
-
-= blog_actions( @blog ) if logged_in?
-
 ~ @blog.body_html
 
 = partial( 'comments/index', :blog => @blog )

@@ -1,0 +1,20 @@
+%h2 Admin
+
+%table{ :width => '100%' }
+  - for blog in @blogs
+    %tr
+      %td{ :width => '50px' }=  print_date( blog.created_at )
+      %td{ :width => '50px' }=  print_date( blog.published_at ) if blog.published_at
+      %td{ :width => '100px' }
+        = (cat = blog.category) ? link( cat.title, url(:admin_blogs, :category_id => cat.id) ) : nil
+      %td
+        - if blog.published?
+          = link( blog.title, url(:blog, blog), :target => '_blank' )
+        - else
+          = blog.title
+      %td{ :width => '100px' }
+        = link( 'Edit', url(:edit_admin_blog, blog) )
+        - confirm = "return confirm('Are you certain you want to delete this blog?');"
+        = delete_button( :blog, blog, 'Delete', {:style   => 'display:inline;'}, {:onclick => confirm, :style => 'font-size:.8em' } )
+        %br
+        = link( pluralize( blog.count_comments, 'Comment' ), '#' ) unless blog.count_comments == 0
