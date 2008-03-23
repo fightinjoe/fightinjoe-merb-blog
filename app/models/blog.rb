@@ -1,4 +1,5 @@
 require 'redcloth'
+require 'syntaxi'
 
 class Blog < DataMapper::Base
 #  include DataMapper::Reflection
@@ -137,7 +138,7 @@ class Blog < DataMapper::Base
 
     def cache_body_html
       return true if self.body.blank?
-      self.body_html = RedCloth.new( self.body ).to_html
+      self.body_html = formatted_body
     end
 
     def parse_date( date_params )
@@ -148,5 +149,36 @@ class Blog < DataMapper::Base
 
     def body_without_markup
       body_html.to_s.gsub(%r{<[^>]*>},'')
+    end
+
+    # From http://www.ruby-forum.com/topic/77231
+    REGEX = /\[code.*?code\]/m
+    Syntaxi::line_number_method = 'floating'
+    Syntaxi::wrap_enabled = false
+
+    # formattes the body using redcloth, colorizes ruby code using syntax(i)
+    def formatted_body
+      code_blocks = get_code_blocks(self.body)
+      red_clothed = RedCloth.new(body.gsub(REGEX, '${code_block}')).to_html
+
+      code_blocks.each { |c|
+        c = Syntaxi.new(c).process
+        red_clothed.sub!(/\$\{code_block\}/, c)
+      }
+
+      red_clothed
+    end
+
+    # retrieves code in [code][/code] blocks
+    def get_code_blocks(contents)
+      code_blocks = []
+      code_block = contents.slice(REGEX)
+      if (!code_block.nil?)
+        code_blocks << code_block
+        while code_block = $'.slice(REGEX)
+          code_blocks << code_block
+        end
+      end
+      code_blocks
     end
 end

@@ -1,3 +1,5 @@
+require 'redcloth'
+
 class Blogs < Application
   include Merb::CommentsHelper
   cache_pages :index, :show
