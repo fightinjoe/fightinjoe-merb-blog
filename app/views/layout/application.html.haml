@@ -9,8 +9,7 @@
     %script{ :type => "text/javascript", :src => "/javascripts/application.js" }
     %script{ :type => "text/javascript", :src => "/javascripts/jquery.dimensions.js" }
     %link{ :href => "/stylesheets/rice.css", :rel => "stylesheet", :type => "text/css" }/
-    %link{ :href => "/feed/atom.xml", :rel => "alternate", :type => "application/atom+xml" }/
-    %link{ :rel => "alternate", :type => "application/rss+xml", :title => "RSS", :href => "http://fightinjoe.com/blogs.rss" }/
+    %link{ :rel => "alternate", :type => "application/rss+xml", :title => "RSS", :href => "http://feeds.feedburner.com/fightinjoe" }/
   %body
     %h1#title
       %a{:href => "/"} FightinJoe : Aaron Wheeler
@@ -19,7 +18,7 @@
         #header
         #content
           = catch_content :for_layout
-        = part( GenericPart => :sidebar, :foo => 'bar', :baz => 'qux' )
+        = part( GenericPart => :sidebar )
         #footer
 
     // %script{ :src => "http://www.google-analytics.com/urchin.js", :type => "text/javascript" }
