@@ -5,7 +5,7 @@ class Blogs < Application
   before :find_blog,      :only    => %w(show edit destroy)
   before :login_required, :exclude => %w(index show)
 
-  cache_pages :index, :show
+  # cache_pages :index, :show
 
   def index
     provides :html, :rss
