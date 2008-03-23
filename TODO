@@ -11,39 +11,4 @@ Design
 About
  - about page, about me, about site, about tools
 
-Flickr
- - get JS slideshow working
-
 === DONE ===
-
-deploy
- - change DNS
- - Add proxy for Flickr rss feed
- - deploy with Vlad
-
-Blogs
- - add published
- - add synopsis
- - add browsing by category
- - add rss
-
-Sidebar
- - better styling
- - add date
- - add toggle indicator
-
-Comments
- - style
-
-Categories
- - show by categories
-
-Gems
- - find out how to freeze
-
-Design
- - fix Safari bugs
-
-Exceptions
- - exception logging
- - better exception pages

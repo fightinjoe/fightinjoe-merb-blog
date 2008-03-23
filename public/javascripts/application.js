@@ -5,7 +5,7 @@ function load_flickr_photo() {
   $.get(url, {}, function(xml,stat) {
     //photo = $(xml).find('entry link[@type="image/jpeg"]')[0].href;
     regexp = /http:\/\/farm\d.static.flickr.com\/\d+\/\d+_[\da-f]*_m.jpg/
-    photo  = $(xml).find('entry content')[0].innerHTML.match(regexp)[0];
+    photo  = $(xml).find('entry content').eq(0).text().match(regexp)[0];
     $('#pic').html('<img src="' + photo + '" />');
   })
 }
