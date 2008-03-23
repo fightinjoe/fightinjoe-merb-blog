@@ -1,0 +1,3 @@
+dependencies "merb-builder"
+
+feed.rss.builder
