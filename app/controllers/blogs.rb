@@ -86,6 +86,7 @@ class Blogs < Application
     def sweep_cache
       expire_page( :key => '/index' )
       expire_page( :key => url(:blog_by_date, @blog) )
+      expire_page( :key => '/blogs.rss' )
     end
 
 end
