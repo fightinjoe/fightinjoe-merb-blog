@@ -6,10 +6,16 @@ describe Blog, 'Callback methods' do
   end
 
   it "should set the path title when saved" do      # set_path
-    title = 'This is my TITLE'
-    want  = /this_is_my_title/
-    blog  = Blog.create( :title => title )
-    blog.path_title.should match want
+    titles = [
+      [ 'TiTlE', 'title' ],
+      [ 'another title', 'another-title' ],
+      [ "weird &? character's", 'weird-characters' ]
+    ]
+
+    titles.each do |title, want|
+      blog  = Blog.create( :title => title )
+      blog.path_title.should == want
+    end
   end
 
   it "should set the year and month when saved" do  # set_month, set_year

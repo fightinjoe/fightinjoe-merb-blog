@@ -67,9 +67,6 @@ Merb::BootLoader.after_app_loads do
 
   # dependency "magic_admin" # this gem uses the app's model classes
 
-  Merb::Mailer.config = {:sendmail_path => '/usr/sbin/sendmail'}
-  Merb::Mailer.delivery_method = :sendmail
-
   Merb.add_mime_type(:rss, nil, ['text/xml'])
 
   Merb::Plugins.config[:merb_cache] = {

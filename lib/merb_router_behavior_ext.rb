@@ -1,3 +1,8 @@
+# Extension to Merb's routing behavior to map the
+# CREATE action to the NEW URL, and the
+# UPDATE action to the EDIT URL, so as to preserve
+# the URL in the case when there are creation or update
+# errors.
 module Merb
   class Router
     class Behavior

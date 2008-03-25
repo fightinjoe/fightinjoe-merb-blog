@@ -120,7 +120,7 @@ class Blog < DataMapper::Base
   private
 
     def set_path_title
-      self.path_title ||= self.title.downcase.gsub(/[^a-zA-Z_0-9]+/, '-')
+      self.path_title ||= self.title.downcase.gsub(/[^a-zA-Z_0-9 ]+/, '').gsub(/ +/, '-')
     end
 
     def set_year()       self.year         = Time.now.year;  end

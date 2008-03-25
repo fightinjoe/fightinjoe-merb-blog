@@ -8,15 +8,15 @@ require File.join( File.dirname(__FILE__), "user_spec_helper")
 
 Merb.start_environment(:testing => true, :adapter => 'runner', :environment => ENV['MERB_ENV'] || 'test')
 
-# Spec::Runner.configure do |config|
-#   config.include(Merb::Test::ViewHelper)
-#   config.include(Merb::Test::RouteHelper)
-#   config.include(Merb::Test::ControllerHelper)
-# #  config.mock_with :mocha
-# end
+Spec::Runner.configure do |config|
+  config.include(Merb::Test::ViewHelper)
+  config.include(Merb::Test::RouteHelper)
+  config.include(Merb::Test::ControllerHelper)
+#  config.mock_with :mocha
+end
 
-def blog_options( options = {} )
-  { :title => 'title' }
+def blog_options
+  { :title => 'title', :published_at => Time.now }
 end
 
 def comment_options( options = {} )

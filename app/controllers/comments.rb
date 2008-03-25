@@ -30,7 +30,7 @@ class Comments < Application
   end
 
   def create
-    params[:comment][:blog_id] = params[:blog_id]
+    params[:comment][:blog_id] = params[:blog_id] unless params[:blog_id].blank?
     @comment = Comment.new(params[:comment])
 
     if @comment.save
