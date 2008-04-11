@@ -4,16 +4,10 @@ http://jit.nuance9.com/2007/11/merb-datamapper-getting-rolling.html
 Gem dependencies
 - merb_helper
 - do_postgres
-- merb_has_flash
-
-Setup of postgres on MacOSX
-- http://www.robbyonrails.com/articles/2008/01/22/installing-ruby-on-rails-and-postgresql-on-os-x-third-edition
+- merb_has_flash - http://rubyfurnace.com/gems/merb_has_flash
 
 Update MacPorts
 - http://www.schabell.com/2007/12/macports-update.html
-
-bug in datamapper for sql session store
-- http://merb.lighthouseapp.com/projects/7588/tickets/5-merb_datamapper-sessions-postgres-busted
 
 Native support for HAML and SASS
 
@@ -23,93 +17,6 @@ Running Merb-Edge
   $ cd merb-core
   $ git pull
   $ sudo rake gem install
-
-# notes
-  - Haml not available by default
-  - init.rb file
-  - layouts have changed - :layout => :for_layout
-
-Template Not Found
-- http://jacobswanner.com/2008/2/14/merb-0-9-haml
-
-undefined method `precompiled_with_ambles' for #<Haml::Engine:0x6b3d0c>
-- upgrade to 1.8.2 from 1.7.1
-
-GIT vs SVN
-- http://git.or.cz/course/svn.html
-
-Merbful authentication
-- http://hassox.blogspot.com/2008/01/merbful-authentication-is-born.html
-- patch for 0.9 - http://pastie.textmate.org/private/5slvszmguuqhrphwmzemrg
-- fixes postgres sessions - http://merb.lighthouseapp.com/projects/7588/tickets/5-merb_datamapper-sessions-postgres-busted
-
-Ruby debugging
-- http://blog.kineticweb.com/articles/2007/11/15/kinetics-intro-to-ruby-debugging
-
-Testing
- - automigrate test database
-   http://marcus.ahnve.net/2008/02/16/how-to-automigrate-the-test-database-using-merb-datamapper-and-rspec/
-
-Routing
- - http://toolmantim.com/article/2008/1/22/merb_routing_in_0_5
- - Merb::Router.named_routes.keys
-
-Partials
- - http://jit.nuance9.com/2008/02/merb-faqs-environment-variables.html
-
-Scaling
- - http://www.last100meters.com/2008/2/18/skinny-requst-fat-backend-scaling-rails-let-mongrels-breath
-
-Merb Testing with Rspec
- - http://www.timocracy.com/articles/tag/merb
-
-Rspec on Rails on Crack
- - http://git.caboo.se/?p=altered_beast.git;a=tree;f=vendor/plugins;hb=HEAD
-
-mail in merb
- - http://yehudakatz.com/2007/09/03/merbs-mailer-is-awesome-if-i-do-say-so-myself/
- - testing: http://rubyforge.org/pipermail/merb-devel/2008-January/000464.html
-
-Merb links
- - http://www.merbcast.com/tutorials.html
- - http://www.rubyinside.com/merb-tutorials-and-resources-716.html
-
-Converting SVN repo to GIT:
- - http://tsunanet.blogspot.com/2007/07/learning-git-svn-in-5min.html
- git svn dcommit
- - http://andy.delcambre.com/2008/3/4/git-svn-workflow
-
-Git-Stash
- - http://kurt.karmalab.org/articles/2008/02/18/the-power-of-git-git-stash
- - http://www.kernel.org/pub/software/scm/git/docs/git-stash.html
-
-Git-Rebase
- - http://jbowes.dangerouslyinc.com/2007/01/26/git-rebase-keeping-your-branches-current/
-
-Git TM Bundle
- - http://gitorious.org/projects/git-tmbundle
-
-Respond_to vs provides
- - http://hassox.blogspot.com/2007/10/goodbye-respondto-hello-provides.html
-
-Vlad deployment
- - Vlad merb config: http://topfunky.net/svn/shovel/merb/vlad_config.rb
- - Vlad and git: http://scie.nti.st/2007/9/25/vlad-the-deployer-and-git
- - Merb and Capistrano
-   - http://www.benr75.com/articles/2007/12/24/taking_merb_to_production_nginx_evented_mongrel_capistrano
-   - http://railstips.org/2008/2/15/merb-and-capistrano
-
-Rake
- - Overwriting: http://blog.jayfields.com/2008/02/rake-task-overwriting.html
- - How does it work: http://www.railsenvy.com/2007/6/11/ruby-on-rails-rake-tutorial#how_does_rake_work
- - Tutorial: http://docs.rubyrake.org/tutorial/index.html
- - API: http://rake.rubyforge.org/
-
-Postgres
- - backup and restore: http://www.postgresql.org/docs/8.1/static/backup.html
-
-Pagination
- - http://codefluency.com/articles/2006/10/24/paginator-released/
 
 ----
 
@@ -129,10 +36,3 @@ Add static option for blogs
 Caching
 captcha
 comment RSS feed
-
-
-dkubb: Blinchik: I saw that earlier you were looking for merb_dm that worked with edge DM.  here it is: http://github.com/heimidal/merb-plugins/
-[6:00pm] Blinchik: dkubb: thanks!
-[6:01pm] mattup joined the chat room.
-[6:01pm] mattup was granted voice by ChanServ.
-[6:02pm] dkubb: Blinchik: I know Heimidal forked merb_dm into this repo and started working on something compat with edge DM.  if you have any problems I would recommend asking for help i #datamapper.  Heimidal has been pretty responsive with any questions/suggestions I've had so far
