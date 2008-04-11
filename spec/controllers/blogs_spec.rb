@@ -7,6 +7,7 @@ describe Blogs, "index action" do
     Category.delete_all
     @blog1 = Blog.create( blog_options )
     @blog2 = Blog.create( blog_options )
+    @blog3 = Blog.create( blog_options.without(:published_at) )
     @blogs = [ @blog1, @blog2 ]
 
     #Blogs.any_instance.expects(:<p>render</p>)
@@ -17,7 +18,7 @@ describe Blogs, "index action" do
     @controller.status.should == 200
   end
 
-  it "should assign all blogs" do
+  it "should assign all published blogs" do
     @controller.assigns(:blogs).count.should == 2
   end
 
