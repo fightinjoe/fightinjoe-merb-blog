@@ -15,7 +15,6 @@ module Merb
 
       def remote_link( content, js, attrs = {} )
         attrs[:href]    = '#'
-        puts js
         attrs[:onclick] = 'javascript:%s;return false;' % js
         tag( 'a', content, attrs )
       end
