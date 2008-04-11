@@ -117,14 +117,17 @@ class Blog < DataMapper::Base
     Comment.count( :conditions => ['comments.blog_id = ?', self.id] )
   end
 
+  def body()      @body      || ''; end
+  def body_html() @body_html || ''; end
+
   private
 
     def set_path_title
       self.path_title ||= self.title.downcase.gsub(/[^a-zA-Z_0-9 ]+/, '').gsub(/ +/, '-')
     end
 
-    def set_year()       self.year         = Time.now.year;  end
-    def set_month()      self.month        = Time.now.month; end
+    def set_year()  self.year  = Time.now.year;  end
+    def set_month() self.month = Time.now.month; end
 
     # Before saving, check to make sure that the category_id is set to an integer.
     # If not, create a new category with the title of teh category_id.
@@ -158,7 +161,7 @@ class Blog < DataMapper::Base
 
     # formattes the body using redcloth, colorizes ruby code using syntax(i)
     def formatted_body
-      code_blocks = get_code_blocks(self.body)
+      code_blocks = _get_code_blocks(self.body)
       red_clothed = RedCloth.new(body.gsub(REGEX, '${code_block}')).to_html
 
       code_blocks.each { |c|
@@ -170,7 +173,7 @@ class Blog < DataMapper::Base
     end
 
     # retrieves code in [code][/code] blocks
-    def get_code_blocks(contents)
+    def _get_code_blocks(contents)
       code_blocks = []
       code_block = contents.slice(REGEX)
       if (!code_block.nil?)
