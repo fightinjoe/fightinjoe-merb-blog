@@ -1,0 +1,12 @@
+:ruby 
+  # Partial for optionally displaying the 'read more' link
+  # ==== Parameters
+  # category<Category>
+
+- if Blog.count(:category_id => category.id) > 10
+  - # Hack to make sure that the last element isn't gobbled by the next headline.  Seems
+  - # to be a problem with the dimensions library
+  - style = request.env['HTTP_USER_AGENT'] =~ /Safari/ ? { :style => 'height:50px' } : {}
+  %li.center{ style }
+    %a{:href => "#{ url(:category, :category_title => category.title) }"} Read more...
+    %a{:href => "#{ url(:category, :category_title => category.title) }", :style => 'display:none;'} Read more...

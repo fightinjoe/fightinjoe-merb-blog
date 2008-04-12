@@ -7,7 +7,7 @@ class Blogs < Application
   def index
     provides :html, :rss
     if params[:format] == 'rss'
-      @blogs = Blog.all( :conditions => ['published_at IS NOT NULL'], :order => 'published_at DESC', :limit => 10 )
+      @blogs = Blog.get_rss
     else
       title     = params[:category_title]
       @category = title && Category.first( :title => title )

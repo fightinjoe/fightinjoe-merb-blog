@@ -70,7 +70,7 @@ Merb::BootLoader.after_app_loads do
   Merb.add_mime_type(:rss, nil, ['text/xml'])
 
   Merb::Plugins.config[:merb_cache] = {
-    :disable => "development", # disable merb-cache in development
+    :disable => ["development","test"], # disable merb-cache in development
     :store => "file",
     :cache_directory => Merb.root_path("tmp/cache"),
     :cache_html_directory => Merb.dir_for(:public) / "cache",

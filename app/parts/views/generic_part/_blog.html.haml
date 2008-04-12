@@ -1,0 +1,8 @@
+:ruby 
+  # Partial for displaying a single link to a blog in the sidebar
+  # ==== Parameters
+  # blog<Blog>: the blog to print
+
+%li
+  = print_date( blog.published_at )
+  %a{:href => "#{ url(:blog_by_date, blog) }"}= blog.title

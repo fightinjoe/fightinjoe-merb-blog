@@ -5,22 +5,22 @@
       %a{ :href => 'http://www.flickr.com/photos/fightinjoe' } Photos
     %h3#contact
       %a{ :href => '/contact' } Contact
-    %h3#previous
-      %a{ :href => '/blogs' } Previously
+    - unless @about
+      %h3#previous
+        %a{ :href => '/blogs' } Previously
     #accordion
-      - for category in Category.all
+      - if @about
+        %h3#previous About
+        %ul.unlist
+          - for blog in @about.blogs
+            = partial(:blog, :blog => blog)
+
+      - for category in @categories
         - blogs = Blog.published( :limit => 10, :category_id => category.id )
         - next if blogs.empty?
         %h3= category.title
         %ul.unlist
           - for blog in blogs
-            %li
-              = print_date( blog.published_at )
-              %a{:href => "#{ url(:blog_by_date, blog) }"}= blog.title
-          - if Blog.count > 10
-            - # Hack to make sure that the last element isn't gobbled by the next headline.  Seems
-            - # to be a problem with the dimensions library
-            - style = request.env['HTTP_USER_AGENT'] =~ /Safari/ ? { :style => 'height:50px' } : {}
-            %li.center{ style }
-              %a{:href => "#{ url(:category, :category_title => category.title) }"} Read more...
-              %a{:href => "#{ url(:category, :category_title => category.title) }", :style => 'display:none;'} Read more...
+            = partial(:blog, :blog => blog)
+
+          = partial(:more, :category => category)

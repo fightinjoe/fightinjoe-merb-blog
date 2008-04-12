@@ -41,6 +41,11 @@ class Blog < DataMapper::Base
 
     def per_page() 10; end
 
+    # Gets the blogs to popluate the RSS feed with
+    def get_rss
+      all( :conditions => ['published_at IS NOT NULL'], :order => 'published_at DESC', :limit => per_page )
+    end
+
     # Returns a paginator object for paginating blogs.
     #
     # ==== Parameters
