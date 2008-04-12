@@ -14,7 +14,7 @@ class Sessions < Application
         self.current_user.remember_me
         cookies[:auth_token] = { :value => self.current_user.remember_token , :expires => self.current_user.remember_token_expires_at }
       end
-      redirect_back_or_default('/')
+      redirect_back_or_default( url(:admin_blogs) )
     else
       render :new
     end
