@@ -9,8 +9,7 @@ Merb::Config.use do |c|
   
   ### Sets up a custom session id key, if you want to piggyback sessions of other applications
   ### with the cookie session store. If not specified, defaults to '_session_id'.
-  # c[:session_id_key] = '_session_id'
-  
+  c[:session_id_key] = '_fightinjoe_session_id'
   c[:session_secret_key]  = '0089065a640a7408b2b9a75f360a58adce409a10'
   c[:session_store] = 'cookie'
 end  
@@ -70,7 +69,7 @@ Merb::BootLoader.after_app_loads do
   Merb.add_mime_type(:rss, nil, ['text/xml'])
 
   Merb::Plugins.config[:merb_cache] = {
-    :disable => ["development","test"], # disable merb-cache in development
+    :disable => "development", # disable merb-cache in development
     :store => "file",
     :cache_directory => Merb.root_path("tmp/cache"),
     :cache_html_directory => Merb.dir_for(:public) / "cache",

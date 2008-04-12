@@ -14,16 +14,17 @@ class Blogs < Application
 
       raise NotFound if title && @category.nil?
 
-      options = { :category_id => @category ? @category.id : nil }
+      options = { :category_id => (@category ? @category.id : nil), :category_id.not => @about.id }
       @blogs  = Blog.paginate( options ).page( params[:page] )
     end
 
     render
   end
 
-  def show 
+  def show
     find_blog
-    @comment = Comment.new( :blog_id => @blog.id )
+    @category = @blog.category
+    @comment  = Comment.new( :blog_id => @blog.id )
     render
   end
 
@@ -32,7 +33,8 @@ class Blogs < Application
     def find_blog
       id, page_title, month, year = params[:id], params[:path_title], params[:month], params[:year]
       if id == 'latest'
-        @blog = Blog.last
+        @about = Category.first(:title => 'About')
+        @blog  = Blog.last( :category_id.not => (@about ? @about.id : -1) )
       else
         @blog = id ? Blog.first( id ) : Blog.first( :path_title => page_title, :year => year, :month => month )
       end

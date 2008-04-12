@@ -10,7 +10,7 @@
 
   %dl
     %dt= label_for( :title )
-    %dd= text_control( :title, :size => 50 )
+    %dd= text_control( :title, :size => 50, :class => 'larger' )
 
     %dt= label_for( :category_id, 'Category' )
     - collection = Category.all.unshift( Category.new ).push( Category.new( :title => '-- Add a new Category --' ) )
@@ -39,5 +39,5 @@
         = options_for_selectt( collection, :selected => blog.comments_expire_at.try(:day) )
 
     %dt= label_for( :body )
-    %dd~ text_area_control( :body, :cols => 50, :rows => 20 )
+    %dd~ text_area_control( :body, :cols => 50, :rows => 20, :class => 'larger' )
     %dd= submit_button( 'Save blog' )

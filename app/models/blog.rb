@@ -32,7 +32,7 @@ class Blog < DataMapper::Base
   before_update :cache_body_html
 
   class << self
-    def last() first( default_options.merge( :conditions => ['published_at IS NOT NULL'] ) ); end
+    def last( opts ) first( default_options.merge(opts).merge( :conditions => ['published_at IS NOT NULL'] ) ); end
 
     # Find all published blogs
     def published( options = {} )

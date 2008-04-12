@@ -1,6 +1,6 @@
 %h2= @blog.title
 %small= @blog.published_at.strftime( '%A, %d %B %Y') if @blog.published_at
 
-~ @blog.send(:formatted_body)
+= @blog.body_html
 
 = partial( 'comments/index', :blog => @blog )
