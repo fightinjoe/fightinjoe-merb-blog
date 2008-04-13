@@ -11,8 +11,9 @@
     #accordion
       - if @about
         %h3#previous About
-        %ul.unlist
+        %ul.unlist.static
           - for blog in @about.blogs
+            - next unless blog.published?
             = partial(:blog, :blog => blog)
 
       - for category in @categories
