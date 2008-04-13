@@ -27,4 +27,4 @@
 
 %script{ :type => "text/javascript" }
   jQuery('#accordion').accordion({ header: 'h3', autoheight: false, alwaysOpen: false });
-  = "jQuery('#accordion').accordion('activate', #{ @sel_category + 1 });" if @sel_category
+  = "jQuery('#accordion').accordion('activate', #{ @sel_category });" unless @sel_category == 0

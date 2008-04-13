@@ -1,6 +1,6 @@
 class Comments < Application
   provides :html, :rss
-  before :login_required #, :exclude => %w(index new create)
+  before :login_required, :exclude => %w(new create)
 
   def index
     @comments = Comment.all( :order => 'created_at DESC', :limit => 30 )
