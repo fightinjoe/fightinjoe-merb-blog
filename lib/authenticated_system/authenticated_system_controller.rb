@@ -66,11 +66,11 @@ module AuthenticatedSystem
         when :html
           store_location
           redirect url(:login)
-        when :xml, :rss
+        when :xml
           headers["Status"]             = "Unauthorized"
           headers["WWW-Authenticate"]   = %(Basic realm="Web Password")
-          set_status(401)
-          render :text => "Couldn't authenticate you"
+          self.status = 401
+          render "Couldn't authenticate you"
         end
       end
     

@@ -61,6 +61,8 @@ dependencies "merb_has_flash", 'paginator'
 require 'object_ext'
 dependencies 'merb_router_behavior_ext', 'merb_exceptions_ext'
 
+require File.join(File.dirname(__FILE__), '..', 'lib', 'authenticated_system/authenticated_dependencies') rescue LoadError
+
 Merb::BootLoader.after_app_loads do
   ### Add dependencies here that must load after the application loads:
 
@@ -75,9 +77,7 @@ Merb::BootLoader.after_app_loads do
     :cache_html_directory => Merb.dir_for(:public) / "cache",
   }
 
+  require 'merb_controller_ext'
+
 end
 
-begin 
-  require File.join(File.dirname(__FILE__), '..', 'lib', 'authenticated_system/authenticated_dependencies') 
-rescue LoadError
-end

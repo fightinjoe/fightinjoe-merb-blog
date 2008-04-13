@@ -3,21 +3,20 @@ class Comments < Application
   before :login_required #, :exclude => %w(index new create)
 
   def index
-    provides :rss
-
     @comments = Comment.all( :order => 'created_at DESC', :limit => 30 )
     @blogs = Blog.get_rss
     render
   end
 
   def show
+    only_provides :html
     @comment = Comment.first(params[:id])
     raise NotFound unless @comment
     display @comment
   end
 
   def new
-    provides :js, :html
+    provides :js
     @blog = params[:blog_id] ? Blog.get( params[:blog_id] ) : nil
     @comment = Comment.new( :blog_id => params[:blog_id] )
     render
