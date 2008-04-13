@@ -1,0 +1,5 @@
+== 0.2.0
+* About category added to sidebar
+* side-menu auto expansion when page is loaded
+* Comment RSS feed updated to work with authentication
+* CSS updates to better support IE

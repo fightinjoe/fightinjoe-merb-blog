@@ -1,38 +1,16 @@
-Setting up DataMapper:
-http://jit.nuance9.com/2007/11/merb-datamapper-getting-rolling.html 
+FightinJoe Merb + DataMapper + jQuery blogging system
 
-Gem dependencies
-- merb_helper
-- do_postgres
-- merb_has_flash - http://rubyfurnace.com/gems/merb_has_flash
+====
 
-Update MacPorts
-- http://www.schabell.com/2007/12/macports-update.html
+A wise man once said, "every beginning Rails developer should
+write their own blog software." (Geoffrey Grosenbach - 
+http://nubyonrails.com/articles/about-this-blog-memcached)
 
-Native support for HAML and SASS
+I'd extend this to say that every Rails developer should write
+their own blog software in Merb (or Sinatra, or Camping, or
+Django, or any other alternative framework).
 
-Running Merb-Edge
-- http://rorblog.techcfl.com/category/merb/
-- to keep things up to date
-  $ cd merb-core
-  $ git pull
-  $ sudo rake gem install
-
-----
-
-Complete
-
-Add categories
-add sidebar categories
-Add RedCloth
-add caching of html content
-Add comment expiration
-Add Flickr
-To Do
-
-Add authentication
-Add Contact option
-Add static option for blogs
-Caching
-captcha
-comment RSS feed
+This is my ongoing investigation into alternatives to the norm.
+It is a blogging app that solves my very-specific blogging needs.
+It probably won't suit your needs, but you may find some insight
+by looking at the way that I've done things.
