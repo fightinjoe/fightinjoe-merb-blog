@@ -1,11 +1,12 @@
 class Comments < Application
-  # provides :xml, :yaml, :js
-  before :login_required, :exclude => %w(index new create)
+  provides :html, :rss
+  before :login_required #, :exclude => %w(index new create)
 
   def index
-    provides :rss, :html
-    redirect('/') and return unless logged_in?
+    provides :rss
+
     @comments = Comment.all( :order => 'created_at DESC', :limit => 30 )
+    @blogs = Blog.get_rss
     render
   end
 

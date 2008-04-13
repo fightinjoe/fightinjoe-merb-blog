@@ -5,7 +5,7 @@ class Blogs < Application
   cache_pages :index, :show
 
   def index
-    provides :html, :rss
+    provides :rss
     if params[:format] == 'rss'
       @blogs = Blog.get_rss
     else

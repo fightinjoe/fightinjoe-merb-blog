@@ -66,7 +66,7 @@ module AuthenticatedSystem
         when :html
           store_location
           redirect url(:login)
-        when :xml
+        when :xml, :rss
           headers["Status"]             = "Unauthorized"
           headers["WWW-Authenticate"]   = %(Basic realm="Web Password")
           set_status(401)
