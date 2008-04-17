@@ -64,7 +64,7 @@ class Blogs < Application
       if id == 'latest'
         @blog = Blog.last
       else
-        @blog = id ? Blog.first( id ) : Blog.first( :path_title => page_title, :year => year, :month => month )
+        @blog = id ? Blog.get( id ) : Blog.first( :path_title => page_title, :year => year, :month => month )
       end
       raise NotFound unless @blog
     end
