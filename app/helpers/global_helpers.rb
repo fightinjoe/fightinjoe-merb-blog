@@ -25,5 +25,10 @@ module Merb
       '%d %s' % [count, count == 1 ? word : word.pluralize]
     end
 
+    def to_rfc822( datetime )
+      d = datetime
+      ::Time.local(d.year, d.month, d.day, d.hour, d.min, d.sec).rfc822
+    end
+
   end
 end    
