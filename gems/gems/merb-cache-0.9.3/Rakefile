@@ -1,0 +1,80 @@
+require 'rubygems'
+require "rake/rdoctask"
+require 'rake/gempackagetask'
+require "spec/rake/spectask"
+
+PLUGIN = "merb-cache"
+NAME = "merb-cache"
+MERB_CACHE_VERSION = Merb::MORE_VERSION rescue "0.9.3"
+VERSION = "0.9.3"
+AUTHOR = "Alex Boussinet"
+EMAIL = "alex.boussinet@gmail.com"
+HOMEPAGE = "http://www.merbivore.com"
+SUMMARY = "Merb plugin that provides caching (page, action, fragment, object)"
+
+spec = Gem::Specification.new do |s|
+  s.name = NAME
+  s.version = MERB_CACHE_VERSION
+  s.platform = Gem::Platform::RUBY
+  s.has_rdoc = true
+  s.extra_rdoc_files = ["README", "LICENSE", 'TODO']
+  s.summary = SUMMARY
+  s.description = s.summary
+  s.author = AUTHOR
+  s.email = EMAIL
+  s.homepage = HOMEPAGE
+  s.add_dependency('merb-core', '>= 0.9.3')
+  s.require_path = 'lib'
+  s.autorequire = PLUGIN
+  s.files = %w(LICENSE README Rakefile TODO) + Dir.glob("{lib,spec}/**/*")
+
+  # rdoc
+  s.has_rdoc         = true
+  s.extra_rdoc_files = %w( README LICENSE TODO )
+end
+
+namespace :specs do
+  ["file", "memory", "memcache", "sequel", "datamapper", "activerecord"].each do |store|
+    desc "Run spec with the \"#{store}\" cache store"
+    task "#{store}" do
+      cwd = Dir.getwd
+      Dir.chdir(File.dirname(__FILE__) + "/spec")
+      ENV["STORE"] = store
+      system("spec --format specdoc --colour merb-cache_spec.rb")
+      Dir.chdir(cwd)
+    end
+  end
+end
+
+namespace :doc do
+  Rake::RDocTask.new do |rdoc|
+    files = ["README", "LICENSE", "lib/**/*.rb"]
+    rdoc.rdoc_files.add(files)
+    rdoc.main = "README"
+    rdoc.title = "merb-cache docs"
+    if File.file?("../../merb-core/tools/allison-2.0.2/lib/allison.rb")
+      rdoc.template = "../../merb-core/tools/allison-2.0.2/lib/allison.rb"
+    end
+    rdoc.rdoc_dir = "doc/rdoc"
+    rdoc.options << "--line-numbers" << "--inline-source"
+  end
+end
+
+Rake::GemPackageTask.new(spec) do |pkg|
+  pkg.gem_spec = spec
+end
+
+install_home = ENV['GEM_HOME'] ? "-i #{ENV['GEM_HOME']}" : ""
+
+task :install => [:package] do
+  sh %{sudo gem install #{install_home} pkg/#{NAME}-#{MERB_CACHE_VERSION} --no-update-sources}
+end
+
+namespace :jruby do
+
+  desc "Run :package and install the resulting .gem with jruby"
+  task :install => :package do
+    sh %{#{SUDO} jruby -S gem install #{install_home} pkg/#{NAME}-#{Merb::VERSION}.gem --no-rdoc --no-ri}
+  end
+  
+end

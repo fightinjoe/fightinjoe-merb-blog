@@ -1,0 +1,2040 @@
+Thu, 14 Feb 2008 17:24:06 GMT  ~  info  ~  Logfile created
+Thu, 14 Feb 2008 17:58:09 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Thu, 14 Feb 2008 17:58:10 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Thu, 14 Feb 2008 17:58:10 GMT ~ Params: {}
+Thu, 14 Feb 2008 17:58:10 GMT ~ Cookies: {}
+Thu, 14 Feb 2008 17:58:10 GMT ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+Thu, 14 Feb 2008 17:58:10 GMT ~ Setting Up Cookie Store Sessions
+Thu, 14 Feb 2008 17:58:10 GMT ~ Finalize Cookie Store Session
+Thu, 14 Feb 2008 17:58:10 GMT ~ {:after_filters_time=>6.0e-06, :before_filters_time=>9.0e-06, :action_time=>0.000996}
+Thu, 14 Feb 2008 17:58:10 GMT ~ Params: {}
+Thu, 14 Feb 2008 17:58:10 GMT ~ Cookies: {}
+Thu, 14 Feb 2008 17:58:10 GMT ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+Thu, 14 Feb 2008 17:58:10 GMT ~ Setting Up Cookie Store Sessions
+Thu, 14 Feb 2008 17:58:10 GMT ~ Finalize Cookie Store Session
+Thu, 14 Feb 2008 17:58:10 GMT ~ {:after_filters_time=>6.0e-06, :before_filters_time=>8.0e-06, :action_time=>0.00037}
+Thu, 14 Feb 2008 21:20:33 GMT ~ Loaded TEST Environment...
+Thu, 14 Feb 2008 21:20:33 GMT ~ Compiling routes...
+Thu, 14 Feb 2008 21:20:33 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Thu, 14 Feb 2008 21:20:34 GMT ~ Loaded TEST Environment...
+Thu, 14 Feb 2008 21:20:34 GMT ~ Compiling routes...
+Thu, 14 Feb 2008 21:20:34 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Thu, 14 Feb 2008 21:20:34 GMT ~ Params: {}
+Thu, 14 Feb 2008 21:20:34 GMT ~ Cookies: {}
+Thu, 14 Feb 2008 21:20:34 GMT ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+Thu, 14 Feb 2008 21:20:34 GMT ~ Setting Up Cookie Store Sessions
+Thu, 14 Feb 2008 21:20:34 GMT ~ Finalize Cookie Store Session
+Thu, 14 Feb 2008 21:20:34 GMT ~ {:after_filters_time=>6.0e-06, :before_filters_time=>9.0e-06, :action_time=>0.001008}
+Thu, 14 Feb 2008 21:20:34 GMT ~ Params: {}
+Thu, 14 Feb 2008 21:20:34 GMT ~ Cookies: {}
+Thu, 14 Feb 2008 21:20:34 GMT ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+Thu, 14 Feb 2008 21:20:34 GMT ~ Setting Up Cookie Store Sessions
+Thu, 14 Feb 2008 21:20:34 GMT ~ Finalize Cookie Store Session
+Thu, 14 Feb 2008 21:20:34 GMT ~ {:after_filters_time=>5.0e-06, :before_filters_time=>7.0e-06, :action_time=>0.000347}
+Fri, 15 Feb 2008 18:44:30 GMT ~ Loaded TEST Environment...
+Fri, 15 Feb 2008 18:44:30 GMT ~ Compiling routes...
+Fri, 15 Feb 2008 18:44:30 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Fri, 15 Feb 2008 18:44:30 GMT ~ Loaded TEST Environment...
+Fri, 15 Feb 2008 18:44:30 GMT ~ Compiling routes...
+Fri, 15 Feb 2008 18:44:31 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Fri, 15 Feb 2008 18:44:31 GMT ~ Params: {}
+Fri, 15 Feb 2008 18:44:31 GMT ~ Cookies: {}
+Fri, 15 Feb 2008 18:44:31 GMT ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+Fri, 15 Feb 2008 18:44:31 GMT ~ Setting Up Cookie Store Sessions
+Fri, 15 Feb 2008 18:44:31 GMT ~ Finalize Cookie Store Session
+Fri, 15 Feb 2008 18:44:31 GMT ~ {:after_filters_time=>7.0e-06, :before_filters_time=>1.0e-05, :action_time=>0.000981}
+Fri, 15 Feb 2008 18:44:31 GMT ~ Params: {}
+Fri, 15 Feb 2008 18:44:31 GMT ~ Cookies: {}
+Fri, 15 Feb 2008 18:44:31 GMT ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+Fri, 15 Feb 2008 18:44:31 GMT ~ Setting Up Cookie Store Sessions
+Fri, 15 Feb 2008 18:44:31 GMT ~ Finalize Cookie Store Session
+Fri, 15 Feb 2008 18:44:31 GMT ~ {:after_filters_time=>6.0e-06, :before_filters_time=>7.0e-06, :action_time=>0.000376}
+Sun, 17 Feb 2008 15:32:24 GMT ~ Loaded TEST Environment...
+Sun, 17 Feb 2008 15:32:24 GMT ~ Compiling routes...
+Sun, 17 Feb 2008 15:32:24 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Sun, 17 Feb 2008 15:32:25 GMT ~ Loaded TEST Environment...
+Sun, 17 Feb 2008 15:32:25 GMT ~ Compiling routes...
+Sun, 17 Feb 2008 15:32:25 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Sun, 17 Feb 2008 15:32:25 GMT ~ Params: {}
+Sun, 17 Feb 2008 15:32:25 GMT ~ Cookies: {}
+Sun, 17 Feb 2008 15:32:25 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Sun, 17 Feb 2008 15:32:25 GMT ~ Setting Up Cookie Store Sessions
+Sun, 17 Feb 2008 15:32:25 GMT ~ Finalize Cookie Store Session
+Sun, 17 Feb 2008 15:32:25 GMT ~ {:before_filters_time=>9.0e-06, :action_time=>0.000985, :after_filters_time=>8.0e-06}
+Sun, 17 Feb 2008 15:32:25 GMT ~ Params: {}
+Sun, 17 Feb 2008 15:32:25 GMT ~ Cookies: {}
+Sun, 17 Feb 2008 15:32:25 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Sun, 17 Feb 2008 15:32:25 GMT ~ Setting Up Cookie Store Sessions
+Sun, 17 Feb 2008 15:32:25 GMT ~ Finalize Cookie Store Session
+Sun, 17 Feb 2008 15:32:25 GMT ~ {:before_filters_time=>7.0e-06, :action_time=>0.000415, :after_filters_time=>7.0e-06}
+Sun, 17 Feb 2008 16:11:53 GMT ~ Loaded TEST Environment...
+Sun, 17 Feb 2008 16:11:53 GMT ~ Compiling routes...
+Sun, 17 Feb 2008 16:11:53 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Sun, 17 Feb 2008 16:11:54 GMT ~ Loaded TEST Environment...
+Sun, 17 Feb 2008 16:11:54 GMT ~ Compiling routes...
+Sun, 17 Feb 2008 16:11:54 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Sun, 17 Feb 2008 16:11:54 GMT ~ Params: {}
+Sun, 17 Feb 2008 16:11:54 GMT ~ Cookies: {}
+Sun, 17 Feb 2008 16:11:54 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Sun, 17 Feb 2008 16:11:54 GMT ~ Setting Up Cookie Store Sessions
+Sun, 17 Feb 2008 16:11:54 GMT ~ Finalize Cookie Store Session
+Sun, 17 Feb 2008 16:11:54 GMT ~ {:before_filters_time=>1.1e-05, :action_time=>0.000983, :after_filters_time=>8.0e-06}
+Sun, 17 Feb 2008 16:11:54 GMT ~ Params: {}
+Sun, 17 Feb 2008 16:11:54 GMT ~ Cookies: {}
+Sun, 17 Feb 2008 16:11:54 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Sun, 17 Feb 2008 16:11:54 GMT ~ Setting Up Cookie Store Sessions
+Sun, 17 Feb 2008 16:11:54 GMT ~ Finalize Cookie Store Session
+Sun, 17 Feb 2008 16:11:54 GMT ~ {:before_filters_time=>6.0e-06, :action_time=>0.000351, :after_filters_time=>5.0e-06}
+Sun, 17 Feb 2008 16:21:28 GMT ~ Loaded TEST Environment...
+Sun, 17 Feb 2008 16:21:28 GMT ~ Compiling routes...
+Sun, 17 Feb 2008 16:21:28 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Sun, 17 Feb 2008 16:21:29 GMT ~ Loaded TEST Environment...
+Sun, 17 Feb 2008 16:21:29 GMT ~ Compiling routes...
+Sun, 17 Feb 2008 16:21:29 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Sun, 17 Feb 2008 16:21:29 GMT ~ Params: {}
+Sun, 17 Feb 2008 16:21:29 GMT ~ Cookies: {}
+Sun, 17 Feb 2008 16:21:29 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Sun, 17 Feb 2008 16:21:29 GMT ~ Setting Up Cookie Store Sessions
+Sun, 17 Feb 2008 16:21:29 GMT ~ Finalize Cookie Store Session
+Sun, 17 Feb 2008 16:21:29 GMT ~ {:before_filters_time=>0.003175, :action_time=>0.004306, :after_filters_time=>8.0e-06}
+Sun, 17 Feb 2008 16:21:29 GMT ~ Params: {}
+Sun, 17 Feb 2008 16:21:29 GMT ~ Cookies: {}
+Sun, 17 Feb 2008 16:21:29 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Sun, 17 Feb 2008 16:21:29 GMT ~ Setting Up Cookie Store Sessions
+Sun, 17 Feb 2008 16:21:29 GMT ~ Finalize Cookie Store Session
+Sun, 17 Feb 2008 16:21:29 GMT ~ {:before_filters_time=>8.0e-06, :action_time=>0.000482, :after_filters_time=>6.0e-06}
+Mon, 25 Feb 2008 23:08:33 GMT ~ Loaded TEST Environment...
+Mon, 25 Feb 2008 23:08:33 GMT ~ Compiling routes...
+Mon, 25 Feb 2008 23:08:43 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Mon, 25 Feb 2008 23:09:38 GMT ~ Loaded TEST Environment...
+Mon, 25 Feb 2008 23:09:38 GMT ~ Compiling routes...
+Mon, 25 Feb 2008 23:09:38 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Mon, 25 Feb 2008 23:09:39 GMT ~ Loaded TEST Environment...
+Mon, 25 Feb 2008 23:09:39 GMT ~ Compiling routes...
+Mon, 25 Feb 2008 23:09:39 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Mon, 25 Feb 2008 23:09:39 GMT ~ Params: {}
+Mon, 25 Feb 2008 23:09:39 GMT ~ Cookies: {}
+Mon, 25 Feb 2008 23:09:39 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Mon, 25 Feb 2008 23:09:39 GMT ~ Setting Up Cookie Store Sessions
+Mon, 25 Feb 2008 23:09:39 GMT ~ Finalize Cookie Store Session
+Mon, 25 Feb 2008 23:09:39 GMT ~ {:before_filters_time=>1.0e-05, :action_time=>0.001018, :after_filters_time=>6.0e-06}
+Mon, 25 Feb 2008 23:09:39 GMT ~ Params: {}
+Mon, 25 Feb 2008 23:09:39 GMT ~ Cookies: {}
+Mon, 25 Feb 2008 23:09:39 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Mon, 25 Feb 2008 23:09:39 GMT ~ Setting Up Cookie Store Sessions
+Mon, 25 Feb 2008 23:09:39 GMT ~ Finalize Cookie Store Session
+Mon, 25 Feb 2008 23:09:39 GMT ~ {:before_filters_time=>7.0e-06, :action_time=>0.000357, :after_filters_time=>5.0e-06}
+Mon, 25 Feb 2008 23:11:41 GMT ~ Loaded TEST Environment...
+Mon, 25 Feb 2008 23:11:41 GMT ~ Compiling routes...
+Mon, 25 Feb 2008 23:11:41 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Mon, 25 Feb 2008 23:11:42 GMT ~ Loaded TEST Environment...
+Mon, 25 Feb 2008 23:11:42 GMT ~ Compiling routes...
+Mon, 25 Feb 2008 23:11:42 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Mon, 25 Feb 2008 23:11:42 GMT ~ Params: {}
+Mon, 25 Feb 2008 23:11:42 GMT ~ Cookies: {}
+Mon, 25 Feb 2008 23:11:42 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Mon, 25 Feb 2008 23:11:42 GMT ~ Setting Up Cookie Store Sessions
+Mon, 25 Feb 2008 23:11:42 GMT ~ Finalize Cookie Store Session
+Mon, 25 Feb 2008 23:11:42 GMT ~ {:before_filters_time=>1.0e-05, :action_time=>0.001039, :after_filters_time=>6.0e-06}
+Mon, 25 Feb 2008 23:11:42 GMT ~ Params: {}
+Mon, 25 Feb 2008 23:11:42 GMT ~ Cookies: {}
+Mon, 25 Feb 2008 23:11:42 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Mon, 25 Feb 2008 23:11:42 GMT ~ Setting Up Cookie Store Sessions
+Mon, 25 Feb 2008 23:11:42 GMT ~ Finalize Cookie Store Session
+Mon, 25 Feb 2008 23:11:42 GMT ~ {:before_filters_time=>6.0e-06, :action_time=>0.000353, :after_filters_time=>5.0e-06}
+Mon, 25 Feb 2008 23:13:09 GMT ~ Loaded TEST Environment...
+Mon, 25 Feb 2008 23:13:09 GMT ~ Compiling routes...
+Mon, 25 Feb 2008 23:13:10 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Mon, 25 Feb 2008 23:13:12 GMT ~ Loaded TEST Environment...
+Mon, 25 Feb 2008 23:13:12 GMT ~ Compiling routes...
+Mon, 25 Feb 2008 23:13:12 GMT ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+Mon, 25 Feb 2008 23:13:12 GMT ~ Params: {}
+Mon, 25 Feb 2008 23:13:12 GMT ~ Cookies: {}
+Mon, 25 Feb 2008 23:13:12 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Mon, 25 Feb 2008 23:13:12 GMT ~ Setting Up Cookie Store Sessions
+Mon, 25 Feb 2008 23:13:12 GMT ~ Finalize Cookie Store Session
+Mon, 25 Feb 2008 23:13:12 GMT ~ {:before_filters_time=>1.0e-05, :action_time=>0.001013, :after_filters_time=>6.0e-06}
+Mon, 25 Feb 2008 23:13:12 GMT ~ Params: {}
+Mon, 25 Feb 2008 23:13:12 GMT ~ Cookies: {}
+Mon, 25 Feb 2008 23:13:12 GMT ~ Routed to: {:controller=>"foo", :format=>nil, :action=>"bar", :id=>"54"}
+Mon, 25 Feb 2008 23:13:12 GMT ~ Setting Up Cookie Store Sessions
+Mon, 25 Feb 2008 23:13:12 GMT ~ Finalize Cookie Store Session
+Mon, 25 Feb 2008 23:13:12 GMT ~ {:before_filters_time=>6.0e-06, :action_time=>0.000352, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.00093, :before_filters_time=>6.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000278, :before_filters_time=>6.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:action_time=>0.00093, :after_filters_time=>6.0e-06, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:action_time=>0.000271, :after_filters_time=>5.0e-06, :before_filters_time=>6.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:action_time=>0.000922, :after_filters_time=>6.0e-06, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:action_time=>0.00027, :after_filters_time=>6.0e-06, :before_filters_time=>6.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:action_time=>0.000921, :after_filters_time=>6.0e-06, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:action_time=>0.00027, :after_filters_time=>5.0e-06, :before_filters_time=>6.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:action_time=>0.000918, :after_filters_time=>6.0e-06, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:action_time=>0.000327, :after_filters_time=>5.0e-06, :before_filters_time=>7.0e-06}
+ ~ {:action_time=>0.019352, :before_filters_time=>8.0e-06, :after_filters_time=>1.5e-05}
+ ~ {:action_time=>0.000821, :before_filters_time=>1.0e-05, :after_filters_time=>8.0e-06}
+ ~ {:action_time=>0.000653, :before_filters_time=>8.0e-06, :after_filters_time=>7.0e-06}
+ ~ {:action_time=>0.000612, :before_filters_time=>7.0e-06, :after_filters_time=>7.0e-06}
+ ~ {:action_time=>0.000572, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000766, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000457, :before_filters_time=>9.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000416, :before_filters_time=>7.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000828, :before_filters_time=>7.0e-06, :after_filters_time=>8.0e-06}
+ ~ {:action_time=>0.000524, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000528, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000479, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000452, :before_filters_time=>5.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.0006, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000355, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000356, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ No routes match the request,  - (Merb::ControllerExceptions::NotFound)
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:11
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_not_acceptable", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::NotAcceptable - (Merb::ControllerExceptions::NotAcceptable)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:18:in `raise_not_acceptable'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:17
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_conflict", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::Conflict - (Merb::ControllerExceptions::Conflict)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:14:in `raise_conflict'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:23
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06, :action_time=>0.000393}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06, :action_time=>0.000362}
+ ~ {:action_time=>0.000901, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000708, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000496, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000471, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000452, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000606, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000354, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.00037, :before_filters_time=>6.0e-06, :after_filters_time=>4.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:action_time=>0.00097, :before_filters_time=>8.0e-06, :after_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:action_time=>0.000304, :before_filters_time=>9.0e-06, :after_filters_time=>6.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ No routes match the request,  - (Merb::ControllerExceptions::NotFound)
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:11
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_not_acceptable", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::NotAcceptable - (Merb::ControllerExceptions::NotAcceptable)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:18:in `raise_not_acceptable'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:17
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_conflict", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::Conflict - (Merb::ControllerExceptions::Conflict)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:14:in `raise_conflict'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:23
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06, :action_time=>0.00039}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06, :action_time=>0.000333}
+ ~ {:action_time=>0.000788, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000474, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000481, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000469, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000454, :before_filters_time=>4.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000746, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000375, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000445, :before_filters_time=>8.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ No routes match the request,  - (Merb::ControllerExceptions::NotFound)
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:11
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_not_acceptable", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::NotAcceptable - (Merb::ControllerExceptions::NotAcceptable)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:18:in `raise_not_acceptable'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:17
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_conflict", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::Conflict - (Merb::ControllerExceptions::Conflict)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:14:in `raise_conflict'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:23
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06, :action_time=>0.00039}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06, :action_time=>0.000333}
+ ~ {:action_time=>0.002075, :before_filters_time=>7.0e-06, :after_filters_time=>7.0e-06}
+ ~ {:action_time=>0.000529, :before_filters_time=>7.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.00053, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000477, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000454, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.0006, :before_filters_time=>4.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000357, :before_filters_time=>4.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000359, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ No routes match the request,  - (Merb::ControllerExceptions::NotFound)
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:11
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_not_acceptable", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::NotAcceptable - (Merb::ControllerExceptions::NotAcceptable)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:18:in `raise_not_acceptable'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:17
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_conflict", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::Conflict - (Merb::ControllerExceptions::Conflict)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:14:in `raise_conflict'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:23
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06, :action_time=>0.000388}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06, :action_time=>0.000447}
+ ~ {:action_time=>0.000805, :before_filters_time=>8.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000487, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000491, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000528, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000835, :before_filters_time=>5.0e-06, :after_filters_time=>1.2e-05}
+ ~ {:action_time=>0.000634, :before_filters_time=>5.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000357, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000359, :before_filters_time=>7.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ No routes match the request,  - (Merb::ControllerExceptions::NotFound)
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:11
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_not_acceptable", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::NotAcceptable - (Merb::ControllerExceptions::NotAcceptable)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:18:in `raise_not_acceptable'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:17
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_conflict", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::Conflict - (Merb::ControllerExceptions::Conflict)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:14:in `raise_conflict'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:23
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06, :action_time=>0.000391}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06, :action_time=>0.000332}
+ ~ {:action_time=>0.000895, :before_filters_time=>8.0e-06, :after_filters_time=>7.0e-06}
+ ~ {:action_time=>0.00082, :before_filters_time=>6.0e-06, :after_filters_time=>7.0e-06}
+ ~ {:action_time=>0.000679, :before_filters_time=>9.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000505, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000468, :before_filters_time=>4.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000619, :before_filters_time=>5.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000364, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000361, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ No routes match the request,  - (Merb::ControllerExceptions::NotFound)
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:11
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_not_acceptable", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::NotAcceptable - (Merb::ControllerExceptions::NotAcceptable)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:18:in `raise_not_acceptable'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:17
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_conflict", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::Conflict - (Merb::ControllerExceptions::Conflict)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:14:in `raise_conflict'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:23
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06, :action_time=>0.000391}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06, :action_time=>0.000333}
+ ~ {:action_time=>0.000827, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000511, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.0005, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000498, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000454, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000617, :before_filters_time=>4.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.00036, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000448, :before_filters_time=>7.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ No routes match the request,  - (Merb::ControllerExceptions::NotFound)
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:11
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_not_acceptable", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::NotAcceptable - (Merb::ControllerExceptions::NotAcceptable)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:18:in `raise_not_acceptable'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:17
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_conflict", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::Conflict - (Merb::ControllerExceptions::Conflict)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:14:in `raise_conflict'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:23
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06, :action_time=>0.00039}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06, :action_time=>0.000332}
+ ~ {:action_time=>0.000816, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000519, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000494, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000485, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000513, :before_filters_time=>5.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000601, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000357, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000362, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ No routes match the request,  - (Merb::ControllerExceptions::NotFound)
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:11
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_not_acceptable", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::NotAcceptable - (Merb::ControllerExceptions::NotAcceptable)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:18:in `raise_not_acceptable'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:17
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_conflict", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::Conflict - (Merb::ControllerExceptions::Conflict)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:14:in `raise_conflict'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:23
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06, :action_time=>0.00039}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06, :action_time=>0.000424}
+ ~ {:action_time=>0.000791, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000476, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000515, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000479, :before_filters_time=>5.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000457, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000599, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000363, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.00036, :before_filters_time=>6.0e-06, :after_filters_time=>4.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ No routes match the request,  - (Merb::ControllerExceptions::NotFound)
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:11
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_not_acceptable", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::NotAcceptable - (Merb::ControllerExceptions::NotAcceptable)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:18:in `raise_not_acceptable'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:17
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_conflict", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::Conflict - (Merb::ControllerExceptions::Conflict)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:14:in `raise_conflict'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:23
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06, :action_time=>0.000393}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06, :action_time=>0.000331}
+ ~ {:action_time=>0.0008, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000491, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000481, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000506, :before_filters_time=>6.0e-06, :after_filters_time=>7.0e-06}
+ ~ {:action_time=>0.000576, :before_filters_time=>5.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000646, :before_filters_time=>5.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.00038, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.00037, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ No routes match the request,  - (Merb::ControllerExceptions::NotFound)
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:36:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:11
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_not_acceptable", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::NotAcceptable - (Merb::ControllerExceptions::NotAcceptable)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:18:in `raise_not_acceptable'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:17
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"raise_conflict", :controller=>"foo", :format=>nil, :id=>nil}
+ ~ Setting Up Cookie Store Sessions
+ ~ Merb::ControllerExceptions::Conflict - (Merb::ControllerExceptions::Conflict)
+./spec/private/dispatch/fixture/app/controllers/foo.rb:14:in `raise_conflict'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `send'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:228:in `_call_action'
+./spec/private/dispatch/../../../lib/merb-core/controller/abstract_controller.rb:209:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/controller/merb_controller.rb:180:in `_dispatch'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `synchronize'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:103:in `dispatch_action'
+./spec/private/dispatch/../../../lib/merb-core/dispatch/dispatcher.rb:71:in `handle'
+./spec/private/dispatch/dispatch_spec.rb:23
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `instance_eval'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/local/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_methods.rb:16:in `execute'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:292:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:291:in `execute_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/example/example_group_methods.rb:121:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:22:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/example_group_runner.rb:21:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/options.rb:90:in `run_examples'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/lib/spec/runner/command_line.rb:19:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rspec-1.1.3/bin/spec:4
+/usr/local/bin/spec:19:in `load'
+/usr/local/bin/spec:19
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06, :action_time=>0.000416}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06, :action_time=>0.000332}
+ ~ {:action_time=>0.000779, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.00047, :before_filters_time=>5.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000479, :before_filters_time=>6.0e-06, :after_filters_time=>6.0e-06}
+ ~ {:action_time=>0.000467, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000449, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000803, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.000361, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ {:action_time=>0.00036, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000888, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000266, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000881, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000329, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.00089, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000308, :before_filters_time=>6.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000889, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000275, :before_filters_time=>6.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>7.0e-06, :action_time=>0.000892, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.00028, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000901, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000302, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000894, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000275, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000896, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>2.0e-05, :action_time=>0.000291, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000882, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000344, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000909, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000627, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000887, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000721, :before_filters_time=>8.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000914, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000482, :before_filters_time=>8.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000912, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000307, :before_filters_time=>6.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000884, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000326, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000886, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>7.0e-06, :action_time=>0.001244, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000883, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000302, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000887, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.00033, :before_filters_time=>6.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000883, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000308, :before_filters_time=>8.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000884, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.002082, :before_filters_time=>0.001714}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>9.0e-06, :action_time=>0.00089, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000305, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000895, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000343, :before_filters_time=>8.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000896, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000296, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>1.0e-05, :action_time=>0.000894, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000344, :before_filters_time=>7.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000882, :before_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.00026, :before_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>6.0e-06, :action_time=>0.000869, :before_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Cookies: {}
+ ~ Routed to: {:format=>nil, :action=>"bar", :controller=>"foo", :id=>"54"}
+ ~ Setting Up Cookie Store Sessions
+ ~ Finalize Cookie Store Session
+ ~ {:after_filters_time=>5.0e-06, :action_time=>0.000266, :before_filters_time=>6.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Routed to: {:controller=>"foo", :format=>nil, :id=>"54", :action=>"bar"}
+ ~ {:action_time=>0.000855, :before_filters_time=>7.0e-06, :after_filters_time=>5.0e-06, :dispatch_time=>0.001051}
+ ~ Params: {}
+ ~ Routed to: {:controller=>"foo", :format=>nil, :id=>"54", :action=>"bar"}
+ ~ {:action_time=>0.000235, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06, :dispatch_time=>0.000373}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Routed to: {:controller=>"foo", :format=>nil, :id=>"54", :action=>"bar"}
+ ~ {:dispatch_time=>0.001036, :action_time=>0.00085, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ Params: {}
+ ~ Routed to: {:controller=>"foo", :format=>nil, :id=>"54", :action=>"bar"}
+ ~ {:dispatch_time=>0.0004, :action_time=>0.000233, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Routed to: {:controller=>"foo", :format=>nil, :id=>"54", :action=>"bar"}
+ ~ {:dispatch_time=>0.001061, :action_time=>0.000868, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ Params: {}
+ ~ Routed to: {:controller=>"foo", :format=>nil, :id=>"54", :action=>"bar"}
+ ~ {:dispatch_time=>0.00037, :action_time=>0.000234, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ {:dispatch_time=>0.001039, :action_time=>0.000849, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :controller=>"foo", :format=>nil, :id=>"54"}
+ ~ {:dispatch_time=>0.000376, :action_time=>0.000245, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:action_time=>0.000859, :before_filters_time=>8.0e-06, :dispatch_time=>0.0011, :after_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:action_time=>0.000238, :before_filters_time=>5.0e-06, :dispatch_time=>0.000374, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:dispatch_time=>0.001118, :action_time=>0.000903, :before_filters_time=>8.0e-06, :after_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:dispatch_time=>0.000423, :action_time=>0.000273, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:dispatch_time=>0.001068, :action_time=>0.00086, :before_filters_time=>8.0e-06, :after_filters_time=>7.0e-06}
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:dispatch_time=>0.001008, :action_time=>0.000708, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:dispatch_time=>0.001078, :action_time=>0.000864, :before_filters_time=>8.0e-06, :after_filters_time=>6.0e-06}
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:dispatch_time=>0.001809, :action_time=>0.001159, :before_filters_time=>6.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:dispatch_time=>0.007199, :action_time=>0.006863, :before_filters_time=>1.0e-05, :after_filters_time=>8.0e-06}
+ ~ Params: {}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:dispatch_time=>0.001312, :action_time=>0.00113, :before_filters_time=>8.0e-06, :after_filters_time=>6.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {"format"=>nil, "action"=>"bar", "id"=>"54", "controller"=>"foo"}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:action_time=>0.000865, :dispatch_time=>0.001076, :before_filters_time=>8.0e-06, :after_filters_time=>6.0e-06}
+ ~ Params: {"format"=>nil, "action"=>"bar", "id"=>"54", "controller"=>"foo"}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:action_time=>0.000242, :dispatch_time=>0.000384, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {"format"=>nil, "action"=>"bar", "id"=>"54", "controller"=>"foo"}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:action_time=>0.000873, :dispatch_time=>0.00112, :before_filters_time=>7.0e-06, :after_filters_time=>6.0e-06}
+ ~ Params: {"format"=>nil, "action"=>"bar", "id"=>"54", "controller"=>"foo"}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:action_time=>0.000251, :dispatch_time=>0.000394, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Loaded TEST Environment...
+ ~ Compiling routes...
+ ~ Using 'share-nothing' cookie sessions (4kb limit per client)
+ ~ Params: {"format"=>nil, "action"=>"bar", "id"=>"54", "controller"=>"foo"}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:action_time=>0.000936, :dispatch_time=>0.00165, :before_filters_time=>9.0e-06, :after_filters_time=>6.0e-06}
+ ~ Params: {"format"=>nil, "action"=>"bar", "id"=>"54", "controller"=>"foo"}
+ ~ Routed to: {:action=>"bar", :format=>nil, :controller=>"foo", :id=>"54"}
+ ~ {:action_time=>0.000269, :dispatch_time=>0.000425, :before_filters_time=>5.0e-06, :after_filters_time=>5.0e-06}
