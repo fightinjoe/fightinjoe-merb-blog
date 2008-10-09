@@ -43,9 +43,9 @@ Merb::Router.prepare do
   )
   
   # NAMED routes
-  r.match('/contact').to( :controller => 'comments', :action => 'new' ).name( :contact )
+  match('/contact').to( :controller => 'comments', :action => 'new' ).name( :contact )
   
-  r.match('/:category_title').to( :controller => 'blogs', :action => 'index' ).name( :category )
+  match('/:category_title').to( :controller => 'blogs', :action => 'index' ).name( :category )
   # resources :posts
 
   # This is the default route for /:controller/:action/:id
@@ -55,8 +55,8 @@ Merb::Router.prepare do
   default_routes
 
   # Used for path generation
-  r.match('/:year/:month/:path_title').to( :controller => 'blogs', :action => 'show' ).name( :blog_by_date )
+  match('/:year/:month/:path_title').to( :controller => 'blogs', :action => 'show' ).name( :blog_by_date )
 
   # Change this for your home page to be available at /
-  r.match('/').to(:controller => 'blogs', :action =>'show', :id => 'latest' )
+  match('/').to(:controller => 'blogs', :action =>'show', :id => 'latest' )
 end

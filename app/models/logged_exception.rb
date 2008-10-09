@@ -1,18 +1,20 @@
 require 'datamapper_ext'
-class LoggedException < DataMapper::Base
+class LoggedException
+  include DataMapper::Resource
   include DataMapperExt
 
-  property :exception_class, :string
-  property :controller_name, :string
-  property :action_name,     :string
-  property :message,         :text
-  property :backtrace,       :text
-  property :cookies,         :text
-  property :session,         :text
-  property :params,          :text
-  property :environment,     :text
-  property :url,             :text
-  property :created_at,      :datetime
+  property :id,              Serial
+  property :exception_class, String
+  property :controller_name, String
+  property :action_name,     String
+  property :message,         Text
+  property :backtrace,       Text
+  property :cookies,         Text
+  property :session,         Text
+  property :params,          Text
+  property :environment,     Text
+  property :url,             Text
+  property :created_at,      DateTime
 
   yaml_attribute :cookies, :backtrace, :params, :session, :environment, :request
 

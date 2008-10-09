@@ -43,15 +43,15 @@ $KCODE = 'UTF8'
 
 # ==== Dependencies
 
-dependencies "merb_helpers", "merb_helpers_ext"
+dependencies "merb_helpers", "lib/merb_helpers_ext"
 require 'merb-mailer'
 dependencies "merb-haml", "merb-cache", "merb-parts", "merb-builder"
 
 # Frozen Gem dependencies
 dependencies "merb_has_flash", 'paginator'
 
-require 'object_ext'
-dependencies 'merb_router_behavior_ext', 'merb_exceptions_ext'
+require 'lib/object_ext'
+dependencies 'lib/merb_router_behavior_ext', 'lib/merb_exceptions_ext'
 
 require File.join(File.dirname(__FILE__), '..', 'lib', 'authenticated_system/authenticated_dependencies') rescue LoadError
 

@@ -1,18 +1,20 @@
-class Comment < DataMapper::Base
+class Comment
+  include DataMapper::Resource
 #  include DataMapper::Reflection
 
-  property :body,           :text
-  property :created_at,     :datetime
-  property :author_name,    :text
-  property :author_email,   :text
-  property :author_website, :text
+  property :id,             Serial
+  property :body,           Text
+  property :created_at,     DateTime
+  property :author_name,    Text
+  property :author_email,   Text
+  property :author_website, Text
 
   belongs_to :blog
 
-  before_save :validate_open_comments
+  before :save, :validate_open_comments
 
-  validates_presence_of :author_name
-  validates_presence_of :body
+  #validates_present :author_name
+  #validates_present :body
 
   def author_name_and_email
     '%s <%s>' % [ self.author_name, self.author_email ]
