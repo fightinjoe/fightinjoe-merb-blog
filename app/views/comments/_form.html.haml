@@ -7,7 +7,7 @@
 - error_li = lambda { |err| "<li>#{ err.last.join('<br />') }</li>" }
 = error_messages_for( @comment, error_li, 'errors' ) { |es| "<strong>#{es.size} problem(s) prevented your comment from saving:</strong>" }
 
-- action = @comment.blog_id ? url(:new_blog_comment, @comment) : url(:new_comment)
+- action = @comment.blog_id ? url(:blog_comments) : url(:new_comment)
 - form_for( :comment, :action => action ) do
   %dl{ :class => "#{ 'compact' if @comment.blog_id }"}
     %dt= label_for( :author_name, 'Name*' )

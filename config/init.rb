@@ -53,7 +53,7 @@ dependencies "merb_has_flash", 'paginator'
 dependencies "dm-aggregates"
 
 require 'lib/object_ext'
-dependencies 'lib/merb_router_behavior_ext', 'lib/merb_exceptions_ext'
+#dependencies 'lib/merb_router_behavior_ext', 'lib/merb_exceptions_ext'
 
 require File.join(File.dirname(__FILE__), '..', 'lib', 'authenticated_system/authenticated_dependencies') rescue LoadError
 

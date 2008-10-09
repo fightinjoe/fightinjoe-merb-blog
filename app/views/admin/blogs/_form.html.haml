@@ -3,7 +3,7 @@
   # Parameters:
   #  blog - blog object to edit or optionally create
 
-- action = blog.new_record? ? url(:new_admin_blog) : url(:edit_admin_blog, blog)
+- action = blog.new_record? ? url(:admin_blogs) : url(:edit_admin_blog, blog)
 - form_for( :blog, :action => action ) do
   - unless blog.new_record?
     %input{ :name => '_method', :type => 'hidden', :value => "put" }

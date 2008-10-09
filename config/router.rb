@@ -32,15 +32,15 @@ Merb::Router.prepare do
   resources :users
   resources :sessions
 
-  # RESTful routes
-  resources :blogs do |b|
-    b.resources :comments
+  namespace :admin do |admin|
+    resources :blogs
   end
 
-  namespace :admin do |admin|
-    admin.resources :blogs
+  # RESTful routes
+  resources :blogs do |b|
+    resources :comments
   end
-  
+
   resources :comments
   
   match(%r{/(\d+)/(\d+)/([a-zA-Z\-]+)}).to(

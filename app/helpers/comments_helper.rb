@@ -12,7 +12,7 @@ module Merb
       email   = '<a href="mailto:%s">Email</a>' % comment.author_email if logged_in? && comment.author_email
       confirm = "return confirm('Are you certain you want to delete this comment?');"
       delete  = delete_button(
-        :blog_comment, comment, 'Delete',
+        url(:blog_comment, comment.blog_id, comment.id), comment, 'Delete',
         {:style   => 'display:inline;'},
         {:onclick => confirm, :style => 'font-size:.8em' }
       )

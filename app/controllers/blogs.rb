@@ -36,7 +36,7 @@ class Blogs < Application
         @about = Category.first(:title => 'About')
         @blog  = Blog.last( :category_id.not => (@about ? @about.id : -1) )
       else
-        @blog = id ? Blog.first( id ) : Blog.first( :path_title => page_title, :year => year, :month => month )
+        @blog = id ? Blog.get( id ) : Blog.first( :path_title => page_title, :year => year, :month => month )
       end
       raise NotFound unless @blog
     end

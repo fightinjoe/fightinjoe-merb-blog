@@ -1,5 +1,5 @@
 class Comments < Application
-  provides :html, :rss
+  provides :html
   before :login_required, :exclude => %w(new create)
 
   def index
@@ -16,7 +16,7 @@ class Comments < Application
   end
 
   def new
-    provides :js
+    provides :js, :html
     @blog = params[:blog_id] ? Blog.get( params[:blog_id] ) : nil
     @comment = Comment.new( :blog_id => params[:blog_id] )
     render
@@ -39,7 +39,8 @@ class Comments < Application
         redirect( '/' )
       else
         flash[:notice] = 'Thanks for sharing!  Your comment will appear below.'
-        redirect( url(:blog_by_date, @comment.reload.blog) )
+        b = @comment.reload.blog
+        redirect( url(:blog_by_date, b.year, b.month, b.path_title) )
       end
     else
       render :new

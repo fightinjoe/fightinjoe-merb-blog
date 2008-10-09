@@ -10,7 +10,7 @@
     - for comment in blog.comments
       - next if comment.new_record?
       %li.dot
-        = print_date( comment.created_at )
+        = print_date( comment.created_at ) unless comment.created_at.nil?
         .comment
           %strong= link_to_author( comment )
           = comment.body
