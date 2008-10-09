@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+pre {
+  padding: 0;
+  line-height: 1.3em;
+  word-wrap: break-word;
+  color: #000000;
+  background-color: #FFFFFF;
+  /* Number */ */
+  /* Built-in constant */ */
+  /* User-defined constant */ */
+  /* Variable */ */
+  /* Keyword */ */
+  /* Storage */ */
+  /* Class name */ */
+  /* Inherited class */ */
+  /* Function name */ */
+  /* Function argument */ */
+  /* Tag name */ */
+  /* Tag attribute */ */
+  /* Library function */ */
+  /* Library constant */ */
+  /* Library class/type */ */
+  /* Library variable */ */
+  /* Invalid */ */
+  /* String interpolation */ */ }
+  pre .linenum {
+    width: 75px;
+    padding: 0.1em 1em 0.2em 0;
+    color: #888;
+    background-color: #eee; }
+  pre span {
+    padding-top: 0.2em;
+    padding-bottom: 0.1em; }
+  pre selection {
+    background-color: #BAD6FD; }
+  pre .comment {
+    color: #919191; }
+  pre .string {
+    color: #00A33F; }
+  pre .constant_language {
+    color: #A535AE; }
+  pre .keyword {
+    color: #FF5600; }
+  pre .storage {
+    color: #FF5600; }
+  pre .entity_name_class {
+    color: #21439C; }
+  pre .entity_name_function {
+    color: #21439C; }
+  pre .support_function {
+    color: #A535AE; }
+  pre .support_constant {
+    color: #A535AE; }
+  pre .support_type, pre .support_class {
+    color: #A535AE; }
+  pre .support_other_variable {
+    color: #A535AE; }
+  pre .invalid {
+    color: #FFFFFF;
+    background-color: #990000; }
+  pre .constant_other_placeholder_py {
+    color: #990000; }

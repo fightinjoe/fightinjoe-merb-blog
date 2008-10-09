@@ -10,13 +10,4 @@ class Exceptions < Application
     render :format => :html
   end
 
-  # handle 500 errors
-  def internal_server_error
-    LoggedException.create_from_controller( self )
-
-    # Required for rendering the exception message - replace for production
-    @exception = params[:exception]
-    render :format => :html, :layout => :nil
-  end
-
 end

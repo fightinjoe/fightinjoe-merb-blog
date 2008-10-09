@@ -1,0 +1,288 @@
+.right {
+  float: right; }
+
+.center {
+  text-align: center; }
+
+.clear {
+  clear: both; }
+
+ul.unlist {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+ul.horizontal li {
+  float: left;
+  padding: 0 .5em; }
+
+dl.compact dt {
+  float: left;
+  width: 75px;
+  clear: left;
+  line-height: 2em; }
+dl.compact dd {
+  margin-left: 75px; }
+
+#flash {
+  padding: 0.5em;
+  text-align: center; }
+  #flash.notice {
+    border: 2px solid Green;
+    background: #cbe379; }
+
+.error {
+  border: 1px solid Red; }
+
+.errors {
+  border: 2px solid Red;
+  margin-top: 1em;
+  background: #FFE1E7; }
+  .errors strong {
+    display: block;
+    text-align: center;
+    background: Pink;
+    padding: .5em 0; }
+
+.larger {
+  font-size: 1.2em; }
+
+.date {
+  width: 30px;
+  height: 30px;
+  float: left;
+  text-align: center;
+  margin: -.25em 10px 0 5px; }
+  .date .month, .date .day {
+    line-height: 15px;
+    display: block;
+    margin: 0; }
+
+.dot {
+  padding: .5em 0;
+  margin: .5em 0;
+  border-bottom: 1px dotted silver; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+pre {
+  padding: 0;
+  line-height: 1.3em;
+  word-wrap: break-word;
+  color: #000000;
+  background-color: #FFFFFF;
+  /* Number */ */
+  /* Built-in constant */ */
+  /* User-defined constant */ */
+  /* Variable */ */
+  /* Keyword */ */
+  /* Storage */ */
+  /* Class name */ */
+  /* Inherited class */ */
+  /* Function name */ */
+  /* Function argument */ */
+  /* Tag name */ */
+  /* Tag attribute */ */
+  /* Library function */ */
+  /* Library constant */ */
+  /* Library class/type */ */
+  /* Library variable */ */
+  /* Invalid */ */
+  /* String interpolation */ */ }
+  pre .linenum {
+    width: 75px;
+    padding: 0.1em 1em 0.2em 0;
+    color: #888;
+    background-color: #eee; }
+  pre span {
+    padding-top: 0.2em;
+    padding-bottom: 0.1em; }
+  pre selection {
+    background-color: #BAD6FD; }
+  pre .comment {
+    color: #919191; }
+  pre .string {
+    color: #00A33F; }
+  pre .constant_language {
+    color: #A535AE; }
+  pre .keyword {
+    color: #FF5600; }
+  pre .storage {
+    color: #FF5600; }
+  pre .entity_name_class {
+    color: #21439C; }
+  pre .entity_name_function {
+    color: #21439C; }
+  pre .support_function {
+    color: #A535AE; }
+  pre .support_constant {
+    color: #A535AE; }
+  pre .support_type, pre .support_class {
+    color: #A535AE; }
+  pre .support_other_variable {
+    color: #A535AE; }
+  pre .invalid {
+    color: #FFFFFF;
+    background-color: #990000; }
+  pre .constant_other_placeholder_py {
+    color: #990000; }
+
+body {
+  font-family: Helvetica, Arial;
+  text-align: center;
+  margin: 0;
+  font-size: 76%;
+  background: url(/images/riceShadow.jpg) center repeat-y; }
+  body a {
+    color: #385409;
+    text-decoration: none; }
+    body a:hover {
+      text-decoration: underline; }
+  body h2 {
+    font-size: 32px;
+    font-family: monospace;
+    border-bottom: 1px solid Silver;
+    margin: 0; }
+    body h2 a {
+      color: Black;
+      text-decoration: none; }
+  body small {
+    color: Silver;
+    font-size: 1em;
+    padding: .5em 0 1em 0;
+    display: block; }
+  body pre {
+    background: #ddd;
+    font-size: 1.2em;
+    padding: 5px;
+    overflow: auto; }
+
+#title {
+  width: 800px;
+  margin: 0 auto;
+  text-indent: -2000px;
+  overflow: hidden;
+  background: url(/images/header.jpg) no-repeat center 0;
+  height: 166px;
+  z-index: 2;
+  position: relative; }
+
+#shell {
+  margin: 0 auto;
+  text-align: left;
+  width: 800px;
+  border: 1px solid White;
+  border-bottom: none;
+  position: relative;
+  top: -1px;
+  background: url(/images/riceBodyTop.jpg) no-repeat; }
+
+#wrapper {
+  *width: 660px;
+  margin: 0 67px 0 70px;
+  background: white; }
+  #wrapper #content {
+    font-size: 1em;
+    width: 450px;
+    float: right;
+    padding-right: 10px; }
+    #wrapper #content p {
+      font-size: 1.2em;
+      line-height: 1.4em; }
+    #wrapper #content #blogs .preview .blog p {
+      font-size: 1em; }
+  #wrapper #sidebar {
+    width: 190px; }
+    #wrapper #sidebar .wrapper {
+      margin-left: 15px; }
+      #wrapper #sidebar .wrapper h3, #wrapper #sidebar .wrapper div, #wrapper #sidebar .wrapper ul {
+        margin: 0; }
+      #wrapper #sidebar .wrapper h3 {
+        text-align: center;
+        padding: .5em 0;
+        text-align: center;
+        font-size: 1.2em; }
+      #wrapper #sidebar .wrapper a {
+        text-decoration: none;
+        color: Black; }
+      #wrapper #sidebar .wrapper #accordion {
+        background: #3c490f;
+        color: Black;
+        list-style: none;
+        padding: 0; }
+        #wrapper #sidebar .wrapper #accordion h3 {
+          cursor: pointer;
+          border-bottom: 1px solid Black;
+          border-color: #222909; }
+          #wrapper #sidebar .wrapper #accordion h3.selected {
+            color: White; }
+        #wrapper #sidebar .wrapper #accordion ul {
+          background: Black; }
+          #wrapper #sidebar .wrapper #accordion ul.static {
+            text-align: center;
+            line-height: 2.5em; }
+            #wrapper #sidebar .wrapper #accordion ul.static .date {
+              display: none; }
+          #wrapper #sidebar .wrapper #accordion ul li {
+            font-size: 1em;
+            margin-bottom: .25em;
+            padding: .4em 0 .15em 0;
+            clear: left;
+            min-height: 30px; }
+            #wrapper #sidebar .wrapper #accordion ul li:hover {
+              background: #222909; }
+              #wrapper #sidebar .wrapper #accordion ul li:hover .date {
+                background: #3c490f;
+                color: #cbe379; }
+              #wrapper #sidebar .wrapper #accordion ul li:hover a {
+                color: White; }
+            #wrapper #sidebar .wrapper #accordion ul li a {
+              color: Silver; }
+              #wrapper #sidebar .wrapper #accordion ul li a:hover {
+                text-decoration: underline; }
+          #wrapper #sidebar .wrapper #accordion ul strong {
+            font-size: 1.2em;
+            display: block;
+            border-bottom: 2px solid Black;
+            padding: .5em 0;
+            text-align: center; }
+      #wrapper #sidebar .wrapper #pic img {
+        width: 80%;
+        padding: 3px;
+        border: 1px solid Silver;
+        border-left: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        margin-bottom: 1em; }
+      #wrapper #sidebar .wrapper #photos {
+        background-color: #cbe379; }
+      #wrapper #sidebar .wrapper #contact {
+        background-color: #b3d838; }
+      #wrapper #sidebar .wrapper #previous {
+        background-color: #7d9920; }
+      #wrapper #sidebar .wrapper small {
+        font-size: smaller;
+        margin-bottom: -.5em; }
+      #wrapper #sidebar .wrapper .date {
+        margin: -.25em 10px 0 5px;
+        background: #222;
+        color: Gray; }
+        #wrapper #sidebar .wrapper .date .month, #wrapper #sidebar .wrapper .date .day {
+          float: none; }
+  #wrapper #footer {
+    height: 120px;
+    background: black url(/images/riceBottom.jpg) 0 -25px;
+    margin: 0 -1px -1px -2px;
+    clear: both; }
+
+#comments .date, #blogs .date {
+  background: #ddd; }
+#comments .comment, #comments .blog, #blogs .comment, #blogs .blog {
+  margin-left: 45px; }
+
+body.admin #wrapper #content {
+  float: none;
+  width: auto;
+  padding: 0 10px; }
+body.admin #wrapper .date {
+  background-color: #eee; }

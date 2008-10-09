@@ -1,0 +1,51 @@
+/*
+Sass::SyntaxError: Undefined constant: "!green1"
+on line 34 of /Users/aaronwheeler/Sites/personal/fightinjoe/public/stylesheets/sass/common.sass
+
+30:   :padding 0.5em
+31:   :text-align center
+32:   &.notice
+33:     :border 2px solid Green
+34:     :background = !green1
+35: 
+36: .error
+37:   :border 1px solid Red
+38: 
+39: .errors
+40:   :border 2px solid Red
+
+
+Backtrace:
+/Users/aaronwheeler/Sites/personal/fightinjoe/public/stylesheets/sass/common.sass:34
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/constant.rb:240:in `get_constant'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/constant.rb:223:in `operationalize'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/constant.rb:213:in `operationalize'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/constant.rb:45:in `parse'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/engine.rb:266:in `parse_attribute'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/engine.rb:232:in `parse_line'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/engine.rb:172:in `build_tree'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/engine.rb:198:in `build_tree'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/engine.rb:105:in `render_to_tree'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/engine.rb:82:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin.rb:61:in `update_stylesheets'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin.rb:46:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin.rb:46:in `update_stylesheets'
+/opt/local/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/merb.rb:27:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-0.9.1/lib/merb-core/rack/handler/mongrel.rb:67:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-0.9.1/lib/merb-core/rack/adapter/mongrel.rb:22:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-0.9.1/lib/merb-core/server.rb:43:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-0.9.1/lib/merb-core.rb:33:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/merb-core-0.9.1/bin/merb:8
+/opt/local/bin/merb:16:in `load'
+/opt/local/bin/merb:16
+*/
