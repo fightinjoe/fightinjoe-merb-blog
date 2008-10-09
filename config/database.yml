@@ -1,13 +1,11 @@
 ---
 # This is a sample database file for the DataMapper ORM
 :development: &defaults
-  :adapter: sqlite3
-  :database: db/dev.sqlite3
-  #:adapter: postgres
-  #:database: joe_dev
-  #:username: postgres
-  #:password: postgres
-  #:host: localhost
+  :adapter: postgres
+  :database: joe_dev
+  :username: postgres
+  :password: postgres
+  :host: localhost
 
 :test:
   <<: *defaults

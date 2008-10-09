@@ -5,4 +5,4 @@
 
 %li
   = print_date( blog.published_at )
-  %a{:href => "#{ url(:blog_by_date, blog) }"}= blog.title
+  %a{:href => "#{ url(:blog_by_date, blog.year, blog.month, blog.path_title) }"}= blog.title

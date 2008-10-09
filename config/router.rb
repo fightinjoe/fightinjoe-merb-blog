@@ -27,6 +27,11 @@
 
 Merb.logger.info("Compiling routes...")
 Merb::Router.prepare do
+  match("/login").to(:controller => "Sessions", :action => "create").name(:login)
+  match("/logout").to(:controller => "Sessions", :action => "destroy").name(:logout)
+  resources :users
+  resources :sessions
+
   # RESTful routes
   resources :blogs do |b|
     b.resources :comments

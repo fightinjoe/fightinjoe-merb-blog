@@ -50,6 +50,8 @@ dependencies "merb-haml", "merb-cache", "merb-parts", "merb-builder"
 # Frozen Gem dependencies
 dependencies "merb_has_flash", 'paginator'
 
+dependencies "dm-aggregates"
+
 require 'lib/object_ext'
 dependencies 'lib/merb_router_behavior_ext', 'lib/merb_exceptions_ext'
 
